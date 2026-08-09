@@ -1,0 +1,26 @@
+{
+  "format_version": 1,
+  "updated": "2026-08-09T18:18:33Z",
+  "sig_sets": [
+    {
+      "id": "msvc_vs2005-2019_amd64_windows_msvc",
+      "library": "msvc",
+      "version": "vs2005-2019",
+      "arch": "amd64",
+      "platform": "windows",
+      "compiler": "msvc",
+      "file": "msvc_x64.json",
+      "sig_count": 5
+    },
+    {
+      "id": "msvc_vs6-2019_i386_windows_msvc",
+      "library": "msvc",
+      "version": "vs6-2019",
+      "arch": "i386",
+      "platform": "windows",
+      "compiler": "msvc",
+      "file": "msvc_x86.json",
+      "sig_count": 14
+    }
+  ]
+}
