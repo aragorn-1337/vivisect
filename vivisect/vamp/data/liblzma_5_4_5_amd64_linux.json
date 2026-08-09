@@ -1,0 +1,1122 @@
+{
+  "format_version": 1,
+  "library": "liblzma",
+  "version": "5.4.5",
+  "arch": "amd64",
+  "platform": "linux",
+  "compiler": "gcc-13",
+  "compiled_flags": "-O2",
+  "source_url": null,
+  "binary_sha256": "696e868dd0700a19a6d65fc01608ec2d70d3cb91f65710e89180cd2e688f30cb",
+  "generated_at": "2026-08-09T20:00:31Z",
+  "generated_by": "vamp-gen-sigs",
+  "signatures": [
+    {
+      "name": "liblzma.lzma_version_number",
+      "bytes": "f30f1efab8f48cfb02c3",
+      "mask": "ffffffffffffffffffff",
+      "func_size": 10,
+      "first_block_size": 10,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "liblzma.lzma_version_string",
+      "bytes": "f30f1efa488d0585fa0100c3",
+      "mask": "ffffffffffffffffffffffff",
+      "func_size": 12,
+      "first_block_size": 12,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "liblzma.lzma_code",
+      "bytes": "f30f1efa5589f04889e5534889fb4883ec28488b3f64488b142528000000488955e831d24885ff0f84b30000004c8b4b184d85c90f84bf000000488b53384885d2747d4c8b521883f80477744d85d2746f89c6b90b000000807c326000746648837b4000b908000000755a48837b4800755348837b5000754c48837b5800754548837b6800753e48837b7000753748837b780075304883bb80000000007526837a50050f87d7ccffff8b4a50488d35cde9010048630c8e4801f13effe10f1f00b90b000000488b45e864482b0425280000000f8535020000488b5df889c8c9c348837b0800b90b00000075d94c8b4b184d85c90f8541ffffff48837b2000b90b",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 796,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_end",
+      "bytes": "f30f1efa4885ff0f848b000000554889e54154534c8b67384889fb4d85e4746d49837c241000488b77307442498b442420498b3c244885c07476ffd0660fefc0488b7330410f110424410f1144241049c7442408ffffffff410f11442420410f11442430410f114424404c8b63384885f6742d488b46084885c07424488b7e104c89e6ffd048c74338000000005b415c5dc3660f1f440000c30f1f80000000004c89e7e8d8c7ffffebdb660f1f4400004885f6741b488b46084885c07412488b56104889fe4889d7e96dffffff0f1f00e8abc7ffffe962ffffff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 218,
+      "first_block_size": 218,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_get_progress",
+      "bytes": "f30f1efa488b4f38488b41284885c0740f488b39ffe0662e0f1f840000000000488b4710488906488b4728488902c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 47,
+      "first_block_size": 47,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_get_check",
+      "bytes": "f30f1efa488b5738488b42304885c0740f488b3affe0662e0f1f84000000000031c0c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 35,
+      "first_block_size": 35,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_memusage",
+      "bytes": "f30f1efa554889e54883ec2064488b042528000000488945f831c04885ff7430488b47384885c074274c8b40384d85c0741e31c9488b38488d55e8488d75f041ffd085c0750a488b45f0eb060f1f400031c0488b55f864482b1425280000007502c9c3e828c7ffff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 104,
+      "first_block_size": 104,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_memlimit_get",
+      "bytes": "f30f1efa554889e54883ec2064488b042528000000488945f831c04885ff7430488b47384885c074274c8b40384d85c0741e31c9488b38488d55f0488d75e841ffd085c0750a488b45f0eb060f1f400031c0488b55f864482b1425280000007502c9c3e8b8c6ffff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 104,
+      "first_block_size": 104,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_memlimit_set",
+      "bytes": "f30f1efa554889e54883ec2064488b042528000000488945f831c04885ff7440488b47384885c074374c8b40384d85c0742e4885f6b901000000488b38488d55f0480f45ce488d75e841ffd0488b55f864482b142528000000750cc9c30f1f00b80b000000ebe5e844c6ffff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 108,
+      "first_block_size": 108,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_filters_copy",
+      "bytes": "f30f1efa554889e54157415641554154534883ec7864488b042528000000488945c831c04885ff0f84d30100004989f64885f60f84c70100004c8b074983f8ff0f84630200004c8d8d70ffffff488d5f084531ff4989d44d89cd48833b004d894500753949c74508000000004c8b4308498d47014983f8ff0f84ca0100004983c5104883c3104883f8040f846001000048833b004d8945004989c774c748ba0100000000000040488d051ae7010031c94939d00f84800100000f1f8000000000488b104883c0184883c1014c39c20f849c0000004883faff75e6498d5fff41be080000004d85ff745f4c8dad78ffffff4889d848c1e004498b7405004d85e474",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 718,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_filters_free",
+      "bytes": "f30f1efa4885ff7477554889e541554154534889fb4883ec0848833fff74444989f44531ed488b73084d85e47442498b4424084885c07438498b7c2410ffd048c74308000000004883c3104983c50148c743f0ffffffff48833bff74064983fd0475c24883c4085b415c415d5dc366904889f7e8a8c2ffffebc5660f1f440000c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 129,
+      "first_block_size": 129,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_physmem",
+      "bytes": "f30f1efa55bf1e0000004889e5534883ec08e809c4ffffbf550000004889c3e8fcc3ffff4883fbff74164883f8ff7410480fafc3488b5df8c9c3660f1f440000488b5df831c0c9c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 72,
+      "first_block_size": 72,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_index_init",
+      "bytes": "f30f1efa554889e54154534885ff0f842c010000488b074989fc4885c00f84fd000000488b7f10ba50000000be01000000ffd04889c34885c00f84db000000660fefc048c74310000000000f1103498b0424c743180000000048c7434000020000c74348000000000f1143200f1143304885c0747bbe01000000498b7c2410baa8000000ffd04889c64885c0747448c7462000000000660fefc04889dfc746280100000048c746300000000048c7464800000000c7465000000000c74668ffffffff48c786a0000000000000000f11060f1146100f1146380f114658e8bfdeffff4889d85b415c5dc30f1f8000000000bfa8000000e866c2ffff4889c64885c0",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 420,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_index_end",
+      "bytes": "f30f1efa4885ff0f84a3030000554889e54157415641554989fd4154534889f34883ec184c8b274d85e40f843a0300004d8b7424184d85f60f84880100004d8b7e184d85ff0f84b0000000498b47184885c07448488b78184885ff7414488d15bccbffff488945c8e8e3c4ffff488b45c8488b78204885ff7417488d159fcbffff4889de488945c8e8c3c4ffff488b45c84889de4889c7e884cbffff498b47204885c0744b488b78184885ff7417488d156bcbffff4889de488945c8e88fc4ffff488b45c8488b78204885ff7417488d154bcbffff4889de488945c8e86fc4ffff488b45c84889de4889c7e830cbffff4889de4c89ffe825cbffff4d8b7e204d",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 945,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_index_memusage",
+      "bytes": "f30f1efa488d57ffb9feffffff48c7c0ffffffff4839d1724348ba0008fd00558ed00f4839f272344881c6ff010000488d14ff48c7c18fffffff48c1ee09488d14974869f66020000048c1e2034829d14839f1488d541670480f43c2c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 93,
+      "first_block_size": 93,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_index_memused",
+      "bytes": "f30f1efa488b77308b7f18e930ffffff",
+      "mask": "ffffffffffffffffffffffffffffffff",
+      "func_size": 16,
+      "first_block_size": 16,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_index_block_count",
+      "bytes": "f30f1efa488b4730c3",
+      "mask": "ffffffffffffffffff",
+      "func_size": 9,
+      "first_block_size": 9,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "liblzma.lzma_index_stream_count",
+      "bytes": "f30f1efa8b4718c3",
+      "mask": "ffffffffffffffff",
+      "func_size": 8,
+      "first_block_size": 8,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "liblzma.lzma_index_total_size",
+      "bytes": "f30f1efa488b4728c3",
+      "mask": "ffffffffffffffffff",
+      "func_size": 9,
+      "first_block_size": 9,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "liblzma.lzma_index_uncompressed_size",
+      "bytes": "f30f1efa488b4720c3",
+      "mask": "ffffffffffffffffff",
+      "func_size": 9,
+      "first_block_size": 9,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "liblzma.lzma_index_checks",
+      "bytes": "f30f1efa488b57108b4748837a68ff740c8b4a78ba01000000d3e209d0c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 30,
+      "first_block_size": 30,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_index_dup",
+      "bytes": "f30f1efa554889e54157415641554154534889fb4883ec28488975b04885f60f841f030000488b064885c00f8413030000488b7e10ba50000000be01000000ffd0488945b8488b45b84885c00f8473020000660fefc048c74040000200000f1140200f114030f30f6f73200f1100f30f6f43304c8b730848c7401000000000c7401800000000c74048000000000f1170200f11403048b8fbffffffffffff0f493b46580f820f020000f3410f6f0e488b4db0498b5e30458b66280f294dc04885c90f8439020000488b014885c00f842d020000488b7910baa8000000be01000000ffd04989c74d85ff0f84c9010000660f6f55c0660fefc049895f30410f1147",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 855,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_index_iter_rewind",
+      "bytes": "f30f1efa660fefc00f1187080100000f118718010000c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 23,
+      "first_block_size": 23,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_index_iter_init",
+      "bytes": "f30f1efa4889b700010000e9d0ffffff",
+      "mask": "ffffffffffffffffffffffffffffffff",
+      "func_size": 16,
+      "first_block_size": 16,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_stream_flags_compare",
+      "bytes": "f30f1efa8b17b80800000085d275668b0685c0756b8b571083fa0f77538b4e1083f90f774b39ca7567488b57084883faff7442488b4e084883f9ff743848befcffffff03000000488d7afc4839fe7220488d79fc4839fe72174889d64809ce83e603750c4839caba090000000f45c2c3b80b000000c3662e0f1f840000000000b808000000c3662e0f1f840000000000b809000000c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 150,
+      "first_block_size": 150,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_index_stream_flags",
+      "bytes": "f30f1efa4885ff7467554889e54154534889f34885f674484989fc4889f7e83dffffff85c0752d498b542410f30f6f030f114268f30f6f4b100f114a78f30f6f53200f119288000000488b4b3048898a980000005b415c5dc30f1f80000000005bb80b000000415c5dc3660f1f440000b80b000000c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 118,
+      "first_block_size": 118,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_str_from_filters",
+      "bytes": "f30f1efa554889e54157415641554154534883ec6864488b042528000000488945c831c04885ff0f84e301000048c707000000004989fc4989f24885f60f84cd01000089d34189d181e30fffffff0f85f300000048833eff0f84e90000004989ce4885c90f843e010000488b014885c00f84320100008955a0488b7910ba20030000488975a8be01000000ffd04c8b55a8448b4da0488945b04885c00f84760300004489cf48c745b80000000083e740897d940f84bf000000488d1548cd010049833aff48c745a8000000004c8d6db0488955880f84e6030000488d352bcd01004c89ef44894d984c8955a0e89fcdffff4c8b55a0448b4d984c89f24c89e041",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 1249,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_str_list_filters",
+      "bytes": "f30f1efa554889e54157415641554154534883ec6864488b042528000000488945c831c04885ff0f84ec03000089d348c707000000004989fc4189d083e38e0f85ab0300004989f64989cf4885c90f84a7010000488b014885c00f849b0100008955a8488b7910ba20030000be01000000ffd0448b45a8488945b04885c00f849f0300004489c0488d1591c8010048c745b800000000488d0d7382020083e030895d984c8d2d8dc801008945a4488d0577c80100480f44c2488d1557c801004489459c4c89bd70ffffff488945804489c083e0404c89a578ffffff4d89f48945a0488d0530c80100480f44c24889458831c0660f1f4400004983fcff0f858e00",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 1094,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_vli_size",
+      "bytes": "f30f1efa31c04885ff780e0f1f44000083c00148c1ef0775f7c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 26,
+      "first_block_size": 26,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_index_size",
+      "bytes": "f30f1efa554889e5534883ec08488b5f38488b7f30e8c6ffffff83c001488d440307488b5df8c94883e0fcc3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 44,
+      "first_block_size": 44,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_index_stream_size",
+      "bytes": "f30f1efa554889e5415453488b5f284c8b6738488b7f30e894ffffff83c001498d4404074883e0fc488d4403185b415c5dc3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 50,
+      "first_block_size": 50,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_index_file_size",
+      "bytes": "f30f1efa5531d24889e5415453488b4710488b7048488b88a00000004c8b6060488b78584885f67415488b563848c1e204488b5432484883c2034883e2fc48034808488d5c0a184885db7824e81fffffff48c7c2ffffffff83c001498d4404074883e0fc4801d85b415c480f48c25dc35b48c7c0ffffffff415c5dc3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 124,
+      "first_block_size": 124,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_index_stream_padding",
+      "bytes": "f30f1efa4885ff746755b80b0000004889e541554154534889f34883ec084885f6783240f6c603752c4c8b67104d8bac24a000000049c78424a000000000000000e83affffff4801d8781549899c24a000000031c04883c4085b415c415d5dc34d89ac24a0000000b809000000ebe690b80b000000c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 118,
+      "first_block_size": 118,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_index_append",
+      "bytes": "f30f1efa554889e54157415641554154534883ec58488975c04885ff0f84960200004989d74883fa040f868902000048befcffffffffffff7f4839d60f82760200004889cb4885c90f886a0200004c8b77104989fc4d8b6e484d85ed0f846e020000498b453848c1e0044c01e8488b4848488d7903488b4840b8090000004889fa4883e2fc48894d904801d94889559848894db00f8809020000498d0c1748894db84839ce0f82f80100004c89ffe8bdfdffff4889df8945c8e8b2fdffff8b55c8498b7e608d0c02498b4658488d770748897da0498b7e084903bea000000048894dc8488d5001488b45b848897580488955a84883c0034883e0fc4c8d540718",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 826,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_index_cat",
+      "bytes": "f30f1efa554889e54157415641554154534883ec5864488b042528000000488945c831c04885ff0f84730100004989f74885f60f84670100004889fb4989d4e87cfbffff4c89ff4989c5e871fbffff4c01e80f88400100004c8b73204c89f0490347200f882f010000488b43304c8b4b384889c74c894d8848894580e8affaffff4d8b4738498b7f308945904c894598e89bfaffff4c8b45984c8b4d888b559089c64b8d44010b83c2014801d08d560148be00000000040000004801d0ba090000004883e0fc4839c60f82a00000004c8b4b104d8b41484d85c07412498b5038488d4201493b40300f82d20000004889dfe82aebffff4c8b5580498b37488d7d",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 791,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_index_iter_next",
+      "bytes": "f30f1efab80100000083fe030f8751020000488b8f00010000488b870801000031d24c8b871801000083fe0174244c8b8f200100004983f9010f84d80100004983f9020f84bc0100004d85c90f84960100004885c00f85aa000000488b410883fe01772c488b50404531c05548898708010000488997100100004c8987180100004889e5e827fdffff31c05dc30f1f00488b50404885d2752f488b50204885d20f84a4000000662e0f1f8400000000004889d0488b52184885d275f4488b50404885d274d40f1f0083fe030f852c010000488b4a4048390a0f851f01000031c948837a380041b8010000000f849f00000048c1e1044c8b540a504c39540a400f",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 612,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_index_iter_locate",
+      "bytes": "f30f1efa488b8700010000483b70200f83db000000488b104885d20f84039cffff4989f94531d2eb0f0f1f80000000004889ca4885d27418488b4a18488b4220483b3272eb4989d24889c24885d275e8498b4238492b324885c00f84ba9bffff554889e5eb12662e0f1f8400000000004889f84885c07418488b7818488b4820483b3072eb4889c24889c84885c075e8488b7a3831c9eb250f1f8400000000004889f84829c848d1e84801c84989c049c1e004493b741040732e4889c74839f972de4d8991080100004c89cf4989911001000049898918010000e861faffff31c05dc30f1f440000488d4801ebcf6690b801000000c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 246,
+      "first_block_size": 246,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_cputhreads",
+      "bytes": "f30f1efa55be8000000031ff4889e553488d9d60ffffff4889da4881ec9800000064488b042528000000488945e831c0e8eb99ffff89c231c085d2741b488b55e864482b142528000000751b488b5df8c9c3660f1f4400004889debf80000000e84b98ffffebd6e86498ffff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 108,
+      "first_block_size": 108,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_alone_encoder",
+      "bytes": "f30f1efa554889e541544989f4534889fb4883ec10e8f6c4ffff85c074124883c4105b415c5dc3660f1f840000000000488b7330488b7b384c89e2e830bcffff85c0751c488b5338c6426001c64263014883c4105b415c5dc30f1f80000000004889df8945ece8a5c8ffff8b45ecebae",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 112,
+      "first_block_size": 112,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_block_buffer_bound",
+      "bytes": "f30f1efa48babcfbffffffffff7f31c04839fa7225488d8fffff000048c1e910488d4c49014829ca4839fa720d488d4439034883e0fc4883c05cc3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 59,
+      "first_block_size": 59,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_raw_buffer_encode",
+      "bytes": "f30f1efa554989cb4d89c24889e541574989f7415641554989d54154534c89cb4881ec9800000064488b142528000000488955c831d24d85ed750f41bc0b0000004885c90f85f60000004d85d24c899d50ffffff41bc0b0000004c899558ffffff0f84d90000004885db0f84d0000000488b03483945100f82c3000000660fefc04889fa41b8010000004c89fe4c8db570ffffff488d0d6598ffff0f298570ffffff4c89f70f29458048c78578ffffffffffffff0f2945900f2945a00f2945b0e8dbb8ffff4189c485c07574488b034883ec084c89ea4c89fe4c8b8d58ffffff4c8b8550ffffff48c78568ffffff00000000488d8d68ffffff48898548ffffff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 358,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_filter_encoder_is_supported",
+      "bytes": "f30f1efa488d05c564020031d20f1f00483b38741b4883c2014883c0384883fa0b75ed31c0c3662e0f1f840000000000b801000000c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 54,
+      "first_block_size": 54,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_raw_encoder",
+      "bytes": "f30f1efa554889e541544989f4534889fb4883ec10e896c2ffff85c074124883c4105b415c5dc3660f1f840000000000488b7330488b7b3841b8010000004c89e2488d0d0897ffffe8a3b7ffff85c0751f488b5338b90101000066894a60c64263014883c4105b415c5dc30f1f4400004889df8945ece835c6ffff8b45eceb9e",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 128,
+      "first_block_size": 128,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_raw_encoder_memusage",
+      "bytes": "f30f1efa4889fe488d3dc296ffffe99d92ffff",
+      "mask": "ffffffffffffffffffffffffffffffffffffff",
+      "func_size": 19,
+      "first_block_size": 19,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_filters_update",
+      "bytes": "f30f1efa554889e5415641554154534883ec604c8b773864488b042528000000488945d831c04d8b66404d85e40f84bd0000004989fd4889f74889f3e89fffffff4883f8ff0f849d00000048837b10ff0f84aa000000b8010000000f1f4400004889c24883c0014889c148c1e10448833c0bff75eb4889c6488d7d8048c1e2044889d948c1e6044801fa4801de0f1f00f30f6f014883c1104883ea100f2942104839f175eb48c1e0044889f9498b75304889da48c7440580ffffffff498b064889c741ffd4488b55d864482b14252800000075384883c4605b415c415d415e5dc30f1f8000000000b808000000ebd690b80b000000ebce660f1f840000000000",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 273,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_properties_size",
+      "bytes": "f30f1efa4c8d05d5610200488b0e31c04c89c20f1f440000483b0a74234883c0014883c2384883f80b75ed48c1f93f83e1038d4108c3662e0f1f840000000000488d14c5000000004829c2498d14d0488b42204885c07406488b7608ffe08b4228890731c0c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 102,
+      "first_block_size": 102,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_properties_encode",
+      "bytes": "f30f1efa4c8d0565610200488b0f31c04c89c20f1f440000483b0a74134883c0014883c2384883f80b75edc30f1f4000488d14c5000000004829c2498b44d0304885c07406488b7f08ffe031c0c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 78,
+      "first_block_size": 78,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_filter_flags_size",
+      "bytes": "f30f1efa48b8ffffffffffffff3f554889e541564155415441bc0b00000053483b0672314989fd4889f3e811ffffff4189c485c0751f488b3b458b7500e89ee4ffff4489f789c3e894e4ffff01d84401f0418945005b4489e0415c415d415e5dc3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 97,
+      "first_block_size": 97,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_block_header_size",
+      "bytes": "f30f1efa554889e5415641554154534883ec1064488b042528000000488945d8b808000000833f010f87880000004c8b67104889fb4983fcff0f84990000004c89e7e829e4ffff4d85e47465448d600685c0745d488b7b184883ffff7413e80de4ffff89c2b80b00000085d274484101d4488b73204885f6743748833eff743141be100000004c8d6dd44c89efe8fefeffff85c07520488b7320440365d44c01f648833eff74414983c6104983fe5075d9b80b000000488b55d864482b14252800000075314883c4105b415c415d415e5dc3660f1f44000041bc06000000e971ffffff0f1f4400004183c4034183e4fc44896304ebc0e8a58affff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 251,
+      "first_block_size": 251,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_index_encoder",
+      "bytes": "f30f1efa554889e541544989f4534889fb4883ec10e8b6bdffff85c074124883c4105b415c5dc3660f1f840000000000488b7330488b7b384c89e2e8d0d7ffff85c0751c488b5338c6426001c64263014883c4105b415c5dc30f1f80000000004889df8945ece865c1ffff8b45ecebae",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 112,
+      "first_block_size": 112,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_stream_buffer_bound",
+      "bytes": "f30f1efa554889e5e8b3f8ffff4885c0741e48baffffffffffffff7f4829c24883c0304883fa2fba00000000480f46c25dc3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 50,
+      "first_block_size": 50,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_vli_encode",
+      "bytes": "f30f1efa554989d24989c94889e54883ec1064488b042528000000488945f831c048c745f000000000488b014885f60f84ab000000ba0a0000004c39c073714c8b1e4983fb080f878c0000004885ff0f8883000000428d0cdd000000004429d94929c348d3ef4889fa498d7b01eb1a9048890e89d148c1ea0783c98049890141884c02ff4939c0743f488d0c074989c34883c0014883fa7f77d6498901488d45f048890e4388141a31d24839c60f95c2488b45f864482b0425280000007532c989d0c30f1f440000488d45f031d24839c675dd0f1f440000ba0b000000ebd1904c39c073f34531db488d75f0e95bffffffe8fa88ffff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 246,
+      "first_block_size": 246,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_filter_flags_encode",
+      "bytes": "f30f1efa554889e541564989fe41554154534883ec10488b3f64488b042528000000488945d831c04889f848c1e83e0f858b0000004989f44989d54889cb4989c84889d14889f231f6e8b2feffff85c0741e488b55d864482b14252800000075664883c4105b415c415d415e5dc36690488d7dd44c89f6e8a4fbffff85c075d28b7dd431f64989d84c89e94c89e2e86dfeffff85c075bb498b45008b55d44829c34839d3721a498d34044c89f7e8defbffff85c0759c8b55d449015500eb9390b80b000000eb8be82488ffff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 204,
+      "first_block_size": 204,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_microlzma_encoder",
+      "bytes": "f30f1efa554889e541544989f4534889fb4883ec10e836bbffff85c074124883c4105b415c5dc3660f1f840000000000488b7330488b7b384c89e2e820b4ffff85c07514488b5338c64263014883c4105b415c5dc30f1f004889df8945ece8edbeffff8b45ecebb6",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 104,
+      "first_block_size": 104,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_alone_decoder",
+      "bytes": "f30f1efa554889e541544989f4534889fb4883ec10e8c6baffff85c074124883c4105b415c5dc3660f1f840000000000488b7330488b7b3831c94c89e2e80eb5ffff85c0751a488b5338c6426001c64263014883c4105b415c5dc30f1f4400004889df8945ece875beffff8b45ecebae",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 112,
+      "first_block_size": 112,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_auto_decoder",
+      "bytes": "f30f1efa554889e541554189d541544989f4534889fb4883ec18e851baffff85c0740d4883c4185b415c415d5dc36690488b7330488b7b384489e94c89e2e8ddb5ffff85c07519488b5338c6426001c64263014883c4185b415c415d5dc366904889df8945dce805beffff8b45dcebb3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 112,
+      "first_block_size": 112,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_file_info_decoder",
+      "bytes": "f30f1efa554889e541564989fe41554989cd41544989d4534889f34883ec10e8dcb9ffff85c074104883c4105b415c415d415e5dc30f1f00498b7630498b7e38498d56604d89e94d89e04889d9e84ecaffff85c0751a498b5638c6426001c64263014883c4105b415c415d415e5dc3904c89f78945dce885bdffff8b45dceba8",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 128,
+      "first_block_size": 128,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_raw_buffer_decode",
+      "bytes": "f30f1efa554889e541574156415541544989d4534881eca80000004c8b751064488b142528000000488955c831d24d85e40f84510100004889cb4885c90f84450100004d89c541bf0b0000004c3b010f820a0100004d85c94c898d58ffffff0f84230100004d85f60f841a010000498b06483945180f82e4000000488d8570ffffff660fefc04889fa4531c0488d0d9d8fffff4889c70f298570ffffff48898550ffffff48c78578ffffffffffffff4889b548ffffff0f2945800f2945900f2945a00f2945b0e8f5adffff4189c785c00f8589000000488b034883ec084d89e84889d9488bb548ffffff4c8b8d58ffffff4c89e248898540ffffff498b064889",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 505,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_filter_decoder_is_supported",
+      "bytes": "f30f1efa488d05f557020031d20f1f00483b38741b4883c2014883c0204883fa0b75ed31c0c3662e0f1f840000000000b801000000c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 54,
+      "first_block_size": 54,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_raw_decoder",
+      "bytes": "f30f1efa554889e541544989f4534889fb4883ec10e826b7ffff85c074124883c4105b415c5dc3660f1f840000000000488b7330488b7b384531c04c89e2488d0dab8dffffe836acffff85c0751a488b5338c6426001c64263014883c4105b415c5dc30f1f4400004889df8945ece8cdbaffff8b45eceba6",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 120,
+      "first_block_size": 120,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_raw_decoder_memusage",
+      "bytes": "f30f1efa4889fe488d3d628dffffe92d87ffff",
+      "mask": "ffffffffffffffffffffffffffffffffffffff",
+      "func_size": 19,
+      "first_block_size": 19,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_properties_decode",
+      "bytes": "f30f1efa48c74708000000004c8b074989f231c04c8d0d055702004c89ce66904c3b06741b4883c0014883c6204883f80b75edb808000000c30f1f800000000048c1e005498b4401184885c074094883c7084c89d6ffe031c04885c90f95c0c1e003c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 99,
+      "first_block_size": 99,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_index_decoder",
+      "bytes": "f30f1efa554889e541554989d541544989f4534889fb4883ec18e811b6ffff85c0740d4883c4185b415c415d5dc36690488b7330488b7b384c89e94c89e2e8bdc8ffff85c07519488b5338c6426001c64263014883c4185b415c415d5dc366904889df8945dce8c5b9ffff8b45dcebb3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 112,
+      "first_block_size": 112,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_index_hash_init",
+      "bytes": "f30f1efa554889f84889e54885ff0f847c000000660fefc0660f6f0d60a70100c700000000000f1140080f1140180f1180900000000f1180a00000000f118020010000660f6f0545a7010048c7803001000000000000c780380100000000000048c780880000000000000048c78010010000000000000f1148680f1140780f1188f00000000f1180000100005dc366904885f6742b488b064885c07423488b7e10ba40010000be01000000ffd04885c00f855effffff31c05dc3660f1f440000bf40010000e89682ffffebe1",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 204,
+      "first_block_size": 204,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_index_hash_end",
+      "bytes": "f30f1efa4885f67417488b46084885c0740e488b56104889fe4889d7ffe06690e90b7effff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 37,
+      "first_block_size": 37,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_index_hash_size",
+      "bytes": "f30f1efa554889e5534883ec08488b5f20488b7f18e8a6d6ffff83c001488d440307488b5df8c94883e0fcc3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 44,
+      "first_block_size": 44,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_index_hash_append",
+      "bytes": "f30f1efa554889e5415641554154534885ff0f8488000000448b274889fb4585e4757d48b9f7ffffffffffff7f488d46fb4839c1726a4885d27865488d7f08e8fce3ffff4c8b6b084d85ed786b48837b10007864488b7b184c8b7320e82fd6ffff48ba000000000400000083c001498d4406074883e0fc4839c2723c498d4405185b4885c0b809000000440f48e04489e0415c415d415e5dc30f1f800000000041bc0b0000005b4489e0415c415d415e5dc3660f1f44000041bc090000005b4489e0415c415d415e5dc3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 202,
+      "first_block_size": 202,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_stream_buffer_decode",
+      "bytes": "f30f1efa554889e5415741564989d641554154534c89c34d89c84881ecb80000004c8b4d104c8b5d1864488b142528000000488955c831d24885db0f84df000000488b134989ff4989cc4885c90f84dd0000004d85db0f84c40000004939d00f82bb000000498b1341bd0b0000004d85c90f84d100000048395520727b4c899d48ffffff41bd0b0000004c898d50ffffff4c898558ffffff40f6c604755a488d8570ffffff498b17660fefc089f14889c74c89f60f2945800f298570ffffff48898540ffffff48c78578ffffffffffffff0f2945900f2945a00f2945b0e84efaffff4189c585c0746f488bbd40ffffff4c89f6e8e8a3ffff488b45c864482b04",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 551,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_stream_decoder",
+      "bytes": "f30f1efa554889e541554189d541544989f4534889fb4883ec18e8d1adffff85c0740d4883c4185b415c415d5dc36690488b7330488b7b384489e94c89e2e8bdf8ffff85c07519488b5338c6426001c64263014883c4185b415c415d5dc366904889df8945dce885b1ffff8b45dcebb3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 112,
+      "first_block_size": 112,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_vli_decode",
+      "bytes": "f30f1efa554989fb4989d24889e541544989cc534883ec1064488b042528000000488945e831c048c745e0000000004885f60f84e00000004889f3488b364885f60f85a900000048c70700000000498b0424ba0a0000004c39c073744d8b0b8d0cf50000000029f1eb1c660f1f4400004883fe090f84be00000083c1074c39c00f83ca000000410fb63c024883c6014883c0014889fa83e27f48d3e24901d14084ff78cc498904244d890b488933750a4883fe010f878c000000488d45e031d24839c30f95c2662e0f1f840000000000488b45e864482b0425280000000f85870000004883c41089d05b415c5dc36690ba0b0000004883fe0877d5488b078d0c",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 367,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_filter_flags_decode",
+      "bytes": "f30f1efa554889e541574989ff41564989f631f641554989d541544989cc534c89c34883ec1864488b042528000000488945c831c048c7470800000000e84efeffff85c0755248b8ffffffffffffff3f493b07726b31f6488d7dc04989d84c89e14c89eae827feffff85c0752b498b0424488b4dc04829c34839cb7243498d5405004c89f64c89ffe8e3f4ffff488b55c0490114240f1f00488b55c864482b14252800000075204883c4185b415c415d415e415f5dc3662e0f1f840000000000b809000000ebd1e81478ffff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 204,
+      "first_block_size": 204,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_block_unpadded_size",
+      "bytes": "f30f1efa31c04885ff0f8491000000833f01770e8b57048d4af881f9f80300007606c30f1f440000f6c20375f548b90000000000000080488b471048befeffffffffffff7f4801c14839ce734b4885c074468b7f0883ff0f773e4883f8ff74c2554889e553488d1c024883ec08e87e4a010048bafcffffffffffff7f89c04801d8488b5df8c94839c2ba00000000480f42c2c30f1f44000031c0c30f1f440000c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 161,
+      "first_block_size": 161,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_block_compressed_size",
+      "bytes": "f30f1efa554889e5415541544989f4534889fb4883ec08e834ffffff4889c2b80b0000004885d274338b7b08448b6b04e80b4a0100418d540500b8090000004c39e273184929d4488b53104c39e274064883faff75064c89631031c04883c4085b415c415d5dc3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 103,
+      "first_block_size": 103,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_block_total_size",
+      "bytes": "f30f1efa554889e5e8d3feffff5d488d50034883e2fc4883f8ff480f45c2c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 31,
+      "first_block_size": 31,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_block_buffer_decode",
+      "bytes": "f30f1efa554889e541574156415541544989d4534881ec980000004c8b6d1064488b142528000000488955c831d24885c90f8449010000488b114989f74889cb4d85e40f84470100004d85ed0f842e0100004939d00f8225010000498b550041be0b0000004d85c90f843a010000483955180f82de000000488d8570ffffff660fefc04889fa4c89fe4889c70f298570ffffff4c898d58ffffff4c898560ffffff48c78578ffffffffffffff48898568ffffff0f2945800f2945900f2945a00f2945b0e848fdffff4189c685c07578488b034883ec084889d94c89e24c8b8d58ffffff4c8b8560ffffff4c89fe48898550ffffff498b450048898548ffffff6a",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 441,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_block_decoder",
+      "bytes": "f30f1efa554889e541544989f4534889fb4883ec10e856a2ffff85c074124883c4105b415c5dc3660f1f840000000000488b7330488b7b384c89e2e810fcffff85c0751c488b5338c6426001c64263014883c4105b415c5dc30f1f80000000004889df8945ece805a6ffff8b45ecebae",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 112,
+      "first_block_size": 112,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_str_to_filters",
+      "bytes": "f30f1efa554889e54157415641554154534881ecc800000064488b042528000000488945c831c04885ff0f84300200004989d44885d20f84240200004189cd488d05628e010083f9037625488b55c864482b1425280000000f853a0800004881c4c80000005b415c415d415e415f5dc30fb6174889bd60ffffff4889fb4989f680fa200f85b7050000488d47010f1f004889c10fb6104883c00180fa2074f148898d60ffffff488d05738d010084d20f847b0100008d42d03c090f86b001000080fa2d0f84570500004c8dbd70ffffff4489e848899d58ffffff4531c9f7d04c89b550ffffff4c89a520ffffff4489ad28ffffff4c89bd18ffffff89852cffff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 2213,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_stream_encoder_mt_memusage",
+      "bytes": "f30f1efa554889e5534889fb488d9518ffffff488d8d10ffffff488db520ffffff4c8d8508ffffff4881ecf800000064488b042528000000488945e831c0e8ddfdffff89c248c7c0ffffffff85d27574488bbd18ffffffe874d0ffff4883f8ff7462448b4304488bbd08ffffff4181f800400000776a4889fb48c1eb3075614489c64c8b8d10ffffff4889f148c1e1044c0fafce4801f148c1e105488d91388200004c01ca7239480faff04801f27230438d04004883c740480fafc74801c2721f4889d0488b55e864482b1425280000007516488b5df8c9c30f1f800000000048c7c0ffffffffebdbe8e25effff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 238,
+      "first_block_size": 238,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_easy_encoder_memusage",
+      "bytes": "f30f1efa5589fe4889e5415453488d9d70ffffff4889df4881ecd000000064488b042528000000488945e831c0e82e3b010089c2b8ffffffff84d2752c4c8da520ffffff48c78520ffffff210000004c89e748899d28ffffff48c78530ffffffffffffffe877cfffff488b55e864482b142528000000750c4881c4d00000005b415c5dc3e8575effff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 137,
+      "first_block_size": 137,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_easy_decoder_memusage",
+      "bytes": "f30f1efa5589fe4889e5415453488d9d70ffffff4889df4881ecd000000064488b042528000000488945e831c0e89e3a010089c2b8ffffffff84d2752c4c8da520ffffff48c78520ffffff210000004c89e748899d28ffffff48c78530ffffffffffffffe857daffff488b55e864482b142528000000750c4881c4d00000005b415c5dc3e8c75dffff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 137,
+      "first_block_size": 137,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_block_encoder",
+      "bytes": "f30f1efa554889e541544989f4534889fb4883ec10e8068fffff85c074124883c4105b415c5dc3660f1f840000000000488b7330488b7b384c89e2e8f0fdffff85c0751c488b5338b90101000066894a60c64263014883c4105b415c5dc366904889df8945ece8b592ffff8b45ecebae",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 112,
+      "first_block_size": 112,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_block_header_encode",
+      "bytes": "f30f1efa554889e54157415641554989f541544989fc534883ec2864488b042528000000488945c831c0e831dfffff4885c00f84be00000048b80000000000000080490344241848bafeffffffffffff7f4839c20f839c000000418b44240441c645010048c745c002000000448d70fc4c89f048c1e80241884500498b7c24104883ffff0f8596000000498b7c24184883ffff0f85b5000000498b7c24204885ff745348833fff744d4531ff488d55c04d89f84c89f14c89ee488955b849c1e0044c01c74c8945b0e883ccffff89c385c07528498b7c24204c8b45b04983c701488b55b84a837c0710ff0f84880000004983ff0475babb0b000000488b45c864",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 432,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_block_buffer_encode",
+      "bytes": "f30f1efa554889e56a01ff7510e8def8ffffc9c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 20,
+      "first_block_size": 20,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_block_uncomp_encode",
+      "bytes": "f30f1efa554889e56a0041514d89c14989c84889d14889f231f6e8b1f8ffffc9c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 33,
+      "first_block_size": 33,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_index_buffer_encode",
+      "bytes": "f30f1efa554889e54157415641554154534889d34881ec6801000064488b042528000000488945c831c04885f60f94c04885d20f94c208d00f859c0000004989fc4885ff0f8490000000488b034989cd4839c10f82810000004989cf4989f64929c7e8299effff4889c2b80a0000004939d7726b4c89e6488dbd80feffff4c8dbd70feffffe87692ffff4883ec0831d24d89f14c89a578feffff4c8b234531c031c9c78570feffff0000000031f64c89ff48c745b000000000c745b8000000006a00415553e8a6fcffff4883c42089c231c083fa0174084c8923b80b000000488b55c864482b142528000000750f488d65d85b415c415d415e415f5dc3e89e44",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 258,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_stream_header_encode",
+      "bytes": "f30f1efa554889e5415453448b274585e4754db85a000000c706fd377a584889f366894604837f100f7725c64606008b471031d2488d7e06884607be02000000e8db1801008943084489e05b415c5dc341bc0b0000005b4489e0415c5dc3669041bc080000005b4489e0415c5dc3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 110,
+      "first_block_size": 110,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_stream_encoder",
+      "bytes": "f30f1efa554889e541554189d541544989f4534889fb4883ec18e81175ffff85c0740d4883c4185b415c415d5dc36690488b7330488b7b384489e94c89e2e89dfdffff85c07521488b5338c6426401c74260010101014883c4185b415c415d5dc30f1f80000000004889df8945dce8bd78ffff8b45dcebab",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 120,
+      "first_block_size": 120,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_easy_encoder",
+      "bytes": "f30f1efa554889e5415641554c8db560ffffff41544189d4534889fb4c89f74881ecd000000064488b042528000000488945d831c0e8c61d010089c2b80800000084d275324c8dad10ffffff4489e24889df48c78510ffffff210000004c89ee4c89b518ffffff48c78520ffffffffffffffe809ffffff488b55d864482b14252800000075104881c4d00000005b415c415d415e5dc3e8e540ffff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 155,
+      "first_block_size": 155,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_stream_encoder_mt",
+      "bytes": "f30f1efa554889e541544989f4534889fb4883ec10e8066effff85c074124883c4105b415c5dc3660f1f840000000000488b7330488b7b384c89e2e8d0f9ffff85c07524488b5338b901010000c6426001c642640166894a624883c4105b415c5dc3660f1f4400004889df8945ece8ad71ffff8b45eceba6",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 120,
+      "first_block_size": 120,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_stream_footer_encode",
+      "bytes": "f30f1efa554889e5415453448b274585e4757548b9fcffffff03000000488b4708488d50fc4839d1731641bc0b0000005b4489e0415c5dc30f1f840000000000a80375e648c1e8024889f383e801894604837f100f77d3c64608008b471031d2488d7e04884609be06000000e88f0e01008903b8595a00006689430a4489e05b415c5dc30f1f400041bc080000005b4489e0415c5dc3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 150,
+      "first_block_size": 150,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_stream_buffer_encode",
+      "bytes": "f30f1efa554889e54157415641554154534881ec5801000048899598feffff4c8b751064488b042528000000488945c831c04885ff0f84bd01000089f383fe0f0f87b20100004c89c24989fc4989cd4d89c84885c975094885d20f85980100004d85c048899588feffff4c898590feffff0f84810100004d85f60f84780100004d8b3e4c397d180f826b01000089dfe82c0d0100b90300000084c00f845c010000488b45184c89bda8feffffb90a0000004c29f84883f8180f863f0100004c8b8590feffff488b4518660fefc048c785e0feffff000000000f2985c0feffff4b8d34384c8dbdb0feffff4883e80c899dc0feffff4c89ff48898580feffff0f29",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 735,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_easy_buffer_encode",
+      "bytes": "f30f1efa554889e541574156488d8500ffffff4d89ce41554d89c541544989cc53488d9d50ffffff4881ecf800000089b5fcfeffff89fe4889df488995f0feffff4c8b7d1064488b142528000000488955c831d2488985e8feffffe81013010089c1b80800000084c9754648899d08ffffff4c89e14d89f14d89e8488b95f0feffff8bb5fcfeffff48c78500ffffff2100000048c78510ffffffffffffff488bbde8feffffff75184157e871fcffff5a59488b55c864482b142528000000750f488d65d85b415c415d415e415f5dc3e81c36ffff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 212,
+      "first_block_size": 212,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_block_header_decode",
+      "bytes": "f30f1efa554889e54157415641554154534883ec2864488b042528000000488945c831c04885ff0f8433010000488b47204889fb4885c00f84230100004989d64885d20f84170100004989f5488d505048c700ffffffff4883c01048c740f8000000004839d075e8833b017606c70301000000c683c800000000410fb606448d248504000000443b63040f85d0000000837b080f0f87c60000004183ec0431d24c89f74c89e6e8e5f90000433b04260f8513010000410fb64601a83c0f853701000048c745c002000000a8400f85be000000488d45c048c74310ffffffff488945b841807e01000f881601000048c74318ffffffff410fb646014531ff83e003",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 554,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_index_buffer_decode",
+      "bytes": "f30f1efa554889e54157415641554154534883ec6864488b042528000000488945c831c04885ff0f84f30000004989f44885f60f84e70000004989cd4885c90f84db0000004c89c34d85c00f84cf0000004d3b084989d64c898d78ffffffba0b0000000f828f0000004c8b3e48c7070000000048897d984c89f7e8915dffff488945904885c00f84e40000004d85ffc74580000000004889d94c89eab80100000048c745a0000000004c8b8578ffffff488d7d804c0f44f84883ec084531c94c89f648c745b8000000004c897d884c8b3bc745c0000000006a006a006a00e8edfbffff4883c42083f801898578ffffff753e31d20f1f4000488b45c864482b04",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 399,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_index_hash_decode",
+      "bytes": "f30f1efa554889e541574156415541bd0a0000004154534883ec184c8b0a4939c9737c4989f74889fb4989d44989ce4c89ce4c8d153b3e01008b1383fa060f879820ffff89d0496304824c01d03effe08b8330010000498d55018d0cc5000000008b833801000049891424d3e84338042f0f85c1010000488b83300100004883c001488983300100004883f8030f87750200004d8b2c244d39ee75b44531ed4883c4184489e85b415c415d415e415f5dc30f1f800000000083fa02488d83200100004d89f04c89e1488dbb28010000488db3300100004c89fa4c894dc8480f44f8e8daa3ffff4c8b4dc84c8d15833d010083f8014189c50f8516020000833b02",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 960,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_stream_header_decode",
+      "bytes": "f30f1efa813efd377a58740cb807000000c3660f1f44000055b8070000004889e541545366837e045a4889f3740a5b415c5dc30f1f44000031d24989fc488d7e06be02000000e895ef000089c2b8090000003b530875d7807b0600b80800000075cc807b070f77c641c70424000000000fb6430749c7442408ffffffff83e00f418944241031c05b415c5dc3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 140,
+      "first_block_size": 140,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_stream_footer_decode",
+      "bytes": "f30f1efa66817e0a595ab80700000075675531d24889e541544989fc488d7e04534889f3be06000000e822ef000089c2b8090000003b137537807b0800b808000000752c807b090f772641c70424000000000fb6430983e00f41894424108b4304488d048504000000498944240831c05b415c5dc30f1f00c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 121,
+      "first_block_size": 121,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_check_is_supported",
+      "bytes": "f30f1efa31c083ff0f770d89ff488d059cb500000fb60438c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 25,
+      "first_block_size": 25,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_check_size",
+      "bytes": "f30f1efab8ffffffff83ff0f770d89ff488d0569b500000fb60438c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 28,
+      "first_block_size": 28,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_crc32",
+      "bytes": "f30f1efa5589d04889f9f7d04889e541564989f64154534883fe080f86d80000004989f8488d35d594000040f6c707742a0f1f80000000000fb6114883c10131c2c1e8080fb6d2330496f6c10775e94d01f04c89c74829cf4989fe4c89f74183e6074883e7f84c8d0c394989fa4c39c90f83830000004989c8488d3580940000418b58044133004983c0084189c34189dc0fb6d30fb6ff41c1eb1041c1ec188b9496000c0000c1eb10450fb6db423314a6440fb6e00fb6db423394a6001c00004189c40fb6c441c1ec18423394a6001000003394be0008000033949e0004000033948600180000428b849e0014000031d04d39c8728a4c01d14e8d0431488d35",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 304,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_crc64",
+      "bytes": "f30f1efaff25a6030100",
+      "mask": "ffffffffffffffffffff",
+      "func_size": 10,
+      "first_block_size": 10,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "liblzma.lzma_mf_is_supported",
+      "bytes": "f30f1efa83ff04770783ff020f97c0c383ef1283ff020f96c0c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 26,
+      "first_block_size": 26,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_lzma_preset",
+      "bytes": "f30f1efa89f283e61f4889f8b90100000083fe090f87a90000004189d04181e0e0ffff7f0f8599000000660f6f05de4800004189f1488d0dbc6b000048c7470800000000420fb60c090f114710bf01000000d3e78938f6c21c757585f60f84c500000089d1bf0400000083e11e83f90119c980e16f81c111010000894824488d0d6b6b0000460fb60409c74020010000008978284489402c83fa1f762483ee03c740200200000083e6fdc7402814000000755dc74024c0000000c7402c0000000031c989c8c3662e0f1f840000000000c7402002000000b910000000c740281400000083fe04741083fe05b940000000bf200000000f44cf8948244489402c83",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 311,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_mode_is_supported",
+      "bytes": "f30f1efa83ef0183ff010f96c0c3",
+      "mask": "ffffffffffffffffffffffffffff",
+      "func_size": 14,
+      "first_block_size": 14,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "liblzma.lzma_microlzma_decoder",
+      "bytes": "f30f1efa554889e541574989ff41564189ce41554589c541544989d4534889f34883ec18e8e74efeff85c074134883c4185b415c415d415e415f5dc30f1f40004584f6498b7730498b7f384589e9410f95c04c89e14889da450fb6c0e88f3fffff85c0751b498b5738c6426001c64263014883c4185b415c415d415e415f5dc34c89ff8945cce88552feff8b45cceb9d",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 144,
+      "first_block_size": 144,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_lzip_decoder",
+      "bytes": "f30f1efa554889e541554189d541544989f4534889fb4883ec18e8614efeff85c0740d4883c4185b415c415d5dc36690488b7330488b7b384489e94c89e2e85d40ffff85c07519488b5338c6426001c64263014883c4185b415c415d5dc366904889df8945dce81552feff8b45dcebb3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 112,
+      "first_block_size": 112,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "liblzma.lzma_stream_decoder_mt",
+      "bytes": "f30f1efa554889e541544989f4534889fb4883ec10e82649feff85c074124883c4105b415c5dc3660f1f840000000000418b442404488b7330488b7b3883e8013dff3f0000772941833c243f77224c89e2e8dafaffff85c0751b488b5338c6426001c64263014883c4105b415c5dc390b8080000004889df8945ece8c04cfeff8b45eceb99",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 133,
+      "first_block_size": 133,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    }
+  ],
+  "dedup_conflicts": [
+    {
+      "bytes": "f30f1efa488b4f38488b41284885c0740f488b39ffe0662e0f1f840000000000488b4710488906488b4728488902c3",
+      "name1": "liblzma.lzma_get_progress",
+      "name2": "liblzma.lzma_get_progress"
+    },
+    {
+      "bytes": "f30f1efa55be8000000031ff4889e553488d9d60ffffff4889da4881ec9800000064488b042528000000488945e831c0e8eb99ffff89c231c085d2741b488b55e864482b142528000000751b488b5df8c9c3660f1f4400004889debf80000000e84b98ffffebd6e86498ffff",
+      "name1": "liblzma.lzma_cputhreads",
+      "name2": "liblzma.lzma_cputhreads"
+    },
+    {
+      "bytes": "f30f1efa554889e5534889fb488d9518ffffff488d8d10ffffff488db520ffffff4c8d8508ffffff4881ecf800000064488b042528000000488945e831c0e8ddfdffff89c248c7c0ffffffff85d27574488bbd18ffffffe874d0ffff4883f8ff7462448b4304488bbd08ffffff4181f800400000776a4889fb48c1eb3075614489c64c8b8d10ffffff4889f148c1e1044c0fafce4801f148c1e105488d91388200004c01ca7239480faff04801f27230438d04004883c740480fafc74801c2721f4889d0488b55e864482b1425280000007516488b5df8c9c30f1f800000000048c7c0ffffffffebdbe8e25effff",
+      "name1": "liblzma.lzma_stream_encoder_mt_memusage",
+      "name2": "liblzma.lzma_stream_encoder_mt_memusage"
+    },
+    {
+      "bytes": "f30f1efa554889e5534889fb488d9518ffffff488d8d10ffffff488db520ffffff4c8d8508ffffff4881ecf800000064488b042528000000488945e831c0e8ddfdffff89c248c7c0ffffffff85d27574488bbd18ffffffe874d0ffff4883f8ff7462448b4304488bbd08ffffff4181f800400000776a4889fb48c1eb3075614489c64c8b8d10ffffff4889f148c1e1044c0fafce4801f148c1e105488d91388200004c01ca7239480faff04801f27230438d04004883c740480fafc74801c2721f4889d0488b55e864482b1425280000007516488b5df8c9c30f1f800000000048c7c0ffffffffebdbe8e25effff",
+      "name1": "liblzma.lzma_stream_encoder_mt_memusage",
+      "name2": "liblzma.lzma_stream_encoder_mt_memusage"
+    },
+    {
+      "bytes": "f30f1efa554889e56a0041514d89c14989c84889d14889f231f6e8b1f8ffffc9c3",
+      "name1": "liblzma.lzma_block_uncomp_encode",
+      "name2": "liblzma.lzma_block_uncomp_encode"
+    },
+    {
+      "bytes": "f30f1efa554889e541544989f4534889fb4883ec10e8066effff85c074124883c4105b415c5dc3660f1f840000000000488b7330488b7b384c89e2e8d0f9ffff85c07524488b5338b901010000c6426001c642640166894a624883c4105b415c5dc3660f1f4400004889df8945ece8ad71ffff8b45eceba6",
+      "name1": "liblzma.lzma_stream_encoder_mt",
+      "name2": "liblzma.lzma_stream_encoder_mt"
+    },
+    {
+      "bytes": "f30f1efa554889e541544989f4534889fb4883ec10e8066effff85c074124883c4105b415c5dc3660f1f840000000000488b7330488b7b384c89e2e8d0f9ffff85c07524488b5338b901010000c6426001c642640166894a624883c4105b415c5dc3660f1f4400004889df8945ece8ad71ffff8b45eceba6",
+      "name1": "liblzma.lzma_stream_encoder_mt",
+      "name2": "liblzma.lzma_stream_encoder_mt"
+    }
+  ]
+}

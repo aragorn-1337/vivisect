@@ -1,0 +1,932 @@
+{
+  "format_version": 1,
+  "library": "libcurl",
+  "version": "8.5.0",
+  "arch": "amd64",
+  "platform": "linux",
+  "compiler": "gcc-13",
+  "compiled_flags": "-O2",
+  "source_url": null,
+  "binary_sha256": "25a1efac8eb6e18913a29baf0d5340ae842398cb944c9e847bed7cb2a7a8f765",
+  "generated_at": "2026-08-09T20:00:08Z",
+  "generated_by": "vamp-gen-sigs",
+  "signatures": [
+    {
+      "name": "libcurl.curl_free",
+      "bytes": "f30f1efaff2586530a00",
+      "mask": "ffffffffffffffffffff",
+      "func_size": 10,
+      "first_block_size": 10,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "libcurl.curl_global_init",
+      "bytes": "f30f1efa55ba010000004889e50f1f0089d08705fc8e090085c074140f1f40008b05ee8e090085c074e6f390ebf26690be01000000e806ffffffc705d08e0900000000005dc3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 70,
+      "first_block_size": 70,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_global_init_mem",
+      "bytes": "f30f1efa4885f674474989fa4889d74885d2743c4885c90f94c04d85c00f94c208d0752c4d85c97427ba01000000669089d087058c8e090085c074240f1f40008b057e8e090085c074e6f390ebf26690b802000000c3662e0f1f8400000000008b15628e090085d2753d554889354669090031f648893d456909004c89d74889e54c89052869090048890d616c09004c890d32690900e855feffffc7051f8e0900000000005dc383c2018915188e0900c7050a8e090000000000c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 187,
+      "first_block_size": 187,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_global_cleanup",
+      "bytes": "f30f1efaba010000000f1f800000000089d08705ec8d090085c074140f1f40008b05de8d090085c074e6f390ebf266908b05d28d090085c0743a83e8018905c58d0900752f55803dbf8d0900004889e57411488b05c7680900ff5028c605a98d090000e88800ffffc705928d0900000000005dc3c705868d090000000000c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 127,
+      "first_block_size": 127,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_easy_init",
+      "bytes": "f30f1efa55ba010000004889e54883ec1064488b042528000000488945f831c089d087056c09090085c074140f1f40008b055e09090085c074e6f390ebf266908b055209090085c07513be01000000bf03000000e86779ffff85c0752e488d7df0c7052909090000000000e830b7040089c2488b45f085d2751b488b55f864482b1425280000007510c9c3c705ff0809000000000031c0ebe1e8d287feff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 158,
+      "first_block_size": 158,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_easy_cleanup",
+      "bytes": "f30f1efa554889e54883ec1048897df84885ff7408813faddbdec07403c9c390488d7df8e8d79d0600c9c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 43,
+      "first_block_size": 43,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_easy_getinfo",
+      "bytes": "f30f1efa554889e54881ecd000000048899560ffffff48898d68ffffff4c898570ffffff4c898d78ffffff84c074200f2945800f294d900f2955a00f295db00f2965c00f296dd00f2975e00f297df064488b04252800000048898548ffffff31c0488d4510488b9560ffffffc78530ffffff1000000048898538ffffff488d8550ffffff48898540ffffff31c0c78534ffffff30000000e8b4d20000488b9548ffffff64482b1425280000007502c9c3e8eb86feff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 181,
+      "first_block_size": 181,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_easy_reset",
+      "bytes": "f30f1efa554889e541544531e4534889fbe8eaeb04004889dfe8f2b40400488dbbb801000089d848c783b00100000000000048c783d00a0000000000004883e7f829f88d88d80a00004c89e0c1e903f348ab4889dfe8e6530400488dbbf80a000089d848c783f00a00000000000048c783700c0000000000004883e7f829f88d88780c00004c89e0c1e903f348ab4889dfe8da3e0600838b240b000010660fefc0488dbbb00d000048c783d80c0000ffffffffc783f00c0000000000000f1183200e00000f1183300e00000f1183400e00000f1183500e0000e802fd0400488dbbe80d00005b415c5de9f2fc0400",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 238,
+      "first_block_size": 238,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_easy_pause",
+      "bytes": "f30f1efa554889e54157415641554154534881ec9800000064488b042528000000488945c831c04885ff0f84a0020000813faddbdec04889fbb82b0000000f85bc0000004c8b77204d85f60f84af000000488b87c00000004885c00f84c700000041bc01000000f680c9010000040f84b40000008b93340100004189f5c1e60341c1e50483e6204183e51089d089d183e0cf4109f54109c531c04431e983e130745e4489e8f7d021d0a82074238b435883e80c83f8017718488d05316f0200483983081200000f846c0200000f1f40004489ab3401000041f6c5100f84af00000041f7d54183e5300f858a010000f683b513000020745931c04585e475726690",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 893,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_easy_recv",
+      "bytes": "f30f1efa554889e5415741564989f641554989d541544989cc534889fb4883ec28488b97c000000064488b042528000000488945c831c04885d27434b85d000000f682c9010000047426488b55c864482b1425280000000f85c60000004883c4285b415c415d415e415f5dc30f1f4000488b93c80000004885d2740eb85d000000f682c90100000475c080bbc90a000000744d488d75c04889dfe8214dffff4189c783f8ff746948837b200074524c8d45b84c89e94c89f24489fe49c70424000000004889dfe83592030085c00f8577ffffff488b55b849891424e96affffff488d3501e706004889df31c0e8ff78ffffb801000000e94fffffff0f1f440000",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 296,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_easy_send",
+      "bytes": "f30f1efa554889e5415741564989f641554989d541544989cc534889fb4883ec28488b97c000000064488b042528000000488945c831c04885d27434b85d000000f682c9010000047426488b55c864482b1425280000000f851e0100004883c4285b415c415d415e415f5dc30f1f4000488b93c80000004885d2740eb85d000000f682c90100000475c080bbc90a00000048c745c0000000000f8491000000488d75c04889dfe8e54bffff4189c783f8ff0f84b1000000488b43204885c07510488b75c04889dfe8c4550200488b43204531c94439b8dc0100004c89f24c89e9410f94c1c745bc000000004c8d45bc4889df4c89ce42ff94c8f00100004889c2",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 384,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_easy_upkeep",
+      "bytes": "f30f1efa554889e54154534883ec2064488b042528000000488945e831c04885ff7465813faddbdec04889fbb82b00000075364c8ba7c80000004d85e47428e8ac440400498db42428010000488d0dbde3ffff4889df488955d8488d55d0488945d0e8a904ffff31c0488b55e864482b14252800000075174883c4205b415c5dc30f1f8000000000b82b000000ebdae82c7ffeff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 148,
+      "first_block_size": 148,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_easy_option_by_id",
+      "bytes": "f30f1efa31d285ff7429488d05efe00800eb120f1f440000488b50184883c0184885d2740e3b780875eef640100175e84889c24889d0c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 55,
+      "first_block_size": 55,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_easy_option_next",
+      "bytes": "f30f1efa488d05b5e008004885ff7417488b074885c0740f488b47184883c7184885c0480f45c7c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 40,
+      "first_block_size": 40,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_easy_escape",
+      "bytes": "f30f1efa554889e54157415641554154534883ec7864488b042528000000488945c831c085d20f8802010000660fefc048c74580000000004989f448c7459800366e010f1145880f84eb0000004863d2488d5aff488d45ac4d89e64c8d6d8049bfffffff43ffffff2348898568ffffff488d857fffffff48898560ffffffeb6f3c2e0f8ff80000003c2c0f8f8600000089c6660f6f0d56b1070083e00f4c89ef40c0ee04ba25000000c645c00083e60f668955ac31d20f294db08a5435b08a7405b0488bb568ffffff668955adba03000000e8a965ffff85c075534c89e04c29f0488d4403014885c00f84a1000000410fb6064983c60188857fffffff3c7f74",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 411,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_escape",
+      "bytes": "f30f1efa89f24889fe31ffe950feffff",
+      "mask": "ffffffffffffffffffffffffffffffff",
+      "func_size": 16,
+      "first_block_size": 16,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_easy_unescape",
+      "bytes": "f30f1efa554889e541545331db4883ec2064488b042528000000488945e831c048c745d80000000085d27924488b45e864482b04252800000075634883c4204889d85b415c5dc3660f1f840000000000488d45d84889f74989cc4863f2488d4de041b8020000004889c2e821f8ffff85c075b9488b5dd84d85e474b0488b45e0483dffffff7f76104889df31dbff151dd10800eb970f1f0041890424eb8ee8ed74feff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 163,
+      "first_block_size": 163,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_unescape",
+      "bytes": "f30f1efa89f231c94889fe31ffe93effffff",
+      "mask": "ffffffffffffffffffffffffffffffffffff",
+      "func_size": 18,
+      "first_block_size": 18,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_formadd",
+      "bytes": "f30f1efa554889e54157415641554154534881ec380100004889bda0feffff4889b5a8feffff48899530ffffff48898d38ffffff4c898540ffffff4c898d48ffffff84c074290f298550ffffff0f298d60ffffff0f299570ffffff0f295d800f2965900f296da00f2975b00f297dc064488b04252800000048898518ffffff31c0488d4510be68000000bf0100000048898508ffffff488d8520ffffffc78500ffffff10000000c78504ffffff3000000048898510ffffffff152ad008004889c24885c00f84e60b00004989c54531ff4531e431db4c8d3564ab07004885db74324584e4742d8b034c8b7b0841bc010000004883c31083f811741583f8140f87",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 3569,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_formfree",
+      "bytes": "f30f1efa4885ff7477554889e541544989fc534c89e34d8b2424488b7b48e8ddffffff488b4350a804743d0f1f440000a858750a488b7b18ff15a2c20800488b7b38ff1598c20800488b7b58ff158ec208004889dfff1585c208004d85e475b35b415c5dc30f1f00488b7b08ff156ec20800488b4350ebb80f1f840000000000c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 129,
+      "first_block_size": 129,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_url",
+      "bytes": "f30f1efabe58000000bf01000000ff25c4bd0800",
+      "mask": "ffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 20,
+      "first_block_size": 20,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_global_trace",
+      "bytes": "f30f1efa55ba010000004889e54157415641554154534883ec3864488b042528000000488945c831c00f1f800000000089d08705acde08008945bc85c07411908b059ede080085c074e6f390ebf26690ff157ab90800488945a84889c74885c00f84f1000000488d45c0488d35ce0407004889c2488945b0e84358feff4889c34885c00f84830000004c8d2506c106000fb6033c2b0f84ad00000041bd010000003c2d75074883c3014531ed4c8d35d58508004c8d3d26b80800eb140f1f400045896f0c4d8b3e4983c6084d85ff74224c89e64889dfe8d515040085c075e1498b374889dfe8c615040085c074d645896f0c488b55b0488d354204070031ffe8",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 357,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_global_sslset",
+      "bytes": "f30f1efa55b9010000004889e541574189ff41564989f641554154534883ec0889cb871d4cdd080085db74140f1f40008b053edd080085c074e6f390ebf266904885d2740a488d05d4db0800488902488b053ab80800488d15b38308004839d0743d443b38741dbb010000004d85f67413488b70084c89f731dbe8c114040085c00f94c389d8c705e4dc0800000000004883c4085b415c415d415e415f5dc34c8b257adb08004c8d2d73db08004d85e47529eb370f1f40004d85f67411498b7c24084c89f6e87614040085c075134d8b65084983c5084d85e47410453b3c2475d74c89e7e8977f0500eb99bb01000000eb92",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 242,
+      "first_block_size": 242,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_easy_option_by_name",
+      "bytes": "f30f1efa554889e54154534885ff74384989fc488d1d16bd0800eb0e0f1f40004883c31848833b007451488b3b4c89e6e80b14040085c074e74889d85b415c5dc30f1f8000000000488d1de1bc0800eb110f1f80000000004883c31848833b007419817b085428000075edf643100174c84883c31848833b0075e731db4889d85b415c5dc3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 133,
+      "first_block_size": 133,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_easy_perform",
+      "bytes": "f30f1efa554889e5415641554154534883ec1064488b042528000000488945d831c04885ff0f8485010000488b87c00100004889fb4885c07403c600004883bbc0000000000f85ed0000004c8ba3c80000004d85e40f842501000041bd5d00000041f68424c901000004756b8b93c40a0000be060000004c89e731c04c8d6dd0e81b9302004889de4c89e7e8e01e02004189c685c00f85bd0000004531c031d231f6b9e80300004c89e7c745d000000000e81a35020085c0744683f80341bd2b000000b81b000000440f44e84889de4c89e7e8f92b0200488b45d864482b0425280000000f85d10000004883c4104489e85b415c415d415e5dc3660f1f440000",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 448,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_easy_duphandle",
+      "bytes": "f30f1efa55beb81400004889e54157415641554989fdbf010000004154534883ec08ff1500b508004885c00f84600100004989c4418b85d4060000498db5b0010000b925010000498dbc24b0010000660fefc0bb4807000041898424d40600004d8db42440030000f348a5498dbc244803000049c7842440030000000000004883e7f84889c84c89f14829f981c1b8010000c1e903f348ab498dbc24500700004489e149c78424f00400000100000049c7842448070000000000004883e7f849c78424c00900000000000029f981c1c8090000c1e903f348ab410f118424c8090000410f118424d8090000410f118424e8090000410f118424f8090000eb1290",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 1374,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_formget",
+      "bytes": "f30f1efa554889e54157415641554154534881ec0010000048830c24004881ec0010000048830c24004881ecf8010000b9370000004889b5e8ddffff488d9d00deffff4989fc4989d74889df64488b042528000000488945c831c0f348ab4889df48c785b0dfffff01000000e8ef4402004d85e4744a4c89e231c94889de31ffe82bfcffff4189c485c074340f1f40004889dfe8c8440200488b45c864482b0425280000000f85b80000004881c4f82100004489e05b415c415d415e415f5dc331c931ff41b8010000004889de488d1596a30600e88736020085c0757e4c8dadffddffff4c8da5c0dfffff0f1f4400004c89e9ba002000004c89e64889dfc685",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 360,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_getenv",
+      "bytes": "f30f1efa554889e5e833dafdff4885c0741680380074114889c75dff253f3708000f1f800000000031c05dc3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 44,
+      "first_block_size": 44,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_easy_header",
+      "bytes": "f30f1efa554889e54157415641554154534883ec3848897db8488955c0894dcc4c894db04885f60f84530100004d85c90f844a0100004885ff0f844101000083f91f0f873801000085c90f84300100004183f8ff0f8c260100004883bfc812000000b8030000000f84180100004889f38bb7980d0000b8040000004139f00f8f010100004183f8ff4c8bafb0120000440f44c6448945c84d85ed0f84f800000048c745a0000000004d89ee4531ff48c745a800000000662e0f1f8400000000004d8b264889de498b7c2418e8905d030085c07424410fb644242c8545cc74198b45c84139442428750f488345a8014d89e74c8975a00f1f004d8b76104d85f675",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 527,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_easy_nextheader",
+      "bytes": "f30f1efa554889e54157415641554154534883ec288b87980d000048897db08975cc39d00f8c3601000083faff0f44d08955c84885c90f84140100004c8b79284d85ff742a4d8b7f104d85ff742166904d8b37410fb6462c8545cc74098b45c84139462874224d8b7f104d85ff75e14883c4284c89f85b415c415d415e415f5dc30f1f8000000000488b45b048c745c0000000004531ed488b98b0120000498b4618488945b84885db74550f1f4400004c8b23488b7db8498b742418e88f5b030085c074238b45c841394424287519410fb644242c8b7dcc21f883f80148835dc0ff660f1f440000488b45c04883e8014939df488b5b104c0f44e84885db75b0",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 360,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_pushheader_bynum",
+      "bytes": "f30f1efa4885ff743f488b074885c074398138addbdec0752f488b80880100004885c07425488b40404885c0741c483bb0300100007311488b8028010000488b04f0c30f1f44000031c0c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 75,
+      "first_block_size": 75,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_pushheader_byname",
+      "bytes": "f30f1efa554889e54157415641554154534883ec184885ff0f84c20000004c8b274d85e40f84b900000041813c24addbdec00f85a80000004889f34885f60f849c000000803e000f8493000000803e3a750a807e01000f8484000000488d7b01be3a000000e8161dfdff4885c075714d8ba424880100004d85e474674d8b6424404d85e4745d4889dfe84217fdff4d8bb424300100004989c54d85f67442498b8424280100004531e4488945c8488b45c84c89ea4889df4e8b3ce04c89fee88d13fdff85c0750743803c2f3a742a4983c4014d39f475d6660f1f8400000000004531e44883c4184c89e05b415c415d415e415f5dc30f1f004f8d642f01ebe4",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 255,
+      "first_block_size": 255,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_mime_init",
+      "bytes": "f30f1efa554889e541544989fcbf6000000053ff153fc306004885c07472660fefc04889c3ba170000004c89e70f1100660f6f05889a0500488d733048c74010000000000f11401848b82d2d2d2d2d2d2d2d48894328e8a5c4000085c07521c743480000000048c743500000000048c74358000000004889d85b415c5dc366904889dfff15d7c206000f1f800000000031dbebe2",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 148,
+      "first_block_size": 148,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_mime_addpart",
+      "bytes": "f30f1efa4885ff0f8483000000554889e5534889fbbfb80100004883ec08ff1594c206004889c24885c07444488d78084889c131c04883e7f84829f981c1b8010000c1e903f348ab48891a48c782b001000001000000488b43104885c0742148895008488953104889d0488b5df8c9c331d2488b5df8c94889d0c30f1f44000048895308ebdd662e0f1f84000000000031c0c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 147,
+      "first_block_size": 147,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_mime_name",
+      "bytes": "f30f1efa4885ff7457554889e541544989f4534889fb488b7f68ff1500c2060048c74368000000004d85e474124c89e7ff15dac10600488943684885c0741131c05b415c5dc3662e0f1f840000000000b81b000000ebea660f1f840000000000b82b000000c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 102,
+      "first_block_size": 102,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_mime_filename",
+      "bytes": "f30f1efa4885ff7457554889e541544989f4534889fb488b7f60ff1590c1060048c74360000000004d85e474124c89e7ff156ac10600488943604885c0741131c05b415c5dc3662e0f1f840000000000b81b000000ebea660f1f840000000000b82b000000c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 102,
+      "first_block_size": 102,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_mime_data",
+      "bytes": "f30f1efa4885ff0f8423010000554889e541554989f541544989d4534889fb4883ec08488b47304885c07406488b7f38ffd0660fefc0836314fb48c743300000000048895b3848c743180000000048c743400000000048c743700000000048c783a800000000000000c743100000000048c783b001000001000000c74378000000000f1143200f1183980000004d85ed74624983fcff7470498d7c2401ff1595c00600488943184885c00f84900000004c8963704d85e4755f42c6042000488d052bcdffff488d0de4d3ffff66480f6ec8834b1404488d0564cdffff66480f6ec148894330c7431001000000660f6cc10f11432031c04883c4085b415c415d5d",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 327,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_mime_filedata",
+      "bytes": "f30f1efa554889e5415641554154534881ecb000000064488b042528000000488945d831c04885ff0f845a010000488b47304889fb4989f44885c07406488b7f38ffd0660fefc0836314fb31c048c743300000000048895b3848c743180000000048c743400000000048c743700000000048c783a800000000000000c743100000000048c783b001000001000000c74378000000000f1143200f1183980000004d85e40f84b5000000488db540ffffff4c89e7e81869fcff85c00f84f80000004c89e7ff1517bf0600488943184885c00f85ca00000048c74370ffffffff41bd1b000000488d0535e5ffffc74310020000004c89e748894320488d0540e6ffff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 544,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_mime_type",
+      "bytes": "f30f1efa4885ff7457554889e541544989f4534889fb488b7f58ff15b0bd060048c74358000000004d85e474124c89e7ff158abd0600488943584885c0741131c05b415c5dc3662e0f1f840000000000b81b000000ebea660f1f840000000000b82b000000c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 102,
+      "first_block_size": 102,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_mime_data_cb",
+      "bytes": "f30f1efa4885ff0f84c3000000554889e541574d89c741564d89ce41554989f541544989d4534889fb4883ec18488b47304885c0740e48894dc8488b7f38ffd0488b4dc8660fefc0836314fb48c743300000000048895b3848c743180000000048c743400000000048c743700000000048c783a800000000000000c743100000000048c783b001000001000000c74378000000000f1143200f1183980000004d85e4741b4c89632048894b284c897b304c8973384c896b70c74310030000004883c41831c05b415c415d415e415f5dc3b82b000000c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 214,
+      "first_block_size": 214,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_mime_subparts",
+      "bytes": "f30f1efa4885ff0f8413010000554889e541544989f453837f10044889fb750a483b77380f84d5000000488b43304885c07406488b7b38ffd0660fefc0836314fb48c743300000000048895b3848c743180000000048c743400000000048c743700000000048c783a800000000000000c743100000000048c783b001000001000000c74378000000000f1143200f1183980000004d85e4746649833c24007570488b134885d27513eb1e660f1f440000488b004885c0740b4889c2488b024885c075ed4939d47448488d0551690000488d0ddac8ffff49891c2466480f6ec166480f6ec84c89633848c74370ffffffff660f6cc1c74310040000000f1143285b",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 294,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_msnprintf",
+      "bytes": "f30f1efa554889e54881ecd000000048898d68ffffff4c898570ffffff4c898d78ffffff84c074200f2945800f294d900f2955a00f295db00f2965c00f296dd00f2975e00f297df064488b04252800000048898548ffffff31c0488d4510488d8d30ffffffc78530ffffff1800000048898538ffffff488d8550ffffffc78534ffffff3000000048898540ffffffe8ed1b0000488b9548ffffff64482b1425280000007502c9c3e8845efcff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 172,
+      "first_block_size": 172,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_mvsnprintf",
+      "bytes": "f30f1efa554889e54883ec2064488b042528000000488945f831c048897de0488d7de0488975f0488d35a2adffff48c745e800000000e8d5e6ffff488b55f04885d2740d488b4de0483b55e8741ac60100488b55f864482b1425280000007511c9c3660f1f440000c641ff0083e801ebe0e83a42fcff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 118,
+      "first_block_size": 118,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_mvaprintf",
+      "bytes": "f30f1efa554889fa4889f1660fefc0488d356ab5ffff4889e553488d7db04883ec4864488b042528000000488945e831c0488d45c048c745c000000000488945b048c745d800127a00c645b8000f1145c8e80ae5ffff807db8007534488b45b048837808007549488d3d33e00400ff159c9c0600488b55e864482b1425280000007532488b5df8c9c30f1f8000000000488b5db0488b3bff15839c0600660fefc948c7030000000031c00f114b08ebc4488b00ebbfe84640fcff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 186,
+      "first_block_size": 186,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_maprintf",
+      "bytes": "f30f1efa554889e54881ecd00000004889b558ffffff48899560ffffff48898d68ffffff4c898570ffffff4c898d78ffffff84c074200f2945800f294d900f2955a00f295db00f2965c00f296dd00f2975e00f297df064488b04252800000048898548ffffff31c0488d4510488db530ffffffc78530ffffff0800000048898538ffffff488d8550ffffffc78534ffffff3000000048898540ffffffe85ffdffff488b9548ffffff64482b1425280000007502c9c3e8463efcff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 186,
+      "first_block_size": 186,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_msprintf",
+      "bytes": "f30f1efa554889e54881ece00000004889bd28ffffff48899560ffffff48898d68ffffff4c898570ffffff4c898d78ffffff84c074200f2945800f294d900f2955a00f295db00f2965c00f296dd00f2975e00f297df064488b04252800000048898548ffffff31c0488d45104889f2488d8d30ffffff48898538ffffff488dbd28ffffff488d8550ffffff488d35fea8ffff48898540ffffffc78530ffffff10000000c78534ffffff30000000e8eee1ffff488b9528ffffffc60200488b9548ffffff64482b1425280000007502c9c3e86b3dfcff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 213,
+      "first_block_size": 213,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_mprintf",
+      "bytes": "f30f1efa554889e54881ecd00000004889b558ffffff48899560ffffff48898d68ffffff4c898570ffffff4c898d78ffffff84c074200f2945800f294d900f2955a00f295db00f2965c00f296dd00f2975e00f297df064488b04252800000048898548ffffff31c0488d4510488b358d9606004889fa48898538ffffff488d8550ffffff488d8d30ffffff48898540ffffff488b05bf960600c78530ffffff08000000c78534ffffff30000000488b004889c7e808e1ffff488b9548ffffff64482b1425280000007502c9c3e88f3cfcff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 209,
+      "first_block_size": 209,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_mfprintf",
+      "bytes": "f30f1efa554889e54881ecd000000048899560ffffff48898d68ffffff4c898570ffffff4c898d78ffffff84c074200f2945800f294d900f2955a00f295db00f2965c00f296dd00f2975e00f297df064488b04252800000048898548ffffff31c04889f2488d4510488b35b195060048898538ffffff488d8d30ffffff488d8550ffffffc78530ffffff10000000c78534ffffff3000000048898540ffffffe83ce0ffff488b9548ffffff64482b1425280000007502c9c3e8c33bfcff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 189,
+      "first_block_size": 189,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_mvsprintf",
+      "bytes": "f30f1efa554889d14889f2488d35fea6ffff4889e54883ec1048897df8488d7df8e8fadfffff488b55f8c60200c9c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 47,
+      "first_block_size": 47,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_mvprintf",
+      "bytes": "f30f1efa488b057d9506004889fa4889f1488b3518950600488b38e9d0dfffff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 32,
+      "first_block_size": 32,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_mvfprintf",
+      "bytes": "f30f1efa4889d14889f2488b35ff940600e9badfffff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 22,
+      "first_block_size": 22,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_multi_add_handle",
+      "bytes": "f30f1efa4885ff0f84eb00000055b8010000004889e54154534889fb4883ec10813f1eab0b000f85be0000004989f4b8020000004885f60f84ad000000813eaddbdec00f85a10000004883bec000000000b8070000000f858e0000000fb697c9010000b808000000f6c204757df6c20874158b771cb80b00000085f6756c83e2f78897c9010000498b8424c0010000660fefc049c78424c00e00000000000049c78424b80e000000000000410f118424a80e00004885c07403c6000049899c24c000000031f64c89e7ba08000000e89d780000660fefc04889df0f1183a8010000e85a77000085c074164883c4105b415c5dc30f1f440000b801000000c36690",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 754,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_multi_remove_handle",
+      "bytes": "f30f1efa554889e541554154534883ec1864488b042528000000488945d831c04885ff7408813f1eab0b007423b801000000488b55d864482b1425280000000f85f50200004883c4185b415c415d5dc34889f34885f60f8404020000813eaddbdec00f85f80100004c8ba6c00000004d85e40f84280200004c39e70f85df01000041f68424c9010000040f8530020000448b6e58488b7e204183fd0e0f86ce0100004885ff741431d28b735c4183fd0e4889df0f96c2e8e5f4ffff4889dfe81d6f000048837b2800741a837b5801488d73280f84f8010000498d7c246031d2e81cc4ffff8b435883f801742f83f810742a488b4318488b53104885c00f84e901",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 831,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_multi_fdset",
+      "bytes": "f30f1efa554889e54157415641554154534883ec58488975884c89458064488b042528000000488945c8b8010000004885ff0f84f4000000813f1eab0b000f85e8000000b808000000f687c9010000040f85d60000004c8b6f08660fefc00f2945a00f2945b04d85ed0f84db000000488d45b84989d441bfffffffff488945904c8d75a00f1f40004c89f64c89efe86dfcffff8b45b485c0747c31db0f1f4000418b0c9e81f9ff0300007f61488b45904c8d0c03410fb6014c894d98a80174274863f9e8082dfcff418b0c9e488b55884c8b4d984889c7b80100000048d3e0480904fa410fb601a802741b4863f9e8dd2cfcff418b0c9e4889c7b80100000048",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 343,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_multi_wait",
+      "bytes": "f30f1efab8010000004885ff7442813f1eab0b007532b808000000f687c9010000047524b80a00000085c9781b554531c94889e54883ec086a00e8516c00005a59c9c30f1f440000c30f1f8000000000c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 81,
+      "first_block_size": 81,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_multi_poll",
+      "bytes": "f30f1efab8010000004885ff744a813f1eab0b00753ab808000000f687c901000004752cb80a00000085c978235541b9010000004889e54883ec086a01e8ee6b00005a59c9c3662e0f1f840000000000c30f1f8000000000c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 89,
+      "first_block_size": 89,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_multi_wakeup",
+      "bytes": "f30f1efa554889e54154534883ec1064488b042528000000488945e831c04885ff746d813f1eab0b004889fbb80100000075428bbfbc010000b80900000083ffff7432c645e7014c8d65e7ba010000004c89e6e8a829fcff4885c07953e85e23fcff8b0083f804743783f80b0f95c00fb6c08d04c0488b55e864482b14252800000075304883c4105b415c5dc30f1f00b801000000ebde660f1f8400000000008bbbbc010000eba30f1f84000000000031c0ebc1e8d723fcff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 185,
+      "first_block_size": 185,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_mime_encoder",
+      "bytes": "f30f1efa554889e5415641554154534885ff746c48c78790000000000000004989fd4989f44885f6744641be2b000000488d1d99390600488d35a797040066904c89e7e8f8c6010085c0740a49899d900000004531f6488b73184883c3184885f675dd5b4489f0415c415d415e5dc3904531f65b415c4489f0415d415e5dc39041be2b0000005b415c4489f0415d415e5dc3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 146,
+      "first_block_size": 146,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_mime_headers",
+      "bytes": "f30f1efa4885ff7457554889e541554189d541544989f4534889fb4883ec088b4714a8017417488b7f504839f77408e81c1b01008b431483e0fe8943144c8963504d85e474094585ed7404834b14014883c40831c05b415c415d5dc30f1f4000b82b000000c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 102,
+      "first_block_size": 102,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_mime_free",
+      "bytes": "f30f1efa4885ff0f84bb000000554889e541544989fc53488b074885c00f8487000000660fefc0836014fb0f114020498b5c240848c74030000000004889403848c740180000000048c740400000000048c740700000000048c780a800000000000000c740100000000048c780b001000001000000c74078000000000f11809800000048c707000000004885db742590488b43084889df4989442408e85ffeffff4889dfff1586520600498b5c24084885db75dc5b4c89e7415c5dff256f5206000f1f8000000000c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 201,
+      "first_block_size": 201,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_multi_init",
+      "bytes": "f30f1efaba47000000be61000000bf8f030000e908fdffff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 24,
+      "first_block_size": 24,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_multi_info_read",
+      "bytes": "f30f1efac706000000004885ff74615531c04889e541554154534889fb4883ec08813f1eab0b007510f687c901000004750748837f3800750f4883c4085b415c415d5dc30f1f40004989f4488b772031d2488d7f204c8b2ee8b364ffff488b433825ffffff7f41890424498d4518ebc931c0c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 115,
+      "first_block_size": 115,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_multi_setopt",
+      "bytes": "f30f1efa554889e54881ecd000000048899560ffffff48898d68ffffff4c898570ffffff4c898d78ffffff84c074200f2945800f294d900f2955a00f295db00f2965c00f296dd00f2975e00f297df064488b04252800000048898548ffffffb8010000004885ff0f84b3000000813f1eab0b000f85a7000000b808000000f687c9010000040f8595000000c78530ffffff10000000488d451048898538ffffff488d8550ffffffc78534ffffff3000000048898540ffffff81fe122700000f843c020000767a81fe214e00000f844e0200000f879800000081fe1c2700000f87cc00000081fe1a270000772881fe15270000756c8b8530ffffff83f82f0f874d",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 972,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_multi_timeout",
+      "bytes": "f30f1efa4885ff7417813f1eab0b00750ff687c9010000047516e961d7ffff90b801000000c3662e0f1f840000000000b808000000c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 54,
+      "first_block_size": 54,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_multi_assign",
+      "bytes": "f30f1efa554889e5534883ec1864488b042528000000488945e831c08975e483feff743c4889d34881c7f8000000488d75e4ba04000000e804e3fdff4885c0741f4889583831c0488b55e864482b1425280000007511488b5df8c9c30f1f4000b805000000ebe0e814bcfbff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 108,
+      "first_block_size": 108,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_multi_cleanup",
+      "bytes": "f30f1efa554889e5415641554154534883ec2064488b042528000000488945d8b8010000004885ff740b813f1eab0b004989fc7423488b55d864482b1425280000000f85f20100004883c4205b415c415d415e5dc30f1f00b808000000f687c90100000475cf488b4760c707000000004885c0740e488b0048c780c0000000000000004c89e7e8d5feffff4d8b6c24084d85ed74724d8db424d0000000eb06904d85ed74624c89eb4d8b6d10f683b513000020751648837b2000740fba0100000031f64889dfe85582ffff83bbb8000000010f842801000048c783780c00000000000048c783c0000000000000004c39b3d800000075a948c783d80000000000",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 575,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_multi_get_handles",
+      "bytes": "f30f1efa554889e5534889fb4883ec088b47188d780148c1e703ff15281506004885c07431488b53084885d2743231c980bab613000000780989ce83c101488914f0488b52104885d275e5488d14c848c70200000000488b5df8c9c30f1f40004889c2ebea",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 101,
+      "first_block_size": 101,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_getdate",
+      "bytes": "f30f1efa554889e54883ec1064488b042528000000488945f831c0488d75f048c745f0ffffffffe8e493030085c07520488b45f031d24883f8ff480f44c2488b55f864482b142528000000750cc9c39048c7c0ffffffffebe5e832b2fbff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 94,
+      "first_block_size": 94,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_multi_perform",
+      "bytes": "f30f1efa554889e54157415641554989f5415441bc01000000534889fb4883ec3864488b042528000000488945c831c0e86b080100488945b0488955b84885db0f84ba000000813b1eab0b000f85ae00000041bc08000000f683c9010000040f859b0000004c8b7b084531e44d85ff74244c8d75b00f1f004c89fa4c89f64889df4d8b7f10e866ccffff85c0440f45e04d85ff75e34c8d75a8eb1f0f1f440000488b48308b75b84889da488b7db0e8adf0020048837da8007426488b93e80000008b75b84c89f1488b7db0e8a0ed0200488983e8000000488b45a84885c075c08b431c418945004585e47f144889dfe86c7fffff4189c4660f1f840000000000",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 294,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_multi_socket",
+      "bytes": "f30f1efaf687c901000004752b554989d031c989f231f64889e5534889fb4883ec08e8d9fdffff85c07e15488b5df8c9c30f1f8000000000b808000000c366904889df488b5df8c9e9e37cffff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 77,
+      "first_block_size": 77,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_multi_socket_action",
+      "bytes": "f30f1efaf687c901000004752b554989c889d189f231f64889e5534889fb4883ec08e889fdffff85c07e15488b5df8c9c30f1f8000000000b808000000c366904889df488b5df8c9e9937cffff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 77,
+      "first_block_size": 77,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_multi_socket_all",
+      "bytes": "f30f1efaf687c9010000047533554989f031c9baffffffffbe010000004889e5534889fb4883ec08e833fdffff85c07e1f488b5df8c9c3660f1f840000000000b808000000c3662e0f1f8400000000004889df488b5df8c9e9337cffff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 93,
+      "first_block_size": 93,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_share_init",
+      "bytes": "f30f1efa55bef8000000bf010000004889e5ff15c04905004885c0745b488d158c0efdff488d0d75fafcff8348040266480f6ec1488d35e5fafcff66480f6ecac7001e7a117e48c7808800000000000000660f6cc14889b0a000000048c780b000000000000000c780a8000000170000000f1180900000005dc3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 122,
+      "first_block_size": 122,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_share_cleanup",
+      "bytes": "f30f1efa554889e5415641554154534885ff0f8458010000813f1e7a117e4889fb41bd030000000f85f8000000488b47104885c07412488b4f20ba02000000be0100000031ffffd0448b6b084585ed0f85e30000004c8d63284c89e7e8afb9fbff4c89e7e82714fdff488dbb88000000e81b14fdff488bbbb8000000e8ffbefbff488dbbd8000000e8332cfdff488bbbe00000004885ff74404883bbe80000000074304531f64531e40f1f80000000004c01f74983c4014981c6b8000000e82dff01004c3ba3e8000000488bbbe000000072ddff1577480500488bbbc00000004885ff741b80bbd000000000757248c783c000000000000000c683d000000000",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 386,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_slist_append",
+      "bytes": "f30f1efa554889e54154534889fb4889f7ff15994705004885c0744d4989c4bf10000000ff158e4705004885c0743148c74008000000004c89204885db741c4889da660f1f4400004889d1488b52084885d275f4488941084889d85b415c5dc34c89e7ff15574705005b31c0415c5dc3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 112,
+      "first_block_size": 112,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_slist_free_all",
+      "bytes": "f30f1efa4885ff743f554889e54154534889fb0f1f4400004989dc488b5b08498b3c24ff152747050049c70424000000004c89e7ff15164705004885db75d95b415c5dc30f1f4000c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 73,
+      "first_block_size": 73,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_easy_setopt",
+      "bytes": "f30f1efa554889e54881ecd000000048899560ffffff48898d68ffffff4c898570ffffff4c898d78ffffff84c074200f2945800f294d900f2955a00f295db00f2965c00f296dd00f2975e00f297df064488b04252800000048898548ffffff31c04885ff7452488d4510488d9530ffffffc78530ffffff1000000048898538ffffff488d8550ffffffc78534ffffff3000000048898540ffffffe88196ffff488b9548ffffff64482b142528000000750ec9c30f1f440000b82b000000ebe0e80c6dfaff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 196,
+      "first_block_size": 196,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_share_setopt",
+      "bytes": "f30f1efa554889e541554154534889fb4881ecd800000048899540ffffff48898d48ffffff4c898550ffffff4c898d58ffffff84c074260f298560ffffff0f298d70ffffff0f2955800f295d900f2965a00f296db00f2975c00f297dd064488b04252800000048898528ffffff31c041bc030000004885db7464813b1e7a117e755c448b63084585e4754dc78510ffffff10000000488d451048898518ffffff488d8530ffffffc78514ffffff3000000048898520ffffff83fe050f873f010000488d1524bf030089f6486304b24801d03effe00f1f400041bc02000000488b8528ffffff64482b0425280000000f85660300004881c4d80000004489e05b41",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 1130,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_strequal",
+      "bytes": "f30f1efa4885ff4889f84889f70f95c24885f60f95c14531c04809c789d7410f94c04020cf75094489c0c30f1f4400000fb6084c8d05567c030084c975380fb61631ff84d2410f94c04131f8450fb6c04489c0c30f1f4000410fb60c0841380c10751d0fb648014883c001488d560184c974154889d60fb61684d275dbebc4904531c0eba20f1f000fb6560131ffebb3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 144,
+      "first_block_size": 144,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_strnequal",
+      "bytes": "f30f1efa4885ff74054885f675124809fe0f94c131c04885d20f95c021c8c3900fb60f4c8d05d67b030084c9754e6690b8010000004885d274500fb616488d05bc7b03000fb63c0840383c100f94c00fb6c0c30f1f4400004885d27433410fb60c0841380c0075200fb64f014883c7014883ea014883c60184c974b40fb60684c075d5ebab0f1f0031c0c30f1f440000b801000000c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 150,
+      "first_block_size": 150,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_easy_strerror",
+      "bytes": "f30f1efa83ff637717488d155098030089ff486304ba4801d03effe00f1f4000488d056ed80200c30f1f840000000000488d05713f0300c30f1f840000000000488d05413f0300c30f1f840000000000488d0528d80200c30f1f840000000000488d0502d80200c30f1f840000000000488d05e5d70200c30f1f840000000000488d05d13e0300c30f1f840000000000488d05913e0300c30f1f840000000000488d05513e0300c30f1f840000000000488d05093e0300c30f1f840000000000488d05c93d0300c30f1f840000000000488d05913d0300c30f1f840000000000488d055fd70200c30f1f840000000000488d0531d70200c30f1f840000000000",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 1432,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_multi_strerror",
+      "bytes": "f30f1efa83c70183ff0d0f87e8000000488d1539940300486304ba4801d03effe00f1f8000000000488d055acf0200c3488d05f9390300c30f1f840000000000488d05c1390300c30f1f840000000000488d05c1d20200c30f1f840000000000488d05b3a20200c30f1f840000000000488d05b5d20200c30f1f840000000000488d05b4d20200c30f1f840000000000488d056cd20200c30f1f840000000000488d0541340300c30f1f840000000000488d05f9330300c30f1f840000000000488d058cd20200c30f1f840000000000488d0581390300c30f1f840000000000488d05a1380300c30f1f840000000000488d0599390300c3488d05f6d10200c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 256,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_share_strerror",
+      "bytes": "f30f1efa83ff05776f488d157893030089ff486304ba4801d03effe00f1f4000488d053bd20200c30f1f840000000000488d0552ce0200c30f1f840000000000488d0569390300c30f1f840000000000488d0520d20200c30f1f840000000000488d0527d20200c30f1f840000000000488d05a3a10200c3488d0524d20200c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 128,
+      "first_block_size": 128,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_url_strerror",
+      "bytes": "f30f1efa83ff1e0f87fb010000488d150c93030089ff486304ba4801d03effe0488d0531390300c30f1f840000000000488d05d2cd0200c30f1f840000000000488d0507d30200c30f1f840000000000488d0506d30200c30f1f840000000000488d0507d30200c30f1f840000000000488d0528d30200c30f1f840000000000488d05f4d20200c30f1f840000000000488d059dd20200c30f1f840000000000488d0571d20200c30f1f840000000000488d0548d20200c30f1f840000000000488d05c4d20200c30f1f840000000000488d05d5d20200c30f1f840000000000488d05afd20200c30f1f840000000000488d05bfd20200c30f1f840000000000",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 528,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_url_cleanup",
+      "bytes": "f30f1efa4885ff7427554889e5534889fb4883ec08e8f6e0ffff4889df488b5df8c9ff2518e803000f1f840000000000c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 49,
+      "first_block_size": 49,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_url_dup",
+      "bytes": "f30f1efa55be580000004889e541544989fcbf0100000053ff15eae703004885c00f8431010000498b3c244889c34885ff7412ff15b7e703004889034885c00f840b010000498b7c24084885ff7413ff159be70300488943084885c00f84ee000000498b7c24104885ff7413ff157ee70300488943104885c00f84d1000000498b7c24184885ff7413ff1561e70300488943184885c00f84b4000000498b7c24204885ff7413ff1544e70300488943204885c00f8497000000498b7c24304885ff740fff1527e70300488943304885c0747e498b7c24384885ff740fff150ee70300488943384885c07465498b7c24404885ff740fff15f5e603004889434048",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 354,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_ws_recv",
+      "bytes": "f30f1efab804000000c3",
+      "mask": "ffffffffffffffffffff",
+      "func_size": 10,
+      "first_block_size": 10,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "libcurl.curl_url_get",
+      "bytes": "f30f1efa554889e54157415641554154534883ec7864488b042528000000488945c831c04885ff0f842b0400004889d34885d20f846f04000089ca4189ce48c703000000004189f5c1ea0641c1ee074189c883e2014183e60183fe0a0f87c750f9ff488d0d47a0020089f04989fc486304814801c83effe00f1f840000000000c6856fffffff00488b7f484531c0b911000000c68578ffffff00660f1f440000448845808855884885ff0f84c80000004889bd70ffffffe86441f9ff488bbd70ffffff4889c64989c7e86203ffff4889034885c00f842e040000440fb645800fb655884584c074214d85ff741c4a8d0c380f1f800000000080382b7503c60020",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 2611,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_url_set",
+      "bytes": "f30f1efa554889e54157415641554154534881ec88000000898d7cffffff64488b042528000000488945c831c04885ff744e4989fe89f34989d74885d274714889d7e87936f9ff4989c5b8030000004981fd00127a00772d440fb6a57cffffff41c0ec0783fb0a0f876645f9ff488d150895020089d8486304824801d03effe0b801000000488b55c864482b1425280000000f85020b00004881c4880000005b415c415d415e415f5dc3660f1f44000083fe0a0f871a45f9ff488d15e89402004189f04a6304824801d03effe04983c6400f1f8000000000498b3e4885ff740dff154a99030049c7060000000031c0eb940f1f8000000000660fefc04b8d446d",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 2975,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_version",
+      "bytes": "f30f1efa5531d2660fefc0bec80000004889e54157415641be0a000000415541544c8da520feffff53488d9d00ffffff4889df4881ec3803000064488b042528000000488945c848b862726f746c692f0048899528feffff31d20f298530feffff0f298500feffff488995f8fdffff48c78540feffff0000000048c78510feffff0000000048898520feffff48b87a7374642f000000488985f0fdffff488d05a8d1010048898580feffff488b05fe8d0300ff503048899d88feffff488d9d50feffffe8282bf9ff4889dfbe28000000488d1583d101004889c131c0e85fd2fcff48899d90feffff488d1de8940100e8ac37f9ff4889dabe21000000488dbd27",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 1193,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "libcurl.curl_version_info",
+      "bytes": "f30f1efa55be500000004889e5415741564c8d3508af030041554c8d2ddfad030041544c8d2516b0030053488d1dceb003004889df4883ec08488b05c0890300ff503048891ddead0300488d1d4fb00300e8ea26f9ff488d3d13ad0100488905d4ad0300e87726f9ff31ff488905e6ad0300e80931f9ff4889dfbe50000000488d1541cd01004889c131c0e800cefcff48891dd1ad0300488d1d89900100e84d33f9ff8905c7ad0300e84233f9ff4889da4c89e7be500000004189c04189c189c131c041c1e80cc1e9184181e1ff0f00004181e0ff0f0000e8b3cdfcff4c892594ad0300e8e733f9ff8905b9ad0300e8dc33f9ff89c148b84b598638d6c56d34",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 468,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    }
+  ],
+  "dedup_conflicts": [
+    {
+      "bytes": "f30f1efab804000000c3",
+      "name1": "libcurl.curl_ws_recv",
+      "name2": "libcurl.curl_ws_send"
+    }
+  ]
+}

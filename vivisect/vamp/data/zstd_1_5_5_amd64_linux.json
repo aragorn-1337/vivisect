@@ -1,0 +1,1842 @@
+{
+  "format_version": 1,
+  "library": "zstd",
+  "version": "1.5.5",
+  "arch": "amd64",
+  "platform": "linux",
+  "compiler": "gcc-13",
+  "compiled_flags": "-O2",
+  "source_url": null,
+  "binary_sha256": "0a2128bc10841fb29e76d08d945864dfb0b6a66da5df6df5d8299197439e54bb",
+  "generated_at": "2026-08-09T20:00:07Z",
+  "generated_by": "vamp-gen-sigs",
+  "signatures": [
+    {
+      "name": "zstd.ZSTD_createThreadPool",
+      "bytes": "f30f1efa55660f6f05034f0a0031f6488b050a4f0a004889e54883ec2048894424100f110424e885fdffffc9c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 45,
+      "first_block_size": 45,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_freeThreadPool",
+      "bytes": "f30f1efa4885ff7407e932fcffff6690c3",
+      "mask": "ffffffffffffffffffffffffffffffffff",
+      "func_size": 17,
+      "first_block_size": 17,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_versionNumber",
+      "bytes": "f30f1efab809290000c3",
+      "mask": "ffffffffffffffffffff",
+      "func_size": 10,
+      "first_block_size": 10,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "zstd.ZSTD_versionString",
+      "bytes": "f30f1efa488d05154e0a00c3",
+      "mask": "ffffffffffffffffffffffff",
+      "func_size": 12,
+      "first_block_size": 12,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "zstd.ZSTD_isError",
+      "bytes": "f30f1efa31c04883ff880f97c0c3",
+      "mask": "ffffffffffffffffffffffffffff",
+      "func_size": 14,
+      "first_block_size": 14,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "zstd.ZSTD_getErrorName",
+      "bytes": "f30f1efa89f831d2f7d84883ff880f47d089d7e9a8f4ffff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 24,
+      "first_block_size": 24,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_getErrorCode",
+      "bytes": "f30f1efa89f831d2f7d84883ff880f46c2c3",
+      "mask": "ffffffffffffffffffffffffffffffffffff",
+      "func_size": 18,
+      "first_block_size": 18,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_getErrorString",
+      "bytes": "f30f1efae977f4ffff",
+      "mask": "ffffffffffffffffff",
+      "func_size": 9,
+      "first_block_size": 9,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "zstd.ZSTD_compressBound",
+      "bytes": "f30f1efa48bafffe00ff00ff00ff48c7c0b8ffffff4839fa72304889f848c1e8084801f84881ffffff0100770fba000002004829fa48c1ea0b4801d04885c048c7c2b8ffffff480f44c2c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 75,
+      "first_block_size": 75,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_initStaticCCtx",
+      "bytes": "f30f1efa554889e5534883ec5864488b042528000000488945e831c04881fe801400000f86cf0100004889f84989f883e0070f85c00100004889f2488d343766480f6ec7488b0d9d5f09004989f2660f6cc04c8d8f8014000048897da04983e2c00f1145b866490f6ec2488975a8660f6cc048894de00f1145c866490f6ec1c645d800660f6cc0c745dc000000004c39ce0f82610100004c894dc00f2945b04885ff0f845001000048c70700000000488d7f084c89c1660fefc048c78770140000000000004883e7f84829f981c180140000c1e903f348ab49899070030000488b45e0660f6f4da00f2945a0660f6f55b0660f6f5dc00f2945b0660f6f65d049",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 592,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_freeCCtxParams",
+      "bytes": "f30f1efa4885ff742755488b87a00000004889fe488bbfa80000004889e54885c07415ffd031c05dc30f1f800000000031c0c30f1f4400004889f7e850cffeffebe3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 66,
+      "first_block_size": 66,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_CCtxParams_init",
+      "bytes": "f30f1efa4889fa4885ff743c48c70700000000488d7f084889d131c048c787c0000000000000004883e7f84829f981c1d0000000c1e903f348ab89722cc7422001000000c30f1f0048c7c0ffffffffc3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 80,
+      "first_block_size": 80,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_createCCtxParams",
+      "bytes": "f30f1efa55bed0000000bf010000004889e5534883ec08e894cdfeff4889c34885c07423be030000004889c7e87ffdffff660fefc048c783a8000000000000000f1183980000004889d8488b5df8c9c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 80,
+      "first_block_size": 80,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_CCtxParams_reset",
+      "bytes": "f30f1efabe03000000e952fdffff",
+      "mask": "ffffffffffffffffffffffffffff",
+      "func_size": 14,
+      "first_block_size": 14,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "zstd.ZSTD_CCtxParams_getParameter",
+      "bytes": "f30f1efa81fe920100000f8490020000773e81feca000000777683fe630f864502000083ee6483fe667715488d0de65a0900486304b14801c83effe00f1f400048c7c0d8ffffffc30f1f84000000000081fef40100000f84240200008d8618fcffff83f81077d981eee903000083fe0f0f871a020000488d0d375c0900486304b14801c83effe0660f1f84000000000081fe900100000f841401000081fe91010000759c488b4750890231c0c30f1f008b87c80000008902ebf0660f1f440000488b87c00000008902ebdf0f1f4400008b47448902ebd3660f1f8400000000008b47488902ebc3660f1f840000000000488b47388902ebb20f1f840000000000",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 682,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_CCtx_getParameter",
+      "bytes": "f30f1efa4883c710e943fdffff",
+      "mask": "ffffffffffffffffffffffffff",
+      "func_size": 13,
+      "first_block_size": 13,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "zstd.ZSTD_CCtx_setParametersUsingCCtxParams",
+      "bytes": "f30f1efa8b97000e000048c7c0c4ffffff85d20f85a50000004883bf580e0000000f8597000000f30f6f0631c00f114710f30f6f4e100f114f20f30f6f56200f115730f30f6f5e300f115f40f30f6f66400f116750f30f6f6e500f116f60f30f6f76600f117770f30f6f7e700f11bf80000000f30f6f86800000000f118790000000f30f6f8e900000000f118fa0000000f30f6f96a00000000f1197b0000000f30f6f9eb00000000f119fc0000000f30f6fa6c00000000f11a7d0000000c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 191,
+      "first_block_size": 191,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_CCtx_setPledgedSrcSize",
+      "bytes": "f30f1efa8b97000e000048c7c0c4ffffff85d2750d4883c60131c04889b7e0020000c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 35,
+      "first_block_size": 35,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_CCtx_refThreadPool",
+      "bytes": "f30f1efa8b97000e000048c7c0c4ffffff85d275094889b76803000031c0c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 31,
+      "first_block_size": 31,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_getFrameProgression",
+      "bytes": "f30f1efa554889e541574156415541544989fc534883ec388b862c01000085c07f7e31c04883beb80d000000740e488b86d00d0000482b86c80d00004c8bb6e8020000f30f6f86e8020000c745b0000000004531ff4c01f0660f6dc0488945b80f2945a0488b45b8660f6f55a04d8974240845897c2424498904248b45b0410f1154241041894424204883c4384c89e05b415c415d415e415f5dc30f1f4400004c8bae780e00004531ff4d8bb5d00b0000498b8530010000f3410f6f9dd00b0000418b9db40b00004c01f0488945b8418b85b80b0000660f6ddb0f295da08945b0410385080100008945b439c30f8371ffffff0f1f44000089da412395b00b00",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 377,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_toFlushNow",
+      "bytes": "f30f1efa554889e54156415541544531e4538b872c01000085c07f145b4c89e0415c415d415e5dc30f1f8400000000004c8baf780e0000418b85b40b0000413b85b80b000074d5412385b00b00004d8b75084869d8b80100004901de498d7e10e83bc3feff498b46084883f888770a492b86a80100004989c449035d08488d7b10e86ac2feff5b4c89e0415c415d415e5dc3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 146,
+      "first_block_size": 146,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_sequenceBound",
+      "bytes": "f30f1efa48b8abaaaaaaaaaaaaaa48f7e748d1ea488d4201c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 25,
+      "first_block_size": 25,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_estimateCCtxSize_usingCCtxParams",
+      "bytes": "f30f1efa5531c94889fe4531c048c7c2ffffffff4889e54154534c8d65c04889fb4c89e74883ec3064488b042528000000488945e831c0e894efffff8b8b9000000085c9751e8b45d8b90200000083e80383f8020f96c231c0837dc00e0f97c021d029c18b534c48c7c0ffffffff85d27f2e8b83b80000004883ec084531c94531c0ffb3c0000000488d7360ba010000004c89e7506affe8f4fdffff4883c420488b55e864482b1425280000007509488d65f05b415c5dc3e8e3b4feff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 189,
+      "first_block_size": 189,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_estimateCCtxSize_usingCParams",
+      "bytes": "f30f1efa554889e54154534c8da510ffffff4c89e74881ec00010000f30f6f451064488b042528000000488945e831c00f110424f30f6f4d1c0f114c240ce85de5ffff8b45284883c42083e80383f80277464c89e7c745a002000000e8dffeffff4c89e7c745a0010000004889c3e8cdfeffff4839c3480f43c3488b55e864482b1425280000007519488d65f05b415c5dc3660f1f4400004c89e7e8a0feffffebd8e839b4feff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 167,
+      "first_block_size": 167,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_estimateCCtxSize",
+      "bytes": "f30f1efa554889e54157415641554c8d2d2b4b0900415441bc01000000534883ec48897d9464488b042528000000488945c831c0488d45a085ff48894598440f4ee74531ff0f1f004c8d35d14a090031db498b16488b7d984531c031c94489e6e86b5b0000660f6f45a04883ec200f110424f30f6f4dac0f114c240ce8cffeffff4883c4204839c3723e4983c6084d39ee75be4939df4c0f42fb4183c401443965947da4488b45c864482b042528000000753a488d65d84c89f85b415c415d415e415f5dc30f1f00660f6f55a04883ec200f111424f30f6f5dac0f115c240ce86cfeffff4883c4204889c3eb9de83eb3feff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 242,
+      "first_block_size": 242,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_estimateCStreamSize_usingCCtxParams",
+      "bytes": "f30f1efa554889e54154534883ec408b774c64488b042528000000488945e831c048c7c0ffffffff85f60f8faf0000004c8d65c04889fb4531c031c94889fe48c7c2ffffffff4c89e7e812edffff488b93c0000000bf000002008b4dc0b8010000004885d2480f45fa48d3e04889fe48d3ee8b4b7c4885f6480f45f84531c085c975044c8d04388b83800000004531c985c0746c8b8b9000000085c9751e8b431c83e80383f8020f96c131c0837b040e0f97c021c8b90200000029c18b83b80000004883ec08488d73604c89e752ba01000000506affe845fbffff4883c420488b55e864482b142528000000753a488d65f05b415c5dc3660f1f840000000000",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 301,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_estimateCStreamSize_usingCParams",
+      "bytes": "f30f1efa554889e54154534c8da510ffffff4c89e74881ec00010000f30f6f451064488b042528000000488945e831c00f110424f30f6f4d1c0f114c240ce87de2ffff8b45284883c42083e80383f80277464c89e7c745a002000000e86ffeffff4c89e7c745a0010000004889c3e85dfeffff4839c3480f43c3488b55e864482b1425280000007519488d65f05b415c5dc3660f1f4400004c89e7e830feffffebd8e859b1feff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 167,
+      "first_block_size": 167,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_estimateCStreamSize",
+      "bytes": "f30f1efa554889e5415641554c8d75b04189fd415453bb010000004883ec3064488b042528000000488945d831c085ff0f4edf4531e4662e0f1f8400000000004531c031c989de48c7c2ffffffff4c89f7e89a580000660f6f45b04883ec200f110424f30f6f4dbc0f114c240ce8defeffff4939c44c0f42e083c3014883c4204139dd7dbb488b45d864482b0425280000007510488d65e04c89e05b415c415d415e5dc3e8a7b0feff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 169,
+      "first_block_size": 169,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_copyCCtx",
+      "bytes": "f30f1efa554889e54156415541544989f4534889fb4881ece000000064488b042528000000488945d831c04885d2744031c94883faff48c7c0c4ffffff0f95c141833c24017440488b55d864482b1425280000000f85c30200004881c4e00000005b415c415d415e5dc3660f1f44000031c941833c240148c7c2ffffffff48c7c0c4ffffff75c0f30f6f4b10f30f6f53304889df4531f6f30f6f5b40f30f6f6350488db500ffffff41b801000000f3410f6f842450030000458b8c24b00d00000f298d00fffffff30f6f6b60f30f6fb3800000000f299520ffffff0f118350030000498b842460030000f30f6fbb90000000f30f6f83a0000000f30f6f8bb000",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 802,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_mergeBlockDelimiters",
+      "bytes": "f30f1efa4885f674674989f14889f831c931d249c1e1044883ee014901f9eb23448b40084585c075224839ce7408448b4004440140144883c0104883c1014c39c87429448b104585d274d5f30f6f004989d04883c0104883c20149c1e0044883c101420f1104074c39c875d74889d0c331d24889d0c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 118,
+      "first_block_size": 118,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_writeSkippableFrame",
+      "bytes": "f30f1efa554889e553488d59084883ec084839de724a4889c848c1e82075514183f80f772b4181c0502a4d18894f044889d64883c708448947f84889cae8de8dfeff4889d8488b5df8c9c30f1f44000048c7c3d6ffffff4889d8488b5df8c9c348c7c3baffffff4889d8488b5df8c9c348c7c3b8ffffff4889d8488b5df8c9c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 128,
+      "first_block_size": 128,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_compressContinue",
+      "bytes": "f30f1efa5541b9010000004889e54883ec086a00e837f3ffffc9c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 27,
+      "first_block_size": 27,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_getBlockSize",
+      "bytes": "f30f1efa488b87a00100008b8fe4000000ba010000004889c648d3e248d3ee4885f6480f45c2c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 39,
+      "first_block_size": 39,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_compressBlock",
+      "bytes": "f30f1efa4989d2488b97a00100004989cbb8010000008b8fe40000004989d149d3e948d3e04d85c9480f45d04c39c2721f554c89d94c89d24531c94889e54883ec086a00e8b7f2ffff5a59c9c30f1f0048c7c0b8ffffffc3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 88,
+      "first_block_size": 88,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_freeCCtx",
+      "bytes": "f30f1efa4885ff0f84730100005548c7c0c0ffffff4889e54154534883bf70030000004889fb0f858b000000483bbf900200000f8387000000e832ffffff488bbb780e00004531e4e863c90800488bb390020000660fefc048c783780e000000000000488b8358030000488bbb6003000048c783d0020000000000000f1183900200000f1183a00200000f1183b00200000f1183c00200004885f60f84ad0000004885c00f84b6000000ffd04585e40f848b00000031c05b415c5dc30f1f40004531e4483bbf98020000410f92c4e89dfeffff488bbb780e0000e8d1c80800488bb390020000660fefc048c783780e000000000000488b8358030000488bbb60",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 387,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_CCtx_loadDictionary_advanced",
+      "bytes": "f30f1efa448b8f000e000048c7c0c4ffffff4585c90f85a5000000554889e541574589c741564189ce41554989d541544989f4534889fb4883ec08e8a0fdffff4d85e474624d85ed745d4183fe0174424883bb7003000000756e488b8350030000488bbb600300004885c074734c89eeffd04889c14885c9744e4c89e64c89ea4889cfe8987dfeff488983300e00004989c44c89a3380e00004c89ab400e00004489bb480e00004883c40831c05b415c415d415e415f5dc30f1f840000000000c30f1f80000000004883c40848c7c0c0ffffff5b415c415d415e415f5dc366904c89efe8687dfeff4889c1eb88",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 237,
+      "first_block_size": 237,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_CCtx_loadDictionary_byReference",
+      "bytes": "f30f1efa4531c0b901000000e9fffeffff",
+      "mask": "ffffffffffffffffffffffffffffffffff",
+      "func_size": 17,
+      "first_block_size": 17,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_CCtx_loadDictionary",
+      "bytes": "f30f1efa4531c031c9e9e2feffff",
+      "mask": "ffffffffffffffffffffffffffff",
+      "func_size": 14,
+      "first_block_size": 14,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "zstd.ZSTD_CCtx_reset",
+      "bytes": "f30f1efa558d46fe83e6fd4889e5534889fb4883ec0883fe017525c787000e00000000000048c787e00200000000000083f801762b488b5df831c0c9c30f1f0083f80177f08b87000e000085c07411488b5df848c7c0c4ffffffc9c30f1f40004889dfe858fcffff660fefc0488d7b100f1183601400000f118370140000488b5df8c9e9f8aeffff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 136,
+      "first_block_size": 136,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_createCCtx_advanced",
+      "bytes": "f30f1efa554889e54154534883ec10f30f6f4510488b5d2066480f7ec00f12c84885c066480f7eca0f94c14885d20f94c238d10f85a70000000f2945e04885c00f84aa000000be801400004889dfffd0660f6f45e04989c44d85e40f847f000000498d7c24084c89e131c049c704240000000049c7842478140000000000004883e7f84829f981c180140000c1e903f348ab49899c2460030000410f118424500300000fa231c983f8067614b8070000000fa2f7d331c981e3080100000f94c141894c24084c89e7be02000000e89efeffff4883c4104c89e05b415c5dc366904883c4104531e44c89e05b415c5dc390bf80140000e8a67bfeff660f6f45e049",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 263,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_createCCtx",
+      "bytes": "f30f1efa660f6f05f4f50800488b05fdf50800554889e54883ec2048894424100f110424e8c7feffffc9c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 43,
+      "first_block_size": 43,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_CCtx_refCDict",
+      "bytes": "f30f1efa8b87000e000085c0757a554889e541544989f453488bb7300e00004889fb4885f67415488b8758030000488bbf600300004885c07456ffd0488bbb500e0000e898200000660fefc04c89a3580e000031c048c783500e00000000000048c783700e0000000000000f1183300e00000f1183400e00000f1183600e00005b415c5dc30f1f0048c7c0c4ffffffc34889f7e8b879feffeba2",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 154,
+      "first_block_size": 154,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_CCtx_refPrefix_advanced",
+      "bytes": "f30f1efa8b87000e000085c00f85ae000000554889e541564189ce41554989d541544989f453488bb7300e00004889fb4885f67419488b8758030000488bbf600300004885c00f8484000000ffd0488bbb500e0000e8e61f0000660fefc048c783500e00000000000048c783700e00000000000048c783580e0000000000000f1183300e00000f1183400e00000f1183600e00004d85e4741a4d85ed74154c89a3600e00004c89ab680e00004489b3700e00005b31c0415c415d415e5dc3669048c7c0c4ffffffc30f1f8400000000004889f7e8d878feffe971ffffff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 221,
+      "first_block_size": 221,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_CCtx_refPrefix",
+      "bytes": "f30f1efab901000000e912ffffff",
+      "mask": "ffffffffffffffffffffffffffff",
+      "func_size": 14,
+      "first_block_size": 14,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "zstd.ZSTD_sizeof_CCtx",
+      "bytes": "f30f1efa554889e54157415641554154534883ec384885ff0f8402020000488b97900200004c8ba798020000b8801400004889fbb9000000004839fa480f44c14929d44901c44883bb300e000000488b87400e0000488bbf500e000074034901c4e8aa1e00004c8bab780e00004c01e0488945c84d85ed0f8477010000498b45004885c00f8486010000488b5048488b4020488d44501e48c1e003488945a0498b5d108b43304889df83e801488945a8e8bb79feff8b533085d20f847001000048c1e2044889d84531e44801da0f1f004c0360584883c0104839d075f34889dfe8db78feff418b85b00b0000498b5d1883c0014889df48895db84869c0b80100",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 599,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_sizeof_CStream",
+      "bytes": "f30f1efae997fdffff",
+      "mask": "ffffffffffffffffff",
+      "func_size": 9,
+      "first_block_size": 9,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "zstd.ZSTD_cParam_getBounds",
+      "bytes": "f30f1efa554889e5534883ec0881ff910100000f8457020000765581fff8030000777d81ffec0300000f86910000008d8f13fcffffb80100000048d3e04889c1a99f0200000f85d5000000bb00040000ba0000020081e160090000744e31c931dbba02000000eb430f1f84000000000081ffca0000000f87c401000083ff630f86ab00000083ef6483ff667713488d1500070900486304ba4801d03effe0669048c7c1d8ffffff31db31d24889d089da488b5df8c948c1e0204809c24889c8c381ffe7030000762881efe903000083ff03774d488d155608090031c9486304ba4801d03effe0662e0f1f84000000000081ff920100000f848400000081fff401",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 638,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_CCtxParams_setParameter",
+      "bytes": "f30f1efa554889e541544989fc5389d381fe920100000f8464060000774281feca000000777a83fe630f86f105000083ee6483fe667719488d1582060900486304b24801d03effe00f1f84000000000048c7c0d8ffffff5b415c5dc30f1f400081fef40100000f84440600008d8618fcffff83f81077d981eee903000083fe0f0f87da050000488d15cf070900486304b24801d03effe0660f1f84000000000081fe900100000f84d402000081fe91010000759c85d2740e81faffff0700b8000008000f4ed8bf91010000e8b0fcffff4883f888778139d389d00f4dc348c1fa2039d00f4fc248984989442450e965ffffff660f1f440000bff8030000e87efc",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 2335,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_CCtx_setParameter",
+      "bytes": "f30f1efa8b87000e000085c0742283fe6474088d469a83f8057775c74704010000004883c710e9b5f6ffff0f1f44000081fe900100007428773681fea4000000775e81fe9f00000077d883fe0a74d38d469c83f80776cb48c7c0d8ffffffc39085d274be4883bf700300000074b4ebe781fef401000074aa77468d8e6ffeffff48c7c0d8ffffff83f9017696c30f1f0048c7c0c4ffffffc30f1f8400000000008d8e38ffffff48c7c0d8ffffff83f9020f866cffffffc3660f1f8400000000008d8e18fcffff48c7c0d8ffffff83f9100f864cffffffc3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 215,
+      "first_block_size": 215,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_CCtx_setFParams",
+      "bytes": "f30f1efa554889e5534889fb4883ec188955e831d285f6488975e00f95c2bec8000000e8f8feffff4883f888760a488b5df8c9c30f1f40008b4de431d2bec90000004889df85c90f95c2e8d1feffff4883f88877d98b45e831d24889dfbeca00000085c00f94c2e8b4feffff31d2488b5df8c94883f888480f46c2c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 124,
+      "first_block_size": 124,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_checkCParams",
+      "bytes": "f30f1efa55bf650000004889e5534883ec088b5d10e8e6f2ffff4883f8880f87ec00000039d30f8ce400000048c1fa2039d30f8fd8000000bf670000008b5d14e8bbf2ffff4883f8880f87c100000039d30f8cb900000048c1fa2039d30f8fad000000bf660000008b5d18e890f2ffff4883f8880f879600000039d30f8c8e00000048c1fa2039d30f8f82000000bf680000008b5d1ce865f2ffff4883f888776f39d37c6b48c1fa2039d37f63bf690000008b5d20e846f2ffff4883f888775039d37c4c48c1fa2039d37f44bf6a0000008b5d24e827f2ffff4883f888773139d37c2d48c1fa2039d37f25bf6b0000008b5d28e808f2ffff4883f888771239d3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 285,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_CCtxParams_init_advanced",
+      "bytes": "f30f1efa4885ff7457554889e5534889fb4883ec28f30f6f4510f30f6f4d1c0f1104240f114c240ce8b3feffff4883c4204883f8887609488b5df8c9c30f1f00488d75104889df31d2e8529bffff488b5df831c0c9c3662e0f1f84000000000048c7c0ffffffffc3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 104,
+      "first_block_size": 104,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_CCtx_setCParams",
+      "bytes": "f30f1efa554889e5534889fb4883ec28f30f6f4510f30f6f4d1c0f1104240f114c240ce848feffff4883c4204883f888760e488b5df8c9c30f1f8400000000008b5510be650000004889dfe8c0fcffff4883f88877dc8b5514be670000004889dfe8aafcffff4883f88877c68b5518be660000004889dfe894fcffff4883f88877b08b551cbe680000004889dfe87efcffff4883f888779a8b5520be690000004889dfe868fcffff4883f88877848b5524be6a0000004889dfe852fcffff4883f8880f876affffff8b5528be6b0000004889dfe838fcffff31d24883f888480f46c2e94bffffff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 231,
+      "first_block_size": 231,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_CCtx_setParams",
+      "bytes": "f30f1efa554889e5534889fb4883ec28f30f6f4510f30f6f4d1c0f1104240f114c240ce858fdffff4883c4204883f888760e488b5df8c9c30f1f840000000000488b752c8b55344889dfe8b1fcffff4883f88877ddf30f6f5510f30f6f5d1c4883ec204889df0f1114240f115c240ce89cfeffff4883c42031d2488b5df8c94883f888480f46c2c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 136,
+      "first_block_size": 136,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_adjustCParams",
+      "bytes": "f30f1efa554889e541574989f7415641554154534883ec48448b4520448b551c48897db8448b4d14bf650000008b5d10488955b0448b6518448b6d24448b752864488b042528000000488945c831c0448945a84489559044894dace890efffffbf670000004889d048c1f82039c30f4ec339d389d30f4dd8e873efffff448b4dacbf660000004889d048c1f8204139c1410f4ec14139d14189d1440f4dc844894dace849efffffbf680000004889d048c1f8204139c4410f4ec44139d44189d4440f4de0e827efffff448b5590448b4dac660f6ec34889d066410f6eccbf6900000048c1f82066410f6ed94139c2660f62c3410f4ec24139d24189d2440f4dd0",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 498,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_generateSequences",
+      "bytes": "f30f1efa554889e541574989f741564989d641554154534889fb4c89c74883ec1848894dc84c8945c0e8e291ffff4889c74989c5e81765feff4885c074624c89bb800300004989c44c89ea4889df4c89b3900300004c8b45c04889c6c7837803000001000000488b4dc848c7838803000000000000e8469400004c89e7e8be63feff488b83880300004883c4185b415c415d415e415f5dc30f1f8400000000004883c41848c7c0c0ffffff5b415c415d415e415f5dc3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 182,
+      "first_block_size": 182,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_compressEnd",
+      "bytes": "f30f1efae947feffff",
+      "mask": "ffffffffffffffffff",
+      "func_size": 9,
+      "first_block_size": 9,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "zstd.ZSTD_estimateCDictSize_advanced",
+      "bytes": "f30f1efa55b8010000004889c24889e58b4d1848d3e28b4d1448d3e08b4d284801d083e90348c1e00283f9027711837d100e760b4883c23f4883e2c04801d04805403a000083fe01740b4883c7074883e7f84801f85dc3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 87,
+      "first_block_size": 87,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_sizeof_CDict",
+      "bytes": "f30f1efa4885ff7427488b4f20b800000000bac01700004839f9480f44d0488b47284829c84801d0c30f1f800000000031c0c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 51,
+      "first_block_size": 51,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_freeCDict",
+      "bytes": "f30f1efa4885ff0f849b000000554889e541564155415453488b77204889fb4c8ba7a01700004c8bafa81700004839f7733e660fefc048c74760000000000f1147200f1147300f1147400f1147504d85e4747d4c89ef41ffd44889de4c89ef41ffd45b31c0415c415d415e5dc30f1f00660fefc04c8b772848c74760000000000f1147200f1147300f1147400f1147504885f6751b4c39f772c84d85e475baeb370f1f800000000031c0c30f1f4400004d85e474334c89ef41ffd44c39f373995b31c0415c415d415e5dc30f1f4400004889f7e89858feff4889dfe89058feffe97dffffff0f1f004889f7e88058feff4c39f30f8269ffffffebdd",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 251,
+      "first_block_size": 251,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_getDictID_fromCDict",
+      "bytes": "f30f1efa4885ff74078b87b0170000c331c0c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffff",
+      "func_size": 19,
+      "first_block_size": 19,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_CStreamInSize",
+      "bytes": "f30f1efab800000200c3",
+      "mask": "ffffffffffffffffffff",
+      "func_size": 10,
+      "first_block_size": 10,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "zstd.ZSTD_maxCLevel",
+      "bytes": "f30f1efab816000000c3",
+      "mask": "ffffffffffffffffffff",
+      "func_size": 10,
+      "first_block_size": 10,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "zstd.ZSTD_minCLevel",
+      "bytes": "f30f1efab80000feffc3",
+      "mask": "ffffffffffffffffffff",
+      "func_size": 10,
+      "first_block_size": 10,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "zstd.ZSTD_defaultCLevel",
+      "bytes": "f30f1efab803000000c3",
+      "mask": "ffffffffffffffffffff",
+      "func_size": 10,
+      "first_block_size": 10,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "zstd.ZSTD_compress_usingDict",
+      "bytes": "f30f1efa554889e54157415641554d89cd41544d89c4534889fb488dbd50ffffff4c8dbbb00100004881eca80000004c8b75108b45184889b540ffffff48898d30ffffff31c948899538ffffff89c664488b142528000000488955c831d24d85c94c89e289854cffffff490f45ce4531c0e8dafdffff8b854cffffffba030000004c89ff660f6f8550fffffff30f6f8d5cffffffc745bc01000000488db570ffffff85c048c745c0000000000f44c20f2945a00f114dac660f6f55a0660f6f5db089c248c74590000000000f299570ffffff0f295d80e8f588ffff6a0031c94c89f241544d89f94531c04c89ee4889dfe8bb3308005a594883f8887623488b55",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 354,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_compressCCtx",
+      "bytes": "f30f1efa554889e541514531c96a00e87cfeffffc9c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 22,
+      "first_block_size": 22,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_compressBegin_usingDict",
+      "bytes": "f30f1efae9e7feffff",
+      "mask": "ffffffffffffffffff",
+      "func_size": 9,
+      "first_block_size": 9,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "zstd.ZSTD_compressBegin",
+      "bytes": "f30f1efa89f131d231f6e9d1feffff",
+      "mask": "ffffffffffffffffffffffffffffff",
+      "func_size": 15,
+      "first_block_size": 15,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "zstd.ZSTD_estimateCDictSize",
+      "bytes": "f30f1efa5548c7c2ffffffff41b8020000004889e5534889fb4889d9488d7dc04883ec3864488b042528000000488945e831c0e858fbffff660f6f45c04883ec2031f6f30f6f4dcc4889df0f1104240f114c240ce837f9ffff488b55e864482b1425280000007506488b5df8c9c3e87d53feff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 115,
+      "first_block_size": 115,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_getCParams",
+      "bytes": "f30f1efa5541b8030000004889e5534889fb4883ec1864488b042528000000488945e831c04885d248c7c0ffffffff480f44d0e8d8faffff488b45e864482b04252800000075094889d8488b5df8c9c3e81b53feff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 85,
+      "first_block_size": 85,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_compressBegin_usingCDict_advanced",
+      "bytes": "f30f1efa89c9e925feffff",
+      "mask": "ffffffffffffffffffffff",
+      "func_size": 11,
+      "first_block_size": 11,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "zstd.ZSTD_compressBegin_usingCDict",
+      "bytes": "f30f1efa49c7c0ffffffff31d231c9e90cfeffff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 20,
+      "first_block_size": 20,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_compress_usingCDict",
+      "bytes": "f30f1efa554889e541574d89c741564989ce31c941554989d5ba0100000041544989f44c89ce534889fb4883ec18e8cdfdffff4883f88876174883c4185b415c415d415e415f5dc30f1f8400000000004883c4184d89f84c89f14c89ea4c89e64889df5b415c415d415e415f5de97ef4ffff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 114,
+      "first_block_size": 114,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_compress_usingCDict_advanced",
+      "bytes": "f30f1efa554889e541574d89c741564989ce41554989d541544989f44c89ce534889fb4883ec188b4d18488b5510e84dfdffff4883f88876174883c4185b415c415d415e415f5dc30f1f8400000000004883c4184d89f84c89f14c89ea4c89e64889df5b415c415d415e415f5de9fef3ffff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 114,
+      "first_block_size": 114,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_getParams",
+      "bytes": "f30f1efa5541b8030000004889e5534889fb488d7da04883ec5864488b042528000000488945e831c04885d248c7c0ffffffff480f44d0e874f7ffff660f6f45a0f30f6f4dacc745dc0100000048c745e0000000000f2945c048c74320000000000f114dcc660f6f55c0660f6f5dd00f11130f115b10488b45e864482b04252800000075094889d8488b5df8c9c3e87d4ffeff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 147,
+      "first_block_size": 147,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_registerSequenceProducer",
+      "bytes": "f30f1efa4885d27437b8010000004889b7601400004889976814000048c787701400000000000048c78778140000000000008987c8000000c30f1f8000000000660fefc031c08987c80000000f1187601400000f118770140000c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 91,
+      "first_block_size": 91,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_createCDict_advanced2",
+      "bytes": "f30f1efa554889e541574156415541544189d4534881ec780100004889bd88fefffff3410f6f6820f30f6f5510f3410f6f18f3410f6f6010f3410f6f784064488b042528000000488945c831c00f29ad10fffffff3410f6fa890000000f3410f6f4850f3410f6f7030f3410f6f40600f299df0feffff66490f7ed7f3410f6f58700f29a500ffffff4d85fff3410f6fa0800000000f296d800f12ea0f94c266480f7ee80f29bd30ffffff0f298d40ffffff4885c00f299570feffff0f94c00f29b520ffffff0f298550ffffff0f299d60ffffff0f29a570fffffff3410f6fb0a0000000f3410f6fb8b0000000f3410f6f88c00000000f2975900f297da00f294d",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 1309,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_compressBegin_advanced",
+      "bytes": "f30f1efa554889e5415741564c8dbdf0feffff4989ce41554989d531d241544989f4488d7510534889fb4c89ff4881ece800000064488b042528000000488945c831c0e84848fffff30f6f85f4feffff4883ec200f110424f30f6f8d00ffffff0f114c240ce866abffff4883c4204883f888771c6a0031c94c89ea4d89f941564531c04c89e64889dfe8e2f207005a59488b55c864482b142528000000750f488d65d85b415c415d415e415f5dc3e8bd14feff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 179,
+      "first_block_size": 179,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_compress_advanced",
+      "bytes": "f30f1efa554889e541574989cf41564989d641554d89cd41544d89c4534889fb4883ec38f30f6f4518488975c80f110424f30f6f4d240f114c240ce8d0aaffff4883c4204883f8887616488d65d85b415c415d415e415f5dc30f1f80000000004c8d8bb0010000488d751831d24c89cf4c894dc0e85747ffff6a004c8b4dc031c94154488b55104531c04c89ee4889dfe81bf207005a594883f88877ad488b75c84d89e04c89f94c89f24889dfe8deb7ffff488d65d85b415c415d415e415f5dc3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 193,
+      "first_block_size": 193,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_compress",
+      "bytes": "f30f1efa554889e54157415641554154534881ec0010000048830c24004881eca80400004889bd38ebffff4989cf4989d64989f54c8da540ebffffb9900200004589c14c89e764488b042528000000488945c831c0f348ab0fa231c983f8067614b8070000000fa2f7d331c981e3080100000f94c1be020000004c89e744898d34ebffff898d48ebffffe8e196ffff4c89ea4d89f84c89f1488bb538ebffff448b8d34ebffff4c89e7e8f2bdffff4c89e74989c5e87793ffff488bbdb8f9ffffe8ab5d0800488bb5d0edffff660fefc048c785b8f9ffff00000000488b8598eeffff488bbda0eeffff48c78510eeffff000000000f2985d0edffff0f2985e0ed",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 335,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_createCDict_advanced",
+      "bytes": "f30f1efa554889e541574189cfb91a00000041564189d641554989f531f641544989fc53488d9df0feffff4889df4881ece800000064488b042528000000488945c831c0f348ab4889dfe8b142ffff488b45404883ec204489f2f30f6f4d10f30f6f551c4989d84489f9f30f6f4530488945984c89ee4c89e70f118df4feffff0f1145880f119500ffffff48894424100f110424e867f7ffff488b55c864482b142528000000750f488d65d85b415c415d415e415f5dc3e8d411feff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 188,
+      "first_block_size": 188,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_createCDict",
+      "bytes": "f30f1efa554889f141b8020000004889e541554989fd4154488d7db04989f45389d348c7c2ffffffff89de4883ec3864488b042528000000488945d831c0e82db9ffff488b05c68c080031c931d2660f6f05aa8c08004883ec404c89e64c89ef48894424300f11442420660f6f4db00f110c24f30f6f55bc0f1154240ce8befeffff4883c4404885c0741085dbba030000000f44da8998b4170000488b55d864482b142528000000750b488d65e85b415c415d5dc3e81611feff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 186,
+      "first_block_size": 186,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_createCDict_byReference",
+      "bytes": "f30f1efa554889f141b8020000004889e541554989fd4154488d7db04989f45389d348c7c2ffffffff89de4883ec3864488b042528000000488945d831c0e86db8ffff4883ec4031c9ba01000000660f6f05ea8b0800488b05f38b08004c89e64c89ef48894424300f11442420660f6f4db00f110c24f30f6f55bc0f1154240ce8fbfdffff4883c4404885c0741085dbba030000000f44da8998b4170000488b55d864482b142528000000750b488d65e85b415c415d5dc3e85310feff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 189,
+      "first_block_size": 189,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_initStaticCDict",
+      "bytes": "f30f1efa554889e541574589cf41564589c641554989d541544989cc534889fb4881ecf80000008b4d188b7d1064488b042528000000488945c831c0b8010000004889c248d3e28b4d1448d3e08b4d284801d0448d41fd48c1e002b9020000004183f802771583ff0e76104883c23fb9010000004883e2c04801d0498d54240731ff4883e2f84183fe01480f44d7f6c3070f85810100004c8d0433488dbbc0170000898decfeffff4939f80f82670100004885db0f845e01000048897b304d89c1488d8402403a000048897b384983e1c048897b40488b3d2c9d080048895b204c8943284c894b484c894b50c6435800c7435c0000000048897b604839c60f82",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 573,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_initStaticCStream",
+      "bytes": "f30f1efae9d73bffff",
+      "mask": "ffffffffffffffffff",
+      "func_size": 9,
+      "first_block_size": 9,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "zstd.ZSTD_createCStream_advanced",
+      "bytes": "f30f1efae91792ffff",
+      "mask": "ffffffffffffffffff",
+      "func_size": 9,
+      "first_block_size": 9,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "zstd.ZSTD_createCStream",
+      "bytes": "f30f1efa660f6f0514890800488b051d890800554889e54883ec2048894424100f110424e8c7ffffffc9c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 43,
+      "first_block_size": 43,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_freeCStream",
+      "bytes": "f30f1efae9978effff",
+      "mask": "ffffffffffffffffff",
+      "func_size": 9,
+      "first_block_size": 9,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "zstd.ZSTD_CStreamOutSize",
+      "bytes": "f30f1efa55bf000002004889e5e81e3bffff5d4883c007c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 24,
+      "first_block_size": 24,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_resetCStream",
+      "bytes": "f30f1efa554885f648c7c0ffffffff4889e541544989fc534889f3be01000000480f44d8e8f790ffff4883f88877154889de4c89e7e8d644ffff31d24883f888480f46c25b415c5dc3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 73,
+      "first_block_size": 73,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_initCStream_usingCDict_advanced",
+      "bytes": "f30f1efa554889e541554d89c541544989f4be01000000534889fb4883ec18488955d0894dd8e8a590ffff4883f888760f4883c4185b415c415d5dc30f1f40004c89ee4889dfe87544ffff4883f88877e0488b45d04c89e64889df488943308b45d8894338e83692ffff31d24883f888480f46c24883c4185b415c415d5dc3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 127,
+      "first_block_size": 127,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_initCStream_usingCDict",
+      "bytes": "f30f1efa554889e541544989f4be01000000534889fbe83590ffff4883f88877154c89e64889dfe8f491ffff31d24883f888480f46c25b415c5dc3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 59,
+      "first_block_size": 59,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_initCStream_advanced",
+      "bytes": "f30f1efa554889e541564989ce41554989d541544989f4534889fb4885c97507837d2c014d19f6be010000004889dfe8dc8fffff4883f8887616488d65e05b415c415d415e5dc3660f1f8400000000004c89f64889dfe8a543ffff4883f88877d9f30f6f45104883ec200f110424f30f6f4d1c0f114c240ce863a2ffff4883c4204883f88877b3488b452cf30f6f55104c89ea4c89e6f30f6f5d1cc7433c000000004889df488943308b45340f1153148943380f115b20e8448fffff31d24883f888480f46c2488d65e05b415c415d415e5dc3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 211,
+      "first_block_size": 211,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_initCStream_usingDict",
+      "bytes": "f30f1efa554889e541564989d641554989f5be0100000041544189cc534889fbe80b8fffff4883f888760d5b415c415d415e5dc30f1f40004489e2be640000004889dfe858a0ffff4883f88877dd4c89f24c89ee4889dfe8c48effff31d25b415c4883f888415d415e480f46c25dc3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 111,
+      "first_block_size": 111,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_initCStream_srcSize",
+      "bytes": "f30f1efa5548c7c0ffffffff4889e541554989d541544189f4be01000000534889fb4883ec084885d24c0f44e8e88e8effff4883f88876104883c4085b415c415d5dc30f1f44000031f64889dfe83e90ffff4883f88877e04489e2be640000004889dfe8c89fffff4883f88877ca4c89ee4889dfe83742ffff31d24883f888480f46c24883c4085b415c415d5dc3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 142,
+      "first_block_size": 142,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_initCStream",
+      "bytes": "f30f1efa554889e541544189f4be01000000534889fbe8158effff4883f888760f5b415c5dc3662e0f1f84000000000031f64889dfe8c68fffff4883f88877e14489e24889dfbe64000000e8509fffff31d25b415c4883f8885d480f46c2c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 95,
+      "first_block_size": 95,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_compressStream2",
+      "bytes": "f30f1efa554889e5415749c7c7baffffff415641554154534881ec980000004889758848895590894d8064488b042528000000488945c831c0488b4610483946080f82d10000004989fe488b420889cf4889d3488b4a1049c7c7b8ffffff4839c80f82b100000049c7c7d6ffffff83ff020f87a1000000458bbe000e00004585ff0f85b9000000498bb6200e0000488d14304829ca4183be8c000000010f855d02000085ff0f85550200004881faffff01000f87480200004885f6741d498bb6080e00004839330f850f030000493b8e100e00000f8502030000488b4d9041837e10014d19fff30f6f39488941104183e7044983c702410f11be080e0000488b",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 7122,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_compressStream",
+      "bytes": "f30f1efa5531c94889e5534889fb4883ec08e809e4ffff4883f888760b488b5df8c9c30f1f4400008b832c01000085c07f2e83bb5c01000001744d488b83d80d0000482b83d00d000075d2488b83d8020000488b5df8c9c30f1f840000000000488b93780e0000488b5df8488b82f80000004889c1482b8a30010000c9480f45c1c3660f1f440000488b83d8020000482b83200e0000eb85",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 152,
+      "first_block_size": 152,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_compressStream2_simpleArgs",
+      "bytes": "f30f1efa5566480f6ec24889e54154534889cb488d55b04883ec404c8b651064488b042528000000488945e831c00f16018b4d18488975d00f1145d866490f6ec1488d75d0410f1604244c8945b00f1145b8e829e3ffff488b55e0488913488b55c049891424488b55e864482b14252800000075094883c4405b415c5dc3e8ddcffdff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 131,
+      "first_block_size": 131,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_compress2",
+      "bytes": "f30f1efa554889e541574d89c741564989ce41554989d54154534889fb4883ec38488975a8be010000004c8ba78c00000064488b042528000000488945c831c0e81b53ffff488b75a8488d4dc04c89ea488b05095e08004d89f94d89f04889df48c745c0000000004889838c000000488d45b848c745b8000000006a0250e8edfeffff4c89a38c0000005a594883f88877094885c07529488b45c0488b55c864482b142528000000751f488d65d85b415c415d415e415f5dc30f1f800000000048c7c0baffffffebd2e802cffdff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 206,
+      "first_block_size": 206,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_flushStream",
+      "bytes": "f30f1efa554889e54883ec2064488b042528000000488945f831c083bf5c01000001743c48c745e00000000031c048c745f000000000488d55e0b901000000488945e8e8d8e1ffff488b55f864482b1425280000007522c9c30f1f8000000000f30f6f87080e0000488b87180e00000f2945e0488945f0ebbde882cefdff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 126,
+      "first_block_size": 126,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_endStream",
+      "bytes": "f30f1efa554889e5534889fb4883ec2864488b042528000000488945e831c083bf5c01000001745848c745d000000000660fefc00f1145d8488d55d0b9020000004889dfe857e1ffff4883f88877198b8b2c01000085c97f0f8b93040e000085d2743d0f1f440000488b55e864482b142528000000753c488b5df8c9c30f1f00f30f6f8f080e0000488b87180e00000f294dd0488945e0eb9f0f1f80000000008b9304010000c1e2024863d2488d441003ebb5e8c8cdfdff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 184,
+      "first_block_size": 184,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_compressSequences",
+      "bytes": "f30f1efa554889e541574d89c741564989f6415541544989d4534889fb4881eca800000048894d984c8b6d104889b550ffffffbe020000004c894da84c89ea64488b042528000000488945c831c0e82dc3ffff4889c14883f888762c488b45c864482b0425280000000f855e060000488d65d84889c85b415c415d415e415f5dc30f1f8000000000488d83e00000004c89f74c89e94c89e6448b83800200004889c248898560ffffffe8723dffff448b93040100004d89e34901c64929c34585d274754d85ed0f856c0300004983fb030f865205000041c7060100000041bc030000004a8d0c208b830401000085c00f8467ffffff488dbbf802000048894da0",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 1746,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_initStaticDDict",
+      "bytes": "f30f1efa554489c04589c84889e541544989cc534889fb4889f74889d64883ec10f6c3070f95c283f8017454488d89d86a00004839cf725584d2755185c0751d488d8bd86a00004c89e244894dec4889cfe8aa02faff448b45ec4889c6b9010000004c89e24889dfe81380ffff4883f888771a4883c4104889d85b415c5dc3904881ffd76a0000760484d274d04883c41031db4889d85b415c5dc3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 155,
+      "first_block_size": 155,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_createDDict_advanced",
+      "bytes": "f30f1efa554889e541574189cf41564189d641554154534883ec08488b45104885c00f94c148837d18000f94c238d10f858b0000004989fc4989f5488b7d204885c0745cbed86a0000ffd04889c34885db746d488b4520f30f6f45104589f84489f14c89ea4c89e64889df488983d06a00000f1183c06a0000e87272ffff4883f888772c4883c4084889d85b415c415d415e415f5dc3662e0f1f840000000000bfd86a0000e8f6f4f9ff4889c3eb9f904889dfe8581300000f1f84000000000031dbebc0",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 196,
+      "first_block_size": 196,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_createDDict",
+      "bytes": "f30f1efa55660fefc031c931d24889e54883ec4048c7442410000000000f110424e80affffffc9c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 40,
+      "first_block_size": 40,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_createDDict_byReference",
+      "bytes": "f30f1efa55660fefc031c9ba010000004889e54883ec4048c7442410000000000f110424e8d7feffffc9c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 43,
+      "first_block_size": 43,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_freeDDict",
+      "bytes": "f30f1efa4885ff745f554889e541554154534889fb4883ec08488b374c8ba7c86a00004c8bafd06a00004885f674214d85e4743c4c89ef41ffd44889de4c89ef41ffd44883c40831c05b415c415d5dc34d85e475e50f1f004889dfe820e0f9ffebe1660f1f44000031c0c30f1f4400004889f7e808e0f9ffebde",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 122,
+      "first_block_size": 122,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_estimateDDictSize",
+      "bytes": "f30f1efa4881c7d86a0000b8d86a000083fe01480f45c7c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 24,
+      "first_block_size": 24,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_sizeof_DDict",
+      "bytes": "f30f1efa4885ff741748833f007419488b47104805d86a0000c3660f1f44000031c0c30f1f440000b8d86a0000c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 46,
+      "first_block_size": 46,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_getDictID_fromDDict",
+      "bytes": "f30f1efa4885ff74078b87b46a0000c331c0c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffff",
+      "func_size": 19,
+      "first_block_size": 19,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_sizeof_DCtx",
+      "bytes": "f30f1efa4885ff7437554889e5534889fb4883ec08488bbfe8750000e8bffcffff4889c2488b834876000048038328760000488d8410f8760100488b5df8c9c331c0c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 67,
+      "first_block_size": 67,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_estimateDCtxSize",
+      "bytes": "f30f1efab8f8760100c3",
+      "mask": "ffffffffffffffffffff",
+      "func_size": 10,
+      "first_block_size": 10,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "zstd.ZSTD_initStaticDCtx",
+      "bytes": "f30f1efa40f6c7070f85020100004881fef77601000f86f500000055660fefc031c048c787d87400000000000048c787fc750000000000004889e55348c78728760000000000000fa248c787487600000000000031c9c787187600000000000048c7876876000000000000c7877076000000000000c7877c7600000000000048c787e8760100000000000f1187e875000083f806775a488d87f8760100898fe0750000488b5df8488987207600004889f848c7873876000001000008c787807600000000000048c787987500000000000048c787087600000000000048c78710760000000000004889b7d8750000c9c3b8070000000fa2f7d331c981e3080100",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 275,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_createDCtx_advanced",
+      "bytes": "f30f1efae997ebffff",
+      "mask": "ffffffffffffffffff",
+      "func_size": 9,
+      "first_block_size": 9,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "zstd.ZSTD_createDCtx",
+      "bytes": "f30f1efa660f6f05a4560400488b05ad560400554889e54883ec2048894424100f110424e867ebffffc9c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 43,
+      "first_block_size": 43,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_freeDCtx",
+      "bytes": "f30f1efa4885ff0f847b0100005548c7c0c0ffffff4889e5415641554154534883bfd8750000004889fb0f85ea0000004c8ba7b87500004c8bb7c0750000488bbfe8750000e836faffff488bb320760000660fefc0c78300760000000000000f1183e87500004885f60f84b90000004d85e40f84580100004c89f741ffd44c8bab6876000048c78320760000000000004d85ed744b8b837076000083f8060f84fc00000083f8070f84b300000083f8050f8582000000498b7d00e841daf9ff498b7d30e838daf9ff498b7d48e82fdaf9ff4c89efe827daf9ffeb5d0f1f4400004c8bab087600004d85ed7423498b75004885f674064c89f741ffd44c89ee4c89",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 545,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_copyDCtx",
+      "bytes": "f30f1efaba20760000e9a2d9f9ff",
+      "mask": "ffffffffffffffffffffffffffff",
+      "func_size": 14,
+      "first_block_size": 14,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "zstd.ZSTD_isFrame",
+      "bytes": "f30f1efa31c04883fe0376208b17b8010000008d8adb4ad00283f903760e83e2f031c081fa502a4d180f94c0c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 45,
+      "first_block_size": 45,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_isSkippableFrame",
+      "bytes": "f30f1efa31c04883fe0376108b0783e0f03d502a4d180f94c00fb6c0c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 29,
+      "first_block_size": 29,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_frameHeaderSize",
+      "bytes": "f30f1efa48c7c0b8ffffff4883fe0476480fb64704488d0d544c040089c289c683e003c0ea0640c0ee050fb6fa4889fa488b0cf9488d3d554c040048030cc789f0f7d083e00185d20f94c2488d4401050fb6d24821f24801d0c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 90,
+      "first_block_size": 90,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_getFrameHeader_advanced",
+      "bytes": "f30f1efa554989f94889e541544989f4534889d34883ec1064488b042528000000488945e831c085c90f8491000000b8010000004885d274674885f60f84fe010000660fefc041ba010000000f11070f1147100f11472083f9010f84d0000000418b04243d28b52ffd0f84c100000083e0f03d502a4d180f8596000000b8080000004883fb077618418b44240441c741140100000049890131c0660f1f440000488b55e864482b1425280000000f85030200004883c4105b415c5dc30f1f40004885d2745b4885f60f84720100004883fa040f8788010000488d7de4c745e428b52ffde808d8f9ff817de428b52ffd4889c7742c4889da4c89e6c745e4502a4d",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 699,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_getFrameHeader",
+      "bytes": "f30f1efa31c9e9f5fbffff",
+      "mask": "ffffffffffffffffffffff",
+      "func_size": 11,
+      "first_block_size": 11,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "zstd.ZSTD_getFrameContentSize",
+      "bytes": "f30f1efa554889f24889e54883ec4064488b042528000000488945f831c04883fe0376748b078d88db4ad00283f90277678d88e04ad0023d25b52ffd0f849e00000083f9060f847e0000004883fe04741f488d45c04889fe4889c7e8409afaff4885c0750b488b45c04885c07512669048c7c0ffffffff660f1f840000000000488b55f864482b142528000000756ec9c30f1f8000000000488d45c04889fe4889c7e889fcffff4885c07514837dd40174ce488b45c0ebc80f1f84000000000048c7c0feffffffebb7488d45c04889fe4889c7e81854faff4885c07488eb9190488d45c04889fe4889c7e82116faff4885c00f8578ffffffe968ffffffe88ed0",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 258,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_readSkippableFrame",
+      "bytes": "f30f1efa554889e54157415641554154534883ec184983f8070f86880000008b018b59044989fe4989d74989cc4d89c58945cc83fbf70f879c000000488d43084939c07253488975c04889cf4c89c6e84cf7ffff4c8b4dc085c0746c4939d90f82a00000004885db74054d85f675414d85ff740e448b75cc4181ee502a4d184589374883c4184889d85b415c415d415e415f5dc30f1f40004c89c64889cfe8fdf6ffff85c0742148c7c3b8ffffffebd2498d7424084889da4c89f7e850d0f9ffebad660f1f44000048c7c3f2ffffffebb10f1f8000000000488975c04889cf4c89c6e8b9f6ffff4c8b4dc085c074d94983fdf176b248c7c3eaffffff4939d90f",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 273,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_getDecompressedSize",
+      "bytes": "f30f1efa554889e5e8c3fdffff31d25d4883f8fe480f43c2c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 25,
+      "first_block_size": 25,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_findFrameCompressedSize",
+      "bytes": "f30f1efa554889f24889fe4889e54883ec2064488b042528000000488945f831c0488d45e04889c7e8c3faffff488b45e8488b55f864482b1425280000007502c9c3e8f9cef9ff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 71,
+      "first_block_size": 71,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_findDecompressedSize",
+      "bytes": "f30f1efa554889e541554154534889f34883ec084883fe040f868b0000004989fc4531ed418b042483e0f03d502a4d1875464883fb077628418b44240483f8f7771e4883c0084839c372154829c34901c44883fb0477cd4885db740b0f1f400049c7c5feffffff4883c4084c89e85b415c415d5dc30f1f004889de4c89e7e8ddfcffff4883f8fd771b4c01e84989c572cf4889de4c89e7e814ffffff4883f88876a9ebbc4989c5ebbe4531edeba9",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 174,
+      "first_block_size": 174,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_decompressBound",
+      "bytes": "f30f1efa554889e5415641554154534883ec2064488b042528000000488945d831c04885f6746c4989fc4889f34c8d75c04531edeb1b662e0f1f8400000000004883f88877274901c44901d54829c374234889da4c89e64c89f7e891f9ffff488b55d0488b45c84883fafe75d349c7c5feffffff488b45d864482b04252800000075154883c4204c89e85b415c415d415e5dc34531edebdce8a3cdf9ff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 157,
+      "first_block_size": 157,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_decompressionMargin",
+      "bytes": "f30f1efa554889e54157415641554154534881ec8800000064488b042528000000488945c831c04885f60f8401010000488d8570ffffff4989fc4889f34531ed48898568ffffff488d4590c7855cffffff0000000048898560ffffffeb406690488b8570ffffff8b55a88b4db0488d04404801d031d285c98b8d5cffffff0f95c2488d04904901c58b45a039c10f43c14d01fc89855cffffff4c29fb7457488bbd68ffffff4889da4c89e6e8a0f8ffff4889da4c89e64c8b7580488bbd60ffffff4c8bbd78ffffffe873f8ffff4883f888772d4983ff88774f4983fefe74498b75a485f60f8476ffffff4d01fd4d01fc4c29fb75a9448bbd5cffffff4b8d042f",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 314,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_insertBlock",
+      "bytes": "f30f1efa4889d0488b97c07400004839d674274885c07422488997d87400004889f1482b97c87400004829d14889b7c874000048898fd07400004801c64889b7c0740000c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 69,
+      "first_block_size": 69,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_nextSrcSizeToDecompress",
+      "bytes": "f30f1efa488b87e0740000c3",
+      "mask": "ffffffffffffffffffffffff",
+      "func_size": 12,
+      "first_block_size": 12,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "zstd.ZSTD_nextInputType",
+      "bytes": "f30f1efa8b872c75000031d283e80283f805770a488d15f58204008b148289d0c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 33,
+      "first_block_size": 33,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_decompressBegin",
+      "bytes": "f30f1efa5531c04889e5534889fb4883ec0848833d36160500007405e87fc8f9ff83bb9875000001660fefc0488983f07601004819c00f11831875000083e0040f1183c07400004883c0010f1183d0740000660f6f05d6560400488983e074000048b801000000040000004889833c680000488d4320488903488d833018000048894308488d832810000048894310488d83382800004889431831c0c783382800000c00000cc783f875000000000000c78344680000080000000f118328750000488b5df8c9c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 199,
+      "first_block_size": 199,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_decompressBegin_usingDict",
+      "bytes": "f30f1efa554889e541554989d541544989f4534889fb4883ec08e811ffffff4883f888770c4d85e474054d85ed751131c04883c4085b415c415d5dc30f1f40004983fd07760a41813c2437a430ec7440488b83c07400004c89e2488983d8740000482b83c87400004829c24c89a3c87400004d01ec31c0488993d07400004c89a3c0740000ebaa660f1f840000000000418b4424044c89ea488d7b204c89e68983f8750000e8c6fbffff4889c248c7c0e2ffffff4883fa880f8773ffffff488b050b5604004c01e24d01ec4889d148898330750000488b83c07400004c89a3c0740000488983d8740000482b83c87400004829c1488993c874000031c048898b",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 265,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_decompressBegin_usingDDict",
+      "bytes": "f30f1efa554889e541544989fc534885f60f84d9000000488b4610480346084889f3483987d87400000f95c00fb6c08987fc750000e8e6fdffff4883f8880f87a3000000f30f7e43088b83b46a000041898424f875000066480f7ec04803431066480f6ec88b83b86a0000660f6fd1660f6cd0660f6cc1410f119424c0740000410f118424d074000085c07473488b052c5504004989842430750000488d431849890424488d83281800004989442408488d83201000004989442410488d83302800004989442418488b8334680000498984243c6800008b833c680000418984244468000031c05b415c5dc30f1f4000e82bfdffff4883f88877ec31c0ebe890",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 272,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_getDictID_fromDict",
+      "bytes": "f30f1efa31c04883fe077608813f37a430ec7404c30f1f008b4704c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 28,
+      "first_block_size": 28,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_getDictID_fromFrame",
+      "bytes": "f30f1efa55660fefc04889f24889fe4889e54883ec4064488b042528000000488945f831c0488d45c00f2945c04889c70f2945d00f2945e0e863f1ffff4889c231c04883fa8877038b45dc488b55f864482b1425280000007502c9c3e89fc5f9ff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 97,
+      "first_block_size": 97,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_createDStream",
+      "bytes": "f30f1efa660f6f05b4400400488b05bd400400554889e54883ec2048894424100f110424e877d5ffffc9c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 43,
+      "first_block_size": 43,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_initStaticDStream",
+      "bytes": "f30f1efae9a7e8ffff",
+      "mask": "ffffffffffffffffff",
+      "func_size": 9,
+      "first_block_size": 9,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "zstd.ZSTD_createDStream_advanced",
+      "bytes": "f30f1efae957d5ffff",
+      "mask": "ffffffffffffffffff",
+      "func_size": 9,
+      "first_block_size": 9,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "zstd.ZSTD_freeDStream",
+      "bytes": "f30f1efae9e7e9ffff",
+      "mask": "ffffffffffffffffff",
+      "func_size": 9,
+      "first_block_size": 9,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "zstd.ZSTD_DStreamInSize",
+      "bytes": "f30f1efab803000200c3",
+      "mask": "ffffffffffffffffffff",
+      "func_size": 10,
+      "first_block_size": 10,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "zstd.ZSTD_DCtx_refDDict",
+      "bytes": "f30f1efa8b971876000048c7c0c4ffffff85d2756b554889e541574156415541544989f4534889fb4883ec18488bbfe8750000e808e4ffff660fefc0c78300760000000000000f1183e87500004d85e4741a83bb10760000014c89a3f0750000c78300760000ffffffff741c31c04883c4185b415c415d415e415f5dc30f1f00c30f1f8000000000488b83b87500004c8bbb08760000488b8bb0750000488945c0488b83c0750000488945c84d85ff0f84c3000000498b47104d8b6f0848c1e0024c39e80f82900000004d89ee4b8d5c2d0049c1e6044c89f64885c90f841e010000488b7dc8ffd14c89f231f64889c7e84bc4f9ff4d8b374d8b6f084889c749",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 679,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_dParam_getBounds",
+      "bytes": "f30f1efa83ff64742781efe803000083ff054819c031d231c948f7d04883e0d883ff050f92c148c1e1204809cac36690b91f000000ba0a00000031c048c1e1204809cac3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 68,
+      "first_block_size": 68,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_DCtx_setMaxWindowSize",
+      "bytes": "f30f1efa554889e541544989fcbf64000000534889f3e895ffffffb8010000004889d14889c648c7c2c4ffffff48d3e648c1f92048d3e0418b8c241876000085c975144839d872184839f3721349899c243876000031d25b4889d0415c5dc39048c7c2d6ffffff5b415c4889d05dc3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 111,
+      "first_block_size": 111,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_DCtx_getParameter",
+      "bytes": "f30f1efa83fe6474778d8618fcffff83f804777c81eee903000083fe037751488d0dea6b0400486304b14801c83effe08b879c750000890231c0c30f1f4400008b8714760000890231c0c30f1f4400008b87107600008902ebde660f1f4400008b87807600008902ebce660f1f4400008b87987500008902ebbe660f1f4400000fbd87387600008902ebad0f1f44000048c7c0d8ffffffc3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 152,
+      "first_block_size": 152,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_DCtx_setParameter",
+      "bytes": "f30f1efa8b8f1876000048c7c0c4ffffff85c9754b554889e541544189d4534889fb83fe640f84650100008d8618fcffff83f8040f87a601000081eee903000083fe030f8717010000488d15306b0400486304b24801d03effe0660f1f440000c30f1f8000000000bfea030000e82efeffff4883f8880f87340100004139d40f8c2b01000048c1fa204139d40f8f1e0100004489a39c75000031c0e917010000bfe9030000e8f6fdffff4883f8880f87fc0000004139d40f8cf300000048c1fa204139d40f8fe60000004489a38076000031c0e9df0000000f1f840000000000bfeb030000e8b6fdffff4883f8880f87bc0000004139d40f8cb300000048c1fa",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 489,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_DCtx_setFormat",
+      "bytes": "f30f1efa89f2bee8030000e900feffff",
+      "mask": "ffffffffffffffffffffffffffffffff",
+      "func_size": 16,
+      "first_block_size": 16,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_DCtx_reset",
+      "bytes": "f30f1efa558d46fe83e6fd4889e5534889fb4883ec0883fe017525c7871876000000000000c7877c7600000000000083f801761b488b5df831c0c9c30f1f400083f80177ef8b871876000085c07551488bbbe8750000e8d5ddffff660fefc0c783007600000000000048c7833876000001000008c783807600000000000048c783987500000000000048c78310760000000000000f1183e8750000eb970f1f00488b5df848c7c0c4ffffffc9c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 173,
+      "first_block_size": 173,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_initDStream",
+      "bytes": "f30f1efa55be010000004889e5534889fb4883ec08e836ffffff4883f8887610488b5df8c9c3662e0f1f84000000000031f64889dfe806f9ffff4883f88877e083bb9875000001488b5df8c94819c083e0044883c001c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 87,
+      "first_block_size": 87,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_initDStream_usingDDict",
+      "bytes": "f30f1efa554889e541544989f4be01000000534889fbe8d5feffff4883f888760f5b415c5dc3662e0f1f8400000000004c89e64889dfe8a5f8ffff4883f88877e083bb98750000015b4819c0415c5d83e0044883c001c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 87,
+      "first_block_size": 87,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_resetDStream",
+      "bytes": "f30f1efa55be010000004889e5534889fb4883ec08e876feffff4883f888771183bb98750000014819c083e0044883c001488b5df8c9c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 55,
+      "first_block_size": 55,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_sizeof_DStream",
+      "bytes": "f30f1efae937e0ffff",
+      "mask": "ffffffffffffffffff",
+      "func_size": 9,
+      "first_block_size": 9,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "zstd.ZSTD_decodingBufferSize_min",
+      "bytes": "f30f1efab8000002004839c7480f46c7488d8438400002004839f0480f47c6c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 32,
+      "first_block_size": 32,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_estimateDStreamSize",
+      "bytes": "f30f1efa5548c7c6ffffffff4889e54154534889fbe8c6ffffff4989c4e83ee0ffffba000002004839d3480f47da4c01e04801d85b415c5dc3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 57,
+      "first_block_size": 57,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_estimateDStreamSize_fromFrame",
+      "bytes": "f30f1efa554889f24889fe4889e54883ec4064488b042528000000488945f831c0488d45c04889c7e853e8ffff4883f888771f4885c07530488b7dc8ba0000008048c7c0f0ffffff4839fa7205e86effffff488b55f864482b1425280000007510c9c30f1f44000048c7c0b8ffffffebe1e86abcf9ff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 118,
+      "first_block_size": 118,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_decompressContinue",
+      "bytes": "f30f1efa554889e5415741564989ce41554989f54889d641544d89c4534889fb4883ec188b972c750000488b87e07400008d4afd83f901771f448b97287500004585d275134c39c0b901000000490f47c04885c0480f44c14939c4742349c7c7b8ffffff488d65d84c89f85b415c415d415e415f5dc3662e0f1f840000000000488b83c07400004939c5743a4885f674354889c166480f6ed066490f6ecd4c89ef482b8bc8740000660f6cc94829cf0f118bc074000066480f6ec7660f6cc20f1183d07400004c8b83187500004d01e04c89831875000083fa070f878e86f9ff488d0db92f0400486304914801c83effe00f1f80000000008b832875000083f8",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 1468,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_decompressBlock",
+      "bytes": "f30f1efa554889e541544989fc53488b87c07400004889f34839c6743e4885d274394889c6482bb7c874000066480f6ed04889df4829f766480f6ecb66480f6ec7660f6cc9410f118c24c0740000660f6cc2410f118424d074000048c7c0b8ffffff4981f80000020077164883ec084531c94889de4c89e76a00e841c6ffff5a594801c349899c24c0740000488d65f05b415c5dc3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 149,
+      "first_block_size": 149,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZDICT_optimizeTrainFromBuffer_cover",
+      "bytes": "f30f1efa55660fefc04889e5415741564d89ce41554989fd4154534881ec9801000048899568fefffff2410f1079104889b5a8feffff418b510c48898d60feffff44898578feffff64488b042528000000488945c831c0660f2fc7f20f11bdb0fefffff20f1005150c04007208f20f1185b0feffff458b66044585e40f8574030000418b0641bf0200000041bc0600000041bb080000008985b8feffff85c00f856b030000c785b8feffffd0070000bb9e07000041ba32000000418b4e08f20f108db0feffffb82800000085c90f45c1660f2fc88985a4feffff418b46248985bcfeffff0f87340300004539da0f8293040000443995b8feffff0f8286040000",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 2425,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_decompress_usingDict",
+      "bytes": "f30f1efa554889e56a00ff7510e81eeaffffc9c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 20,
+      "first_block_size": 20,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_decompress_usingDDict",
+      "bytes": "f30f1efa554889e541514531c96a00e8fce9ffffc9c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 22,
+      "first_block_size": 22,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_decompressDCtx",
+      "bytes": "f30f1efa554889e5534889fb4883ec288b870076000083f8ff746783f8017458488bbfe87500004c8945d048894dd8488955e0488975e8e83475ffff660fefc0488b75e84889df0f1183e8750000488b55e0488b4dd84531c9c78300760000000000004c8b45d0488b5df8c9e96fffffff0f1f8000000000c78700760000000000004c8b8bf07500004889df488b5df8c9e94affffff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 150,
+      "first_block_size": 150,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_decompress",
+      "bytes": "f30f1efa554889e541574989cf41564989d641554989f541544989fc534883ec28488b05b8d00300660f6f05a0d0030048894424100f110424e87265ffff4883c4204885c074394889c34c89e64889c74d89f84c89f14c89eae802ffffff4889df4989c4e8e779ffff488d65d84c89e05b415c415d415e415f5dc30f1f44000049c7c4c0ffffffebe0",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 137,
+      "first_block_size": 137,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_decompressStream",
+      "bytes": "f30f1efa554989f249c7c1b8ffffff4889e5415741564989d641554154534889fb4881eca8000000488b36498b4a1064488b042528000000488945c831c04c8b5a08488b4210488d3c0e4c8b024889fa4889bd78ffffff498b7a08488955984939c30f82aa0000004839cf0f82df07000083bb80760000014c8b8b887600004c8bab907600004c8ba3987600008b9318760000745b4d8d24004b8d0c184801fe48898540ffffff4c89a550ffffff4c8d2d4bff030048894d88488975804c899d38ffffff4c899570ffffff4c89b548ffffff83fa040f87dc55f9ff49634495004c01e83effe0662e0f1f84000000000085d274a14c39ce410f94c14c39e10f94",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 4944,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_decompressStream_simpleArgs",
+      "bytes": "f30f1efa5566480f6ec24889e5415453488d55b04889cb4883ec404c8b651064488b042528000000488945e831c00f1601488975d0488d75d00f1145d866490f6ec1410f1604244c8945b00f1145b8e85cecffff488b55e0488913488b55c049891424488b55e864482b14252800000075094883c4405b415c5dc3e84041f9ff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 128,
+      "first_block_size": 128,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_DCtx_loadDictionary_advanced",
+      "bytes": "f30f1efa448b8f1876000048c7c0c4ffffff4585c90f85b5000000554889e541574589c741564189ce41554989d541544989f4534889fb4883ec08488bbfe8750000e82960ffff660fefc0c78300760000000000000f1183e87500004d85e474054d85ed751a31c0488d65d85b415c415d415e415f5dc3660f1f8400000000004883ec204489f94489f24c89eef30f6f8bb07500004c89e70f110c24488b83c07500004889442410e8b34bffff4883c420488983e87500004885c0741b488983f0750000c78300760000ffffffffeb96c30f1f800000000048c7c0c0ffffffeb87",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 225,
+      "first_block_size": 225,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_initDStream_usingDict",
+      "bytes": "f30f1efa554889e541554989d541544989f4be01000000534889fb4883ec08e8fc80ffff4883f888760e4883c4085b415c415d5dc30f1f004c89ea4c89e64889dfe8aaffffff4883f88877de83bb98750000014819c04883c40883e0045b415c4883c001415d5dc3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 104,
+      "first_block_size": 104,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_DCtx_refPrefix_advanced",
+      "bytes": "f30f1efa554189c8b9010000004889e5534889fb4883ec08e853feffff4883f888770cc783007600000100000031c0488b5df8c9c3",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 53,
+      "first_block_size": 53,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZSTD_DCtx_refPrefix",
+      "bytes": "f30f1efab901000000e9b2ffffff",
+      "mask": "ffffffffffffffffffffffffffff",
+      "func_size": 14,
+      "first_block_size": 14,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "zstd.ZDICT_trainFromBuffer_cover",
+      "bytes": "f30f1efa554889e54157415641554154534881ecb8000000448b4d10448b5d1464488b042528000000488945c831c08b45348905b88c04004585c90f840f0300004585db0f84060300004989d54489ca4889f34839d60f82f40200004539d90f82eb0200004589c44585c00f847f0300004881feff0000000f86320300004989ce4889bd30ffffff4589d84489e1f20f10057acd0300488dbd70ffffff4c89f24c89ee44898d3cffffff4889bd48ffffff44899d40ffffffe88350ffff4989c74883f8880f87910200004c8b45a8448b3d1b8c0400448b9d40ffffff448b8d3cffffff4d85c04c8b9530ffffff0f8865030000660fefc0f2490f2ac04885db0f",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 1230,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZDICT_trainFromBuffer_fastCover",
+      "bytes": "f30f1efa55660fefc04889e5415741564989fe41554154534889f3be140000004881ecb8000000448b7d188b7d1448899538fffffff30f6f4d10660f6e65448b553064488b042528000000488945c831c04585ff0f11855cffffff8b4540440f44fe8b753cf30f6f4520660f6fd9660f6ed089059887040089b560ffffff8b75340fc6c1f00fc6d824f20f1005afc80300660f62d4c7856cffffff0000000089b558ffffff8b75100f299d40fffffff20f118550ffffff660fd69564ffffff85f60f840901000085ff0f8401010000660f70d15566410f7ed4418d7424fa83e6fd0f85e9000000660f7ecf660f7e8d2cffffff4439e70f82d400000089fe4839",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 1238,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZDICT_optimizeTrainFromBuffer_fastCover",
+      "bytes": "f30f1efa55660fefc04889e54157415641554154534881ecd801000048899540fefffff2410f10511844898548feffff418b51104d89c84889bd18feffff4889b590feffff48898d38feffff64488b042528000000488945c831c0660f2fc2f20f119598feffff7210f20f100d876f0300f20f118d98feffff458b60044585e40f8585040000418b0041bd02000000c7854cfeffff0800000041bc0600000089858cfeffff85c00f857c040000c7858cfeffffd0070000bb9e07000041ba32000000418b480cb828000000458b4808f20f108d98feffff85c90f45c14585c9418b4830898588feffffb814000000440f44c8660f2f0dd66e0300898d54feffff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 2977,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZDICT_getErrorName",
+      "bytes": "f30f1efa89f831d2f7d84883ff880f47d089d7e9c8f8f8ff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 24,
+      "first_block_size": 24,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZDICT_getDictHeaderSize",
+      "bytes": "f30f1efa554889e54157415649c7c6e2ffffff41554154534883ec084883fe08760b813f37a430ec4989fc74134883c4084c89f05b415c415d415e415f5dc390bf001600004889f3e893d5f8ffbf002200004989c5e886d5f8ff4989c74d85ed74574885c07452488b05526303004889d94c89e24c89fe660f6f05516203004c89ef41c7850808000000000000498985f4150000410f1185e4150000e87f71faff4989c64c89efe824d4f8ff4c89ffe81cd4f8ffe974ffffff49c7c6c0ffffffebe2",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 194,
+      "first_block_size": 194,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZDICT_trainFromBuffer",
+      "bytes": "f30f1efa55660fefc04889e54883ec4064488b042528000000488945f831c04c8d4dc00f2945c00f2945e048c745f000000000c745c408000000c745cc04000000c745ec030000000f2945d0e8dff2ffff488b55f864482b1425280000007502c9c3e8e9d3f8ff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 103,
+      "first_block_size": 103,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZDICT_finalizeDictionary",
+      "bytes": "f30f1efa554889e5415741564989d641554154534881ec38010000448b6d188b55204c8985b8feffff4d89c8448b4d1c64488b042528000000488945c831c04585edb803000000440f44e84839ce0f82740100004989f44881feff0000000f86640100004889ce4989ff4c89f74c8985a0feffff44898da8feffff4889cb8995b0feffffc785c0feffff37a430ece89db602008b95b0feffff448b8da8feffff4c8b85a0feffff4889c185d20f84260100008995c4feffff4183f9010f874e0100004883ec08488b8db8feffff4489eabef80000004151448b4d10488dbdc8feffff534156e886f0ffff4883c4204889c74989c5e807e5ffff85c00f859f0000",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 787,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZDICT_trainFromBuffer_legacy",
+      "bytes": "f30f1efa554889e54157415641554154534881ec780100004889bda8feffff4889b508ffffff48898da0feffff448985fcfeffff64488b042528000000488945c831c04585c00f84340d00004589c74889d34989cd4889c84e8d34f94531e44c03204883c0084939c675f44981fcff0100000f86080d0000498d4c24204889cf48894d88e877b3f8ff48898540ffffff4885c00f84d2220000488b4d884c89e24889de4889c74889c3e812b3f8ff660f6f1dda4003004901dc31c0660f6f25dd400300660f6f2de5400300660f6fc3660f6fd3660f72f007660f6ff2660ffac3660ff4f4660f72f002660ffac3660f6fc8660f72f108660ffec1660f70f60866",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 9687,
+      "first_block_size": 256,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "zstd.ZDICT_addEntropyTablesFromBuffer",
+      "bytes": "f30f1efa554889e54883ec3064488b042528000000488945f831c048c745ec00000000c745f40000000048c7042400000000c744240800000000e851d8ffff488b55f864482b1425280000007502c9c3e80b8df8ff",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "func_size": 85,
+      "first_block_size": 85,
+      "reloc_count": 0,
+      "masked_ratio": 0.0,
+      "confidence": "high"
+    }
+  ],
+  "dedup_conflicts": [
+    {
+      "bytes": "f30f1efab800000200c3",
+      "name1": "zstd.ZSTD_CStreamInSize",
+      "name2": "zstd.ZSTD_DStreamOutSize"
+    },
+    {
+      "bytes": "f30f1efa4531c0b901000000e9fffeffff",
+      "name1": "zstd.ZSTD_CCtx_loadDictionary_byReference",
+      "name2": "zstd.ZSTD_DCtx_loadDictionary_byReference"
+    },
+    {
+      "bytes": "f30f1efa4531c031c9e9e2feffff",
+      "name1": "zstd.ZSTD_CCtx_loadDictionary",
+      "name2": "zstd.ZSTD_DCtx_loadDictionary"
+    },
+    {
+      "bytes": "f30f1efa31c04883ff880f97c0c3",
+      "name1": "zstd.ZSTD_isError",
+      "name2": "zstd.ZDICT_isError"
+    },
+    {
+      "bytes": "f30f1efa31c04883fe077608813f37a430ec7404c30f1f008b4704c3",
+      "name1": "zstd.ZSTD_getDictID_fromDict",
+      "name2": "zstd.ZDICT_getDictID"
+    }
+  ]
+}

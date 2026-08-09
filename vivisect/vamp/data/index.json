@@ -1,7 +1,107 @@
 {
   "format_version": 1,
-  "updated": "2026-08-09T18:18:33Z",
+  "updated": "2026-08-09T20:00:49Z",
   "sig_sets": [
+    {
+      "id": "glibc_2.39_aarch64_linux_gcc",
+      "library": "glibc",
+      "version": "2.39",
+      "arch": "aarch64",
+      "platform": "linux",
+      "compiler": "gcc-13",
+      "file": "glibc_2_39_aarch64_linux.json",
+      "sig_count": 2192
+    },
+    {
+      "id": "glibc_2.39_amd64_linux_gcc",
+      "library": "glibc",
+      "version": "2.39",
+      "arch": "amd64",
+      "platform": "linux",
+      "compiler": "gcc-13",
+      "file": "glibc_2_39_amd64_linux.json",
+      "sig_count": 2196
+    },
+    {
+      "id": "glibc_2.39_arm_linux_gcc",
+      "library": "glibc",
+      "version": "2.39",
+      "arch": "arm",
+      "platform": "linux",
+      "compiler": "gcc-13",
+      "file": "glibc_2_39_arm_linux.json",
+      "sig_count": 2287
+    },
+    {
+      "id": "glibc_2.39_i386_linux_gcc",
+      "library": "glibc",
+      "version": "2.39",
+      "arch": "i386",
+      "platform": "linux",
+      "compiler": "gcc-13",
+      "file": "glibc_2_39_i386_linux.json",
+      "sig_count": 2443
+    },
+    {
+      "id": "json-c_0.17_amd64_linux_gcc",
+      "library": "json-c",
+      "version": "0.17",
+      "arch": "amd64",
+      "platform": "linux",
+      "compiler": "gcc-13",
+      "file": "json-c_0_17_amd64_linux.json",
+      "sig_count": 137
+    },
+    {
+      "id": "libbz2_1.0.8_amd64_linux_gcc",
+      "library": "libbz2",
+      "version": "1.0.8",
+      "arch": "amd64",
+      "platform": "linux",
+      "compiler": "gcc-13",
+      "file": "libbz2_1_0_8_amd64_linux.json",
+      "sig_count": 32
+    },
+    {
+      "id": "libcurl_8.5.0_amd64_linux_gcc",
+      "library": "libcurl",
+      "version": "8.5.0",
+      "arch": "amd64",
+      "platform": "linux",
+      "compiler": "gcc-13",
+      "file": "libcurl_8_5_0_amd64_linux.json",
+      "sig_count": 91
+    },
+    {
+      "id": "liblz4_1.9.4_amd64_linux_gcc",
+      "library": "liblz4",
+      "version": "1.9.4",
+      "arch": "amd64",
+      "platform": "linux",
+      "compiler": "gcc-13",
+      "file": "liblz4_1_9_4_amd64_linux.json",
+      "sig_count": 106
+    },
+    {
+      "id": "liblzma_5.4.5_amd64_linux_gcc",
+      "library": "liblzma",
+      "version": "5.4.5",
+      "arch": "amd64",
+      "platform": "linux",
+      "compiler": "gcc-13",
+      "file": "liblzma_5_4_5_amd64_linux.json",
+      "sig_count": 107
+    },
+    {
+      "id": "libstdc++_14.2.0_amd64_linux_gcc",
+      "library": "libstdc++",
+      "version": "14.2.0",
+      "arch": "amd64",
+      "platform": "linux",
+      "compiler": "gcc-13",
+      "file": "libstdcpp_14_2_0_amd64_linux.json",
+      "sig_count": 3492
+    },
     {
       "id": "msvc_vs2005-2019_amd64_windows_msvc",
       "library": "msvc",
@@ -21,6 +121,76 @@
       "compiler": "msvc",
       "file": "msvc_x86.json",
       "sig_count": 14
+    },
+    {
+      "id": "musl_1.2.4_amd64_linux_unknown",
+      "library": "musl",
+      "version": "1.2.4",
+      "arch": "amd64",
+      "platform": "linux",
+      "compiler": "unknown",
+      "file": "musl_1_2_4_amd64_linux.json",
+      "sig_count": 1357
+    },
+    {
+      "id": "openssl-ssl_3.0.13_amd64_linux_gcc",
+      "library": "openssl-ssl",
+      "version": "3.0.13",
+      "arch": "amd64",
+      "platform": "linux",
+      "compiler": "gcc-13",
+      "file": "openssl-ssl_3_0_13_amd64_linux.json",
+      "sig_count": 506
+    },
+    {
+      "id": "openssl_3.0.13_amd64_linux_gcc",
+      "library": "openssl",
+      "version": "3.0.13",
+      "arch": "amd64",
+      "platform": "linux",
+      "compiler": "gcc-13",
+      "file": "openssl_3_0_13_amd64_linux.json",
+      "sig_count": 4794
+    },
+    {
+      "id": "snappy_1.1.10_amd64_linux_gcc",
+      "library": "snappy",
+      "version": "1.1.10",
+      "arch": "amd64",
+      "platform": "linux",
+      "compiler": "gcc-13",
+      "file": "snappy_1_1_10_amd64_linux.json",
+      "sig_count": 48
+    },
+    {
+      "id": "sqlite_3.46.0_amd64_linux_gcc",
+      "library": "sqlite",
+      "version": "3.46.0",
+      "arch": "amd64",
+      "platform": "linux",
+      "compiler": "gcc-13",
+      "file": "sqlite_3_46_0_amd64_linux.json",
+      "sig_count": 1373
+    },
+    {
+      "id": "zlib_1.3_amd64_linux_gcc",
+      "library": "zlib",
+      "version": "1.3",
+      "arch": "amd64",
+      "platform": "linux",
+      "compiler": "gcc-13",
+      "file": "zlib_1_3_amd64_linux.json",
+      "sig_count": 87
+    },
+    {
+      "id": "zstd_1.5.5_amd64_linux_gcc",
+      "library": "zstd",
+      "version": "1.5.5",
+      "arch": "amd64",
+      "platform": "linux",
+      "compiler": "gcc-13",
+      "file": "zstd_1_5_5_amd64_linux.json",
+      "sig_count": 180
     }
   ]
 }
