@@ -1,7 +1,97 @@
 {
   "format_version": 1,
-  "updated": "2026-08-09T20:00:49Z",
+  "updated": "2026-08-11T18:36:44Z",
   "sig_sets": [
+    {
+      "id": "glibc_2.27_aarch64_linux_gcc",
+      "library": "glibc",
+      "version": "2.27",
+      "arch": "aarch64",
+      "platform": "linux",
+      "compiler": "gcc-7",
+      "file": "glibc_2_27_aarch64_linux.json",
+      "sig_count": 1757
+    },
+    {
+      "id": "glibc_2.27_amd64_linux_gcc",
+      "library": "glibc",
+      "version": "2.27",
+      "arch": "amd64",
+      "platform": "linux",
+      "compiler": "gcc-7",
+      "file": "glibc_2_27_amd64_linux.json",
+      "sig_count": 1735
+    },
+    {
+      "id": "glibc_2.27_arm_linux_gcc",
+      "library": "glibc",
+      "version": "2.27",
+      "arch": "arm",
+      "platform": "linux",
+      "compiler": "gcc-7",
+      "file": "glibc_2_27_arm_linux.json",
+      "sig_count": 1803
+    },
+    {
+      "id": "glibc_2.31_aarch64_linux_gcc",
+      "library": "glibc",
+      "version": "2.31",
+      "arch": "aarch64",
+      "platform": "linux",
+      "compiler": "gcc-9",
+      "file": "glibc_2_31_aarch64_linux.json",
+      "sig_count": 1776
+    },
+    {
+      "id": "glibc_2.31_amd64_linux_gcc",
+      "library": "glibc",
+      "version": "2.31",
+      "arch": "amd64",
+      "platform": "linux",
+      "compiler": "gcc-9",
+      "file": "glibc_2_31_amd64_linux.json",
+      "sig_count": 1793
+    },
+    {
+      "id": "glibc_2.31_arm_linux_gcc",
+      "library": "glibc",
+      "version": "2.31",
+      "arch": "arm",
+      "platform": "linux",
+      "compiler": "gcc-9",
+      "file": "glibc_2_31_arm_linux.json",
+      "sig_count": 1810
+    },
+    {
+      "id": "glibc_2.35_aarch64_linux_gcc",
+      "library": "glibc",
+      "version": "2.35",
+      "arch": "aarch64",
+      "platform": "linux",
+      "compiler": "gcc-11",
+      "file": "glibc_2_35_aarch64_linux.json",
+      "sig_count": 2060
+    },
+    {
+      "id": "glibc_2.35_amd64_linux_gcc",
+      "library": "glibc",
+      "version": "2.35",
+      "arch": "amd64",
+      "platform": "linux",
+      "compiler": "gcc-11",
+      "file": "glibc_2_35_amd64_linux.json",
+      "sig_count": 2100
+    },
+    {
+      "id": "glibc_2.35_arm_linux_gcc",
+      "library": "glibc",
+      "version": "2.35",
+      "arch": "arm",
+      "platform": "linux",
+      "compiler": "gcc-11",
+      "file": "glibc_2_35_arm_linux.json",
+      "sig_count": 2180
+    },
     {
       "id": "glibc_2.39_aarch64_linux_gcc",
       "library": "glibc",
@@ -41,6 +131,26 @@
       "compiler": "gcc-13",
       "file": "glibc_2_39_i386_linux.json",
       "sig_count": 2443
+    },
+    {
+      "id": "glibc_2.43_aarch64_linux_gcc",
+      "library": "glibc",
+      "version": "2.43",
+      "arch": "aarch64",
+      "platform": "linux",
+      "compiler": "gcc-14",
+      "file": "glibc_2_43_aarch64_linux.json",
+      "sig_count": 2219
+    },
+    {
+      "id": "glibc_2.43_amd64_linux_gcc",
+      "library": "glibc",
+      "version": "2.43",
+      "arch": "amd64",
+      "platform": "linux",
+      "compiler": "gcc-14",
+      "file": "glibc_2_43_amd64_linux.json",
+      "sig_count": 2215
     },
     {
       "id": "json-c_0.17_amd64_linux_gcc",
@@ -123,6 +233,16 @@
       "sig_count": 14
     },
     {
+      "id": "musl_1.2.4_aarch64_linux_unknown",
+      "library": "musl",
+      "version": "1.2.4",
+      "arch": "aarch64",
+      "platform": "linux",
+      "compiler": "unknown",
+      "file": "musl_1_2_4_aarch64_linux.json",
+      "sig_count": 1315
+    },
+    {
       "id": "musl_1.2.4_amd64_linux_unknown",
       "library": "musl",
       "version": "1.2.4",
@@ -131,6 +251,26 @@
       "compiler": "unknown",
       "file": "musl_1_2_4_amd64_linux.json",
       "sig_count": 1357
+    },
+    {
+      "id": "musl_1.2.4_arm_linux_unknown",
+      "library": "musl",
+      "version": "1.2.4",
+      "arch": "arm",
+      "platform": "linux",
+      "compiler": "unknown",
+      "file": "musl_1_2_4_arm_linux.json",
+      "sig_count": 1314
+    },
+    {
+      "id": "musl_1.2.4_i386_linux_unknown",
+      "library": "musl",
+      "version": "1.2.4",
+      "arch": "i386",
+      "platform": "linux",
+      "compiler": "unknown",
+      "file": "musl_1_2_4_i386_linux.json",
+      "sig_count": 1382
     },
     {
       "id": "openssl-ssl_3.0.13_amd64_linux_gcc",
