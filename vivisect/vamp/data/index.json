@@ -1,6 +1,6 @@
 {
   "format_version": 1,
-  "updated": "2026-08-11T18:36:44Z",
+  "updated": "2026-08-11T18:41:54Z",
   "sig_sets": [
     {
       "id": "glibc_2.27_aarch64_linux_gcc",
@@ -283,6 +283,86 @@
       "sig_count": 506
     },
     {
+      "id": "openssl_1.0.2g_amd64_linux_gcc",
+      "library": "openssl",
+      "version": "1.0.2g",
+      "arch": "amd64",
+      "platform": "linux",
+      "compiler": "gcc-5",
+      "file": "openssl_1_0_2g_amd64_crypto.json",
+      "sig_count": 3208
+    },
+    {
+      "id": "openssl-ssl_1.0.2g_amd64_linux_gcc",
+      "library": "openssl-ssl",
+      "version": "1.0.2g",
+      "arch": "amd64",
+      "platform": "linux",
+      "compiler": "gcc-5",
+      "file": "openssl_1_0_2g_amd64_ssl.json",
+      "sig_count": 283
+    },
+    {
+      "id": "openssl_1.1.1f_aarch64_linux_gcc",
+      "library": "openssl",
+      "version": "1.1.1f",
+      "arch": "aarch64",
+      "platform": "linux",
+      "compiler": "gcc-9",
+      "file": "openssl_1_1_1f_aarch64_crypto.json",
+      "sig_count": 3690
+    },
+    {
+      "id": "openssl-ssl_1.1.1f_aarch64_linux_gcc",
+      "library": "openssl-ssl",
+      "version": "1.1.1f",
+      "arch": "aarch64",
+      "platform": "linux",
+      "compiler": "gcc-9",
+      "file": "openssl_1_1_1f_aarch64_ssl.json",
+      "sig_count": 474
+    },
+    {
+      "id": "openssl_1.1.1f_amd64_linux_gcc",
+      "library": "openssl",
+      "version": "1.1.1f",
+      "arch": "amd64",
+      "platform": "linux",
+      "compiler": "gcc-9",
+      "file": "openssl_1_1_1f_amd64_crypto.json",
+      "sig_count": 3742
+    },
+    {
+      "id": "openssl-ssl_1.1.1f_amd64_linux_gcc",
+      "library": "openssl-ssl",
+      "version": "1.1.1f",
+      "arch": "amd64",
+      "platform": "linux",
+      "compiler": "gcc-9",
+      "file": "openssl_1_1_1f_amd64_ssl.json",
+      "sig_count": 486
+    },
+    {
+      "id": "openssl_3.0.13_aarch64_linux_gcc",
+      "library": "openssl",
+      "version": "3.0.13",
+      "arch": "aarch64",
+      "platform": "linux",
+      "compiler": "gcc-13",
+      "file": "openssl_3_0_13_aarch64_crypto.json",
+      "sig_count": 4816
+    },
+    {
+      "id": "openssl-ssl_3.0.13_aarch64_linux_gcc",
+      "library": "openssl-ssl",
+      "version": "3.0.13",
+      "arch": "aarch64",
+      "platform": "linux",
+      "compiler": "gcc-13",
+      "file": "openssl_3_0_13_aarch64_ssl.json",
+      "sig_count": 510
+    },
+    {
       "id": "openssl_3.0.13_amd64_linux_gcc",
       "library": "openssl",
       "version": "3.0.13",
@@ -291,6 +371,86 @@
       "compiler": "gcc-13",
       "file": "openssl_3_0_13_amd64_linux.json",
       "sig_count": 4794
+    },
+    {
+      "id": "openssl_3.0.2_amd64_linux_gcc",
+      "library": "openssl",
+      "version": "3.0.2",
+      "arch": "amd64",
+      "platform": "linux",
+      "compiler": "gcc-11",
+      "file": "openssl_3_0_2_amd64_crypto.json",
+      "sig_count": 4783
+    },
+    {
+      "id": "openssl-ssl_3.0.2_amd64_linux_gcc",
+      "library": "openssl-ssl",
+      "version": "3.0.2",
+      "arch": "amd64",
+      "platform": "linux",
+      "compiler": "gcc-11",
+      "file": "openssl_3_0_2_amd64_ssl.json",
+      "sig_count": 510
+    },
+    {
+      "id": "openssl_3.4.1_amd64_linux_gcc",
+      "library": "openssl",
+      "version": "3.4.1",
+      "arch": "amd64",
+      "platform": "linux",
+      "compiler": "gcc-14",
+      "file": "openssl_3_4_1_amd64_crypto.json",
+      "sig_count": 5103
+    },
+    {
+      "id": "openssl-ssl_3.4.1_amd64_linux_gcc",
+      "library": "openssl-ssl",
+      "version": "3.4.1",
+      "arch": "amd64",
+      "platform": "linux",
+      "compiler": "gcc-14",
+      "file": "openssl_3_4_1_amd64_ssl.json",
+      "sig_count": 576
+    },
+    {
+      "id": "openssl_3.5.5_aarch64_linux_gcc",
+      "library": "openssl",
+      "version": "3.5.5",
+      "arch": "aarch64",
+      "platform": "linux",
+      "compiler": "gcc-14",
+      "file": "openssl_3_5_5_aarch64_crypto.json",
+      "sig_count": 5274
+    },
+    {
+      "id": "openssl-ssl_3.5.5_aarch64_linux_gcc",
+      "library": "openssl-ssl",
+      "version": "3.5.5",
+      "arch": "aarch64",
+      "platform": "linux",
+      "compiler": "gcc-14",
+      "file": "openssl_3_5_5_aarch64_ssl.json",
+      "sig_count": 599
+    },
+    {
+      "id": "openssl_3.5.5_amd64_linux_gcc",
+      "library": "openssl",
+      "version": "3.5.5",
+      "arch": "amd64",
+      "platform": "linux",
+      "compiler": "gcc-14",
+      "file": "openssl_3_5_5_amd64_crypto.json",
+      "sig_count": 5278
+    },
+    {
+      "id": "openssl-ssl_3.5.5_amd64_linux_gcc",
+      "library": "openssl-ssl",
+      "version": "3.5.5",
+      "arch": "amd64",
+      "platform": "linux",
+      "compiler": "gcc-14",
+      "file": "openssl_3_5_5_amd64_ssl.json",
+      "sig_count": 593
     },
     {
       "id": "snappy_1.1.10_amd64_linux_gcc",
