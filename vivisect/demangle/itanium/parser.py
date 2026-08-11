@@ -154,7 +154,7 @@ class ItaniumParser:
             return self._parse_special_name()
 
         # It's a name, possibly followed by a bare-function-type
-        name = self._parse_name(substable=True)
+        name = self._parse_name(substable=False)
 
         # Check for bare-function-type (only if there's more input and it
         # looks like a type list)
@@ -189,7 +189,7 @@ class ItaniumParser:
         c = self._peek()
 
         if c == 'N':
-            return self._parse_nested_name()
+            return self._parse_nested_name(substable=substable)
 
         if c == 'Z':
             return self._parse_local_name()
@@ -247,8 +247,15 @@ class ItaniumParser:
 
         return unq
 
-    def _parse_nested_name(self):
-        """<nested-name> ::= N [<CV-qualifiers>] [<ref-qualifier>] <prefix> <unqualified-name> E"""
+    def _parse_nested_name(self, substable=False):
+        """<nested-name> ::= N [<CV-qualifiers>] [<ref-qualifier>] <prefix> <unqualified-name> E
+
+        The substable parameter controls whether the full nested name is added
+        to the substitution table. When called from _parse_name (encoding level),
+        it should be False — only intermediate prefixes are sub candidates, not
+        the top-level encoding name. When called from _parse_type (as a type),
+        it should be True.
+        """
         self._expect_char('N')
 
         # CV-qualifiers
@@ -277,8 +284,9 @@ class ItaniumParser:
 
         node = ast.NestedName(prefix_chain, unqualified, cv, ref)
 
-        # Add nested name to substitutions
-        self._add_substitution(node)
+        # Only add to substitution table when used as a type (not encoding name)
+        if substable:
+            self._add_substitution(node)
 
         return node
 
@@ -524,6 +532,24 @@ class ItaniumParser:
         if c == 'S':
             sub = self._parse_substitution(prefix=False)
             if sub is not None:
+                # St followed by a source name = std::<name> as a type
+                if isinstance(sub, ast.Substitution) and sub.std_sub == 't' and self._peek().isdigit():
+                    inner_name = self._parse_source_name()
+                    # Check for template args
+                    if self._peek() == 'I':
+                        targs = self._parse_template_args()
+                        result = ast.NestedName(
+                            [ast.SourceName('std'), ast.UnqualifiedName('source', inner_name)],
+                            ast.UnqualifiedName('template', targs)
+                        )
+                        self._add_substitution(result)
+                        return result
+                    result = ast.NestedName(
+                        [ast.SourceName('std')],
+                        ast.UnqualifiedName('source', inner_name)
+                    )
+                    self._add_substitution(result)
+                    return result
                 # Could be followed by template args (template-template-param)
                 if self._peek() == 'I':
                     targs = self._parse_template_args()
@@ -568,7 +594,7 @@ class ItaniumParser:
 
         # Nested name (class/enum type as a qualified name)
         if c == 'N':
-            return self._parse_nested_name()
+            return self._parse_nested_name(substable=True)
 
         # Source name as a class-enum-type (unqualified)
         if c.isdigit():
@@ -724,7 +750,28 @@ class ItaniumParser:
             type_node = self._parse_type()
             value = self._parse_until_char('E')
             self._expect_char('E')
-            return ast.TemplateArg('primary', '%s%s' % (type_node, value))
+            # Render the type properly and convert known value formats
+            if isinstance(type_node, ast.BuiltinType):
+                type_name = type_node.name
+                # For bool, convert 0->false, 1->true
+                if type_name == 'bool':
+                    if value == '0':
+                        value = 'false'
+                    elif value == '1':
+                        value = 'true'
+                # For integer types, render as the decimal value
+                # c++filt shows e.g. '42' for Li42E
+                elif value.isdigit() or (value.startswith('n') and value[1:].isdigit()):
+                    if value.startswith('n'):
+                        value = '-' + value[1:]
+                # For char, show the character
+                elif type_name == 'char' and len(value) <= 3:
+                    pass  # keep as-is
+                return ast.TemplateArg('primary', '%s' % value)
+            # Fallback: render as type+value
+            from vivisect.demangle.itanium.renderer import render as _render
+            type_str = _render(type_node)
+            return ast.TemplateArg('primary', '%s%s' % (type_str, value))
         # Default: it's a type
         type_node = self._parse_type()
         return ast.TemplateArg('type', type_node)

@@ -65,7 +65,15 @@ class Renderer:
         name_str = self.render(node.qualified_name)
 
         if node.bare_function is None or not node.bare_function.types:
-            return name_str + '()'
+            # For const member functions, cv-qualifiers are on the NestedName
+            # and should come AFTER the parens
+            cv_suffix = ''
+            if isinstance(node.qualified_name, ast.NestedName):
+                if node.qualified_name.cv_qualifiers:
+                    cv_suffix = ' ' + node.qualified_name.cv_qualifiers
+                if node.qualified_name.ref_qualifier:
+                    cv_suffix += node.qualified_name.ref_qualifier
+            return name_str + '()' + cv_suffix
 
         # The bare function type contains return type + params (for functions
         # that are not member functions) or just params (for member functions).
@@ -92,7 +100,25 @@ class Renderer:
         # Per cxxfilt convention: a single 'void' param = empty param list
         if len(param_strs) == 1 and param_strs[0] == 'void':
             param_strs = []
-        return '%s(%s)' % (name_str, ', '.join(param_strs))
+
+        # CV-qualifiers and ref-qualifiers go AFTER the parens for member functions
+        cv_suffix = ''
+        if isinstance(node.qualified_name, ast.NestedName):
+            if node.qualified_name.cv_qualifiers:
+                cv_suffix = ' ' + node.qualified_name.cv_qualifiers
+            if node.qualified_name.ref_qualifier:
+                cv_suffix += node.qualified_name.ref_qualifier
+
+        # Strip the cv-qualifiers from name_str since we're adding them after parens
+        # The NestedName renderer already appended them — we need to remove them
+        if cv_suffix:
+            # name_str already has cv appended by _render_NestedName
+            # Remove it and re-add after parens
+            stripped = cv_suffix.strip()
+            if name_str.endswith(stripped):
+                name_str = name_str[:-(len(stripped) + 1)]  # +1 for the space
+
+        return '%s(%s)%s' % (name_str, ', '.join(param_strs), cv_suffix)
 
     def _is_template_name(self, node):
         """Check if a name node is a template instantiation."""
@@ -114,7 +140,12 @@ class Renderer:
         if node.kind == 'source':
             return self.render(node.value)
         if node.kind == 'operator':
-            return 'operator%s' % node.value.symbol
+            sym = node.value.symbol
+            # Operators like "new", "delete", "sizeof", etc. get a space
+            # Binary/unary operator symbols like "+", "-", "<<" don't
+            if sym[0].isalpha():
+                return 'operator %s' % sym
+            return 'operator%s' % sym
         if node.kind == 'ctor':
             return self._render_ctor_dtor(node.value, is_destructor=False)
         if node.kind == 'dtor':
@@ -173,7 +204,11 @@ class Renderer:
 
         result = '::'.join(parts)
 
-        # Apply CV-qualifiers and ref-qualifiers for member functions
+        # NOTE: CV-qualifiers and ref-qualifiers are NOT appended here
+        # when this NestedName is part of a function signature. They are
+        # handled by _render_function_signature which places them after ().
+        # However, when this NestedName is used standalone (as a type),
+        # the cv-qualifiers should be appended.
         suffix = ''
         if node.cv_qualifiers:
             suffix += ' ' + node.cv_qualifiers
@@ -188,7 +223,14 @@ class Renderer:
             return ''
         last = prefix[-1]
         if isinstance(last, ast.SourceName):
-            return last.name
+            name = last.name
+            # Strip template args FIRST (they may contain ::)
+            if '<' in name:
+                name = name[:name.index('<')]
+            # Then strip namespace prefix
+            if '::' in name:
+                name = name.rsplit('::', 1)[-1]
+            return name
         if isinstance(last, ast.UnqualifiedName):
             if last.kind == 'source' and isinstance(last.value, ast.SourceName):
                 return last.value.name
@@ -202,6 +244,17 @@ class Renderer:
                         return prev.name
                     if isinstance(prev, ast.UnqualifiedName) and isinstance(prev.value, ast.SourceName):
                         return prev.value.name
+        if isinstance(last, ast.Substitution):
+            # For substitutions like Ss, extract the class name
+            # from the expanded form
+            rendered = self.render(last)
+            # Strip namespace prefix: take the last ::-separated component
+            # For template instantiations, take just the class name before <
+            name = rendered.rsplit('::', 1)[-1]
+            # If it's a template instantiation, take just the class name
+            if '<' in name:
+                name = name[:name.index('<')]
+            return name
         return self.render(last)
 
     def _render_OperatorName(self, node):
