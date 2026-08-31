@@ -1,6 +1,6 @@
 {
   "format_version": 1,
-  "updated": "2026-08-17T10:03:30Z",
+  "updated": "2026-08-31T10:01:55Z",
   "sig_sets": [
     {
       "id": "glibc_2.27_aarch64_linux_gcc",
@@ -171,6 +171,46 @@
       "compiler": "unknown",
       "file": "glibc_2_43_i386_linux.json",
       "sig_count": 2328
+    },
+    {
+      "id": "glibc_2.44_aarch64_linux_unknown",
+      "library": "glibc",
+      "version": "2.44",
+      "arch": "aarch64",
+      "platform": "linux",
+      "compiler": "unknown",
+      "file": "glibc_2_44_aarch64_linux.json",
+      "sig_count": 158
+    },
+    {
+      "id": "glibc_2.44_amd64_linux_unknown",
+      "library": "glibc",
+      "version": "2.44",
+      "arch": "amd64",
+      "platform": "linux",
+      "compiler": "unknown",
+      "file": "glibc_2_44_amd64_linux.json",
+      "sig_count": 4
+    },
+    {
+      "id": "glibc_2.44_arm_linux_unknown",
+      "library": "glibc",
+      "version": "2.44",
+      "arch": "arm",
+      "platform": "linux",
+      "compiler": "unknown",
+      "file": "glibc_2_44_arm_linux.json",
+      "sig_count": 0
+    },
+    {
+      "id": "glibc_2.44_i386_linux_unknown",
+      "library": "glibc",
+      "version": "2.44",
+      "arch": "i386",
+      "platform": "linux",
+      "compiler": "unknown",
+      "file": "glibc_2_44_i386_linux.json",
+      "sig_count": 0
     },
     {
       "id": "glibc_crypt_2.39_amd64_linux_gcc",
@@ -603,6 +643,16 @@
       "sig_count": 2748
     },
     {
+      "id": "sqlite_3.8.2_amd64_linux_unknown",
+      "library": "sqlite",
+      "version": "3.8.2",
+      "arch": "amd64",
+      "platform": "linux",
+      "compiler": "unknown",
+      "file": "sqlite_3_8_2_amd64_linux.json",
+      "sig_count": 158
+    },
+    {
       "id": "zlib_1.3_amd64_linux_gcc",
       "library": "zlib",
       "version": "1.3",
@@ -611,6 +661,16 @@
       "compiler": "gcc-13",
       "file": "zlib_1.3_x64.json",
       "sig_count": 128
+    },
+    {
+      "id": "zlib_1.3.dfsg_amd64_linux_unknown",
+      "library": "zlib",
+      "version": "1.3.dfsg",
+      "arch": "amd64",
+      "platform": "linux",
+      "compiler": "unknown",
+      "file": "zlib_1_3_dfsg_amd64_linux.json",
+      "sig_count": 79
     }
   ]
 }
