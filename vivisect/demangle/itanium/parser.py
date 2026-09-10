@@ -469,6 +469,12 @@ class ItaniumParser:
             code = c1 + c2
             if code in grammar.OPERATORS:
                 sym, nargs = grammar.OPERATORS[code]
+                if code == 'cv':
+                    # Conversion operator: parse the target type
+                    target_type = self._parse_type()
+                    op = ast.OperatorName(code, sym, nargs, target_type=target_type)
+                    self.last_name = op
+                    return ast.UnqualifiedName('operator', op)
                 op = ast.OperatorName(code, sym, nargs)
                 self.last_name = op
                 return ast.UnqualifiedName('operator', op)
@@ -827,6 +833,19 @@ class ItaniumParser:
             if type_str in ('unsigned long long', 'unsigned __int128',):
                 return ast.TemplateArg('primary', value + 'ull')
             # For other types, just use the value
+            # But for enum/class types, cxxfilt renders as (type)value
+            if type_str not in ('int', 'unsigned int', 'long', 'unsigned long',
+                                'long long', 'unsigned long long', '__int128',
+                                'unsigned __int128', 'bool', 'char',
+                                'unsigned char', 'signed char', 'short',
+                                'unsigned short', 'wchar_t', 'char8_t',
+                                'char16_t', 'char32_t', 'float', 'double',
+                                'long double', 'void', 'nullptr_t',
+                                'decltype(nullptr)'):
+                # Enum or class type: render as (type)value
+                from vivisect.demangle.itanium.renderer import Renderer
+                rendered_type = Renderer().render(type_node)
+                return ast.TemplateArg('primary', '(%s)%s' % (rendered_type, value))
             return ast.TemplateArg('primary', value)
         # Default: it's a type
         type_node = self._parse_type()

@@ -82,8 +82,10 @@ class Renderer:
         # Heuristic: if the name is a template, the first type is the return.
         # Otherwise, all types are parameters.
         is_template = self._is_template_name(node.qualified_name)
+        # Constructors and destructors don't have return types
+        is_ctor_dtor = self._is_ctor_dtor_name(node.qualified_name)
 
-        if is_template and len(types) > 1:
+        if is_template and not is_ctor_dtor and len(types) > 1:
             return_type = self.render(types[0])
             params = types[1:]  # skip return type
         else:
@@ -102,19 +104,25 @@ class Renderer:
         cv_suffix = ''
         qn = node.qualified_name
         if isinstance(qn, ast.NestedName):
-            if qn.cv_qualifiers:
-                cv_suffix = ' ' + qn.cv_qualifiers
-                # Strip the cv_qualifiers that _render_NestedName appended
-                name_str = name_str[:-len(cv_suffix)]
+            # Strip ref-qualifier first (it's at the very end), then cv-qualifiers
+            # The suffix from _render_NestedName is: " cv ref" (e.g. " const &")
             if qn.ref_qualifier:
                 ref_suffix = ' ' + qn.ref_qualifier
-                # ref_qualifier may have been appended after cv
                 if name_str.endswith(ref_suffix):
                     name_str = name_str[:-len(ref_suffix)]
                     cv_suffix += ref_suffix
                 elif name_str.endswith(qn.ref_qualifier):
                     name_str = name_str[:-len(qn.ref_qualifier)]
                     cv_suffix += ' ' + qn.ref_qualifier
+            if qn.cv_qualifiers:
+                cv_to_strip = ' ' + qn.cv_qualifiers
+                if name_str.endswith(cv_to_strip):
+                    name_str = name_str[:-len(cv_to_strip)]
+                    # cv goes before ref in the suffix
+                    if cv_suffix:
+                        cv_suffix = cv_to_strip + cv_suffix
+                    else:
+                        cv_suffix = cv_to_strip
 
         result = '%s(%s)' % (name_str, ', '.join(param_strs))
         if cv_suffix:
@@ -136,6 +144,21 @@ class Renderer:
             return unq.kind == 'template'
         return False
 
+    def _is_ctor_dtor_name(self, node):
+        """Check if the name is a constructor or destructor."""
+        if isinstance(node, ast.NestedName):
+            unq = node.unqualified_name
+            if isinstance(unq, ast.UnqualifiedName):
+                if unq.kind in ('ctor', 'dtor'):
+                    return True
+                # Template constructor: unqualified_name is template args,
+                # but the prefix contains a ctor/dtor
+                if unq.kind == 'template' and node.prefix:
+                    last = node.prefix[-1]
+                    if isinstance(last, ast.UnqualifiedName) and last.kind in ('ctor', 'dtor'):
+                        return True
+        return False
+
     def _render_SourceName(self, node):
         return node.name
 
@@ -147,7 +170,11 @@ class Renderer:
                 result += ''.join('[abi:%s]' % t for t in node.abi_tags)
             return result
         if node.kind == 'operator':
-            sym = node.value.symbol
+            op = node.value
+            # Conversion operator: render as "operator <target-type>"
+            if op.code == 'cv' and op.target_type is not None:
+                return 'operator ' + self.render(op.target_type)
+            sym = op.symbol
             # cxxfilt convention: alphabetic operator names get a space
             # (operator new, operator delete, operator cast), symbolic ones don't
             # (operator+, operator-, operator<<)
@@ -191,8 +218,23 @@ class Renderer:
         unq = node.unqualified_name
         if isinstance(unq, ast.UnqualifiedName) and unq.kind == 'template':
             # The unqualified name is template args — append to last prefix
+            # But if the last prefix element is a ctor/dtor, we need to
+            # resolve the class name first, then append template args
             if parts:
-                parts[-1] += self.render(unq)
+                # Check if last prefix element is ctor/dtor
+                last_prefix = prefix[-1] if prefix else None
+                if isinstance(last_prefix, ast.UnqualifiedName) and last_prefix.kind in ('ctor', 'dtor'):
+                    class_name = self._get_class_name_from_prefix(prefix)
+                    template_args = self.render(unq)
+                    if class_name:
+                        if last_prefix.kind == 'dtor':
+                            parts[-1] = '~' + class_name + template_args
+                        else:
+                            parts[-1] = class_name + template_args
+                    else:
+                        parts[-1] += self.render(unq)
+                else:
+                    parts[-1] += self.render(unq)
             else:
                 parts.append(self.render(unq))
         else:
@@ -217,6 +259,8 @@ class Renderer:
         if node.cv_qualifiers:
             suffix += ' ' + node.cv_qualifiers
         if node.ref_qualifier:
+            if suffix:
+                suffix += ' '
             suffix += node.ref_qualifier
 
         return result + suffix
@@ -225,28 +269,32 @@ class Renderer:
         """Get the unqualified class name from the prefix chain."""
         if not prefix:
             return ''
-        last = prefix[-1]
-        if isinstance(last, ast.SourceName):
-            return self._extract_class_name(last.name)
-        if isinstance(last, ast.UnqualifiedName):
-            if last.kind == 'source' and isinstance(last.value, ast.SourceName):
-                return last.value.name
-            # For template classes, the class name is the source name
-            # in the prefix element BEFORE the template args.
-            # e.g., prefix = [std, allocator, <template-args>] -> "allocator"
-            if last.kind == 'template':
-                if len(prefix) >= 2:
-                    prev = prefix[-2]
-                    if isinstance(prev, ast.SourceName):
-                        return self._extract_class_name(prev.name)
-                    if isinstance(prev, ast.UnqualifiedName):
-                        if isinstance(prev.value, ast.SourceName):
-                            return prev.value.name
-                        # Could be a substitution like Ss/Si/So/Sd
-                        if isinstance(prev.value, ast.Substitution) and prev.value.std_sub:
-                            name = grammar.STD_SUBS.get(prev.value.std_sub, '')
-                            return self._extract_class_name(name)
-        return self.render(last)
+        # Search backwards from the end, skipping ctor/dtor and template args,
+        # to find the class name (a source name or substitution)
+        i = len(prefix) - 1
+        while i >= 0:
+            elem = prefix[i]
+            # Skip ctor/dtor elements
+            if isinstance(elem, ast.UnqualifiedName) and elem.kind in ('ctor', 'dtor'):
+                i -= 1
+                continue
+            # Skip template args — the class name is the source name before them
+            if isinstance(elem, ast.UnqualifiedName) and elem.kind == 'template':
+                i -= 1
+                continue
+            # Found a source name — this is the class name
+            if isinstance(elem, ast.SourceName):
+                return self._extract_class_name(elem.name)
+            if isinstance(elem, ast.UnqualifiedName):
+                if elem.kind == 'source' and isinstance(elem.value, ast.SourceName):
+                    return elem.value.name
+                # Could be a substitution like Ss/Si/So/Sd
+                if isinstance(elem.value, ast.Substitution) and elem.value.std_sub:
+                    name = grammar.STD_SUBS.get(elem.value.std_sub, '')
+                    return self._extract_class_name(name)
+            # Unknown type — render it
+            return self.render(elem)
+        return ''
 
     def _extract_class_name(self, full_name):
         """Extract the unqualified class name from a full name string."""

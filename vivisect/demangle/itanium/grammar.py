@@ -62,7 +62,7 @@ EXTENDED_BUILTIN_TYPES = {
     'Du': 'char8_t',         # C++20 char8_t
     'Da': 'auto',
     'Dc': 'decltype(auto)',
-    'Dn': 'nullptr_t',
+    'Dn': 'decltype(nullptr)',
     # DF<number>_ = _Float<number> (handled specially in parser)
     # DF<number>b = std::bfloat16_t (handled specially)
 }

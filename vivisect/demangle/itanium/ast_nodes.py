@@ -93,12 +93,15 @@ class UnqualifiedName(Node):
 
 class OperatorName(Node):
     """An operator name: e.g. 'pl' -> '+'."""
-    def __init__(self, code, symbol, num_args=2):
+    def __init__(self, code, symbol, num_args=2, target_type=None):
         self.code = code        # str: the 2-char code
         self.symbol = symbol   # str: the operator symbol/name
         self.num_args = num_args
+        self.target_type = target_type  # For cv (conversion operator): the target type
 
     def __repr__(self):
+        if self.target_type:
+            return '<OperatorName %s=cast->%s>' % (self.code, self.target_type)
         return '<OperatorName %s=%s>' % (self.code, self.symbol)
 
 
