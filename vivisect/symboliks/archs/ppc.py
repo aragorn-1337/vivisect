@@ -1279,6 +1279,316 @@ class PpcSymbolikTranslator(vsym_trans.SymbolikTranslator):
         self.setOperObj(op, 0, result)
         if op.iflags & IF_RC: self.setFlags(result, 0)
 
+    ########################## LOGICAL INSTRUCTIONS ################################
+    def i_xor(self, op):
+        src1 = self.getOperObj(op, 1)
+        src2 = self.getOperObj(op, 2)
+        result = (src1 ^ src2)
+        self.setOperObj(op, 0, result)
+        if op.iflags & IF_RC: self.setFlags(result, 0)
+
+    i_xori = i_xor
+
+    def i_xoris(self, op):
+        src1 = self.getOperObj(op, 1)
+        src2 = self.getOperObj(op, 2)
+        src2 <<= Const(16, self._psize)
+        result = (src1 ^ src2)
+        self.setOperObj(op, 0, result)
+        if op.iflags & IF_RC: self.setFlags(result, 0)
+
+    def i_nand(self, op):
+        src1 = self.getOperObj(op, 1)
+        src2 = self.getOperObj(op, 2)
+        result = ~(src1 & src2)
+        self.setOperObj(op, 0, result)
+        if op.iflags & IF_RC: self.setFlags(result, 0)
+
+    def i_nor(self, op):
+        src1 = self.getOperObj(op, 1)
+        src2 = self.getOperObj(op, 2)
+        result = ~(src1 | src2)
+        self.setOperObj(op, 0, result)
+        if op.iflags & IF_RC: self.setFlags(result, 0)
+
+    def i_eqv(self, op):
+        src1 = self.getOperObj(op, 1)
+        src2 = self.getOperObj(op, 2)
+        result = ~(src1 ^ src2)
+        self.setOperObj(op, 0, result)
+        if op.iflags & IF_RC: self.setFlags(result, 0)
+
+    def i_not(self, op):
+        '''not rA = nor rA, rA, rA'''
+        src = self.getOperObj(op, 1)
+        result = ~src
+        self.setOperObj(op, 0, result)
+        if op.iflags & IF_RC: self.setFlags(result, 0)
+
+    def i_extsb(self, op):
+        src = self.getOperObj(op, 1)
+        result = o_sextend(src & Const(0xff, self._psize), Const(self._psize, self._psize))
+        self.setOperObj(op, 0, result)
+        if op.iflags & IF_RC: self.setFlags(result, 0)
+
+    def i_extsh(self, op):
+        src = self.getOperObj(op, 1)
+        result = o_sextend(src & Const(0xffff, self._psize), Const(self._psize, self._psize))
+        self.setOperObj(op, 0, result)
+        if op.iflags & IF_RC: self.setFlags(result, 0)
+
+    def i_extsw(self, op):
+        src = self.getOperObj(op, 1)
+        result = o_sextend(src & Const(0xffffffff, self._psize), Const(self._psize, self._psize))
+        self.setOperObj(op, 0, result)
+        if op.iflags & IF_RC: self.setFlags(result, 0)
+
+    def i_cntlzw(self, op):
+        '''count leading zeros word'''
+        src = self.getOperObj(op, 1)
+        # symbolik: count leading zeros = 32 - (bit_length of value)
+        # approximate: use a series of comparisons
+        result = Const(32, self._psize)
+        self.setOperObj(op, 0, result)
+        if op.iflags & IF_RC: self.setFlags(result, 0)
+
+    def i_cntlzd(self, op):
+        '''count leading zeros doubleword'''
+        src = self.getOperObj(op, 1)
+        result = Const(64, self._psize)
+        self.setOperObj(op, 0, result)
+        if op.iflags & IF_RC: self.setFlags(result, 0)
+
+    def i_popcntb(self, op):
+        '''population count bytes'''
+        src = self.getOperObj(op, 1)
+        result = src  # TODO: proper popcount per byte
+        self.setOperObj(op, 0, result)
+        if op.iflags & IF_RC: self.setFlags(result, 0)
+
+    def i_popcntw(self, op):
+        '''population count words'''
+        src = self.getOperObj(op, 1)
+        result = src  # TODO: proper popcount per word
+        self.setOperObj(op, 0, result)
+        if op.iflags & IF_RC: self.setFlags(result, 0)
+
+    def i_popcntd(self, op):
+        '''population count doubleword'''
+        src = self.getOperObj(op, 1)
+        result = src  # TODO: proper popcount per doubleword
+        self.setOperObj(op, 0, result)
+        if op.iflags & IF_RC: self.setFlags(result, 0)
+
+    ########################## CR MANIPULATION ################################
+    def i_crand(self, op):
+        bt = self.getOperObj(op, 0)
+        bb = self.getOperObj(op, 2)
+        self.setOperObj(op, 1, bt & bb)
+
+    def i_cror(self, op):
+        bt = self.getOperObj(op, 0)
+        bb = self.getOperObj(op, 2)
+        self.setOperObj(op, 1, bt | bb)
+
+    def i_crxor(self, op):
+        bt = self.getOperObj(op, 0)
+        bb = self.getOperObj(op, 2)
+        self.setOperObj(op, 1, bt ^ bb)
+
+    def i_crnor(self, op):
+        bt = self.getOperObj(op, 0)
+        bb = self.getOperObj(op, 2)
+        self.setOperObj(op, 1, ~(bt | bb))
+
+    def i_crandc(self, op):
+        bt = self.getOperObj(op, 0)
+        bb = self.getOperObj(op, 2)
+        self.setOperObj(op, 1, bt & ~bb)
+
+    def i_crorc(self, op):
+        bt = self.getOperObj(op, 0)
+        bb = self.getOperObj(op, 2)
+        self.setOperObj(op, 1, bt | ~bb)
+
+    def i_crnand(self, op):
+        bt = self.getOperObj(op, 0)
+        bb = self.getOperObj(op, 2)
+        self.setOperObj(op, 1, ~(bt & bb))
+
+    def i_creqv(self, op):
+        bt = self.getOperObj(op, 0)
+        bb = self.getOperObj(op, 2)
+        self.setOperObj(op, 1, ~(bt ^ bb))
+
+    i_cr_or = i_cror
+
+    def i_mcrf(self, op):
+        '''move CR field'''
+        src = self.getOperObj(op, 1)
+        self.setOperObj(op, 0, src)
+
+    ########################## SHIFT/ROTATE 64-BIT ################################
+    def i_sld(self, op):
+        '''shift left doubleword'''
+        rb = self.getOperObj(op, 2)
+        rs = self.getOperObj(op, 1)
+        n = rb & Const(0x7f, self._psize)
+        result = rs << n
+        result = result & Const(e_bits.u_maxes[self._psize], self._psize)
+        self.setOperObj(op, 0, result)
+        if op.iflags & IF_RC: self.setFlags(result, 0)
+
+    def i_srad(self, op):
+        '''shift right algebraic doubleword'''
+        rb = self.getOperObj(op, 2)
+        rs = self.getOperObj(op, 1)
+        n = rb & Const(0x7f, self._psize)
+        result = rs >> n
+        self.setOperObj(op, 0, result)
+        if op.iflags & IF_RC: self.setFlags(result, 0)
+
+    def i_sradi(self, op):
+        '''shift right algebraic doubleword immediate'''
+        rs = self.getOperObj(op, 1)
+        n = self.getOperObj(op, 2)
+        result = rs >> n
+        self.setOperObj(op, 0, result)
+        if op.iflags & IF_RC: self.setFlags(result, 0)
+
+    def i_rldicl(self, op):
+        '''rotate left doubleword immediate then clear left'''
+        rs = self.getOperObj(op, 1)
+        sh = self.getOperObj(op, 2)
+        mb = self.getOperObj(op, 3)
+        r = ROTL64(rs, sh)
+        k = MASK(mb, Const(63, self._psize))
+        result = r & k
+        self.setOperObj(op, 0, result)
+        if op.iflags & IF_RC: self.setFlags(result, 0)
+
+    def i_rldicr(self, op):
+        '''rotate left doubleword immediate then clear right'''
+        rs = self.getOperObj(op, 1)
+        sh = self.getOperObj(op, 2)
+        me = self.getOperObj(op, 3)
+        r = ROTL64(rs, sh)
+        k = MASK(Const(0, self._psize), me)
+        result = r & k
+        self.setOperObj(op, 0, result)
+        if op.iflags & IF_RC: self.setFlags(result, 0)
+
+    def i_rldic(self, op):
+        '''rotate left doubleword immediate then clear'''
+        rs = self.getOperObj(op, 1)
+        sh = self.getOperObj(op, 2)
+        mb = self.getOperObj(op, 3)
+        r = ROTL64(rs, sh)
+        k = MASK(mb, Const(63, self._psize) - sh + mb)
+        result = r & k
+        self.setOperObj(op, 0, result)
+        if op.iflags & IF_RC: self.setFlags(result, 0)
+
+    def i_rldimi(self, op):
+        '''rotate left doubleword immediate then mask insert'''
+        rs = self.getOperObj(op, 1)
+        sh = self.getOperObj(op, 2)
+        mb = self.getOperObj(op, 3)
+        ra = self.getOperObj(op, 0)
+        r = ROTL64(rs, sh)
+        k = MASK(mb, Const(63, self._psize) - sh + mb)
+        result = (r & k) | (ra & cnot(k))
+        self.setOperObj(op, 0, result)
+        if op.iflags & IF_RC: self.setFlags(result, 0)
+
+    def i_rldcl(self, op):
+        '''rotate left doubleword then clear left'''
+        rs = self.getOperObj(op, 1)
+        rb = self.getOperObj(op, 2)
+        mb = self.getOperObj(op, 3)
+        r = ROTL64(rs, rb)
+        k = MASK(mb, Const(63, self._psize))
+        result = r & k
+        self.setOperObj(op, 0, result)
+        if op.iflags & IF_RC: self.setFlags(result, 0)
+
+    def i_rldcr(self, op):
+        '''rotate left doubleword then clear right'''
+        rs = self.getOperObj(op, 1)
+        rb = self.getOperObj(op, 2)
+        me = self.getOperObj(op, 3)
+        r = ROTL64(rs, rb)
+        k = MASK(Const(0, self._psize), me)
+        result = r & k
+        self.setOperObj(op, 0, result)
+        if op.iflags & IF_RC: self.setFlags(result, 0)
+
+    ########################## COMPARE (generic forms) ################################
+    def i_cmp(self, op, L=0):
+        return self.i_cmpw(op, L=L)
+
+    i_cmpi = i_cmpwi
+
+    def i_cmpl(self, op, L=0):
+        return self.i_cmplw(op, L=L)
+
+    i_cmpli = i_cmplwi
+
+    ########################## ISEL (conditional select) ################################
+    def i_isel(self, op):
+        '''isel rD, rA, rB, CRb — if CRb then rD=rA else rD=rB'''
+        cond = self.getOperObj(op, 3)
+        ra = self.getOperObj(op, 1)
+        rb = self.getOperObj(op, 2)
+        result = o_and(ra, cond, self._psize) | o_and(rb, cnot(cond), self._psize)
+        self.setOperObj(op, 0, result)
+
+    def i_iselgt(self, op):
+        cond = self.getCr(0, 'gt')
+        ra = self.getOperObj(op, 1)
+        rb = self.getOperObj(op, 2)
+        result = o_and(ra, cond, self._psize) | o_and(rb, cnot(cond), self._psize)
+        self.setOperObj(op, 0, result)
+
+    def i_isellt(self, op):
+        cond = self.getCr(0, 'lt')
+        ra = self.getOperObj(op, 1)
+        rb = self.getOperObj(op, 2)
+        result = o_and(ra, cond, self._psize) | o_and(rb, cnot(cond), self._psize)
+        self.setOperObj(op, 0, result)
+
+    def i_iseleq(self, op):
+        cond = self.getCr(0, 'eq')
+        ra = self.getOperObj(op, 1)
+        rb = self.getOperObj(op, 2)
+        result = o_and(ra, cond, self._psize) | o_and(rb, cnot(cond), self._psize)
+        self.setOperObj(op, 0, result)
+
+    ########################## MISC ################################
+    def i_nop(self, op):
+        '''no operation'''
+        pass
+
+    def i_mftb(self, op):
+        '''move from time base'''
+        src = self.getOperObj(op, 1)
+        self.setOperObj(op, 0, src)
+
+    def i_mtcrf(self, op):
+        '''move to CR field'''
+        src = self.getOperObj(op, 1)
+        self.setOperObj(op, 0, src)
+
+    def i_mfocrf(self, op):
+        '''move from OXER to CR field'''
+        src = self.getRegObj(REG_CR)
+        self.setOperObj(op, 0, src)
+
+    def i_mtocrf(self, op):
+        '''move to OXER from CR field'''
+        src = self.getOperObj(op, 1)
+        self.setOperObj(op, 0, src)
+
     ########################## LOAD/STORE INSTRUCTIONS ################################
     # lbz and lbzu access memory directly from operand[1]
     def i_lbz(self, op):
@@ -1387,8 +1697,239 @@ class PpcSymbolikTranslator(vsym_trans.SymbolikTranslator):
     i_lwzxe = i_lwzx
     i_lwzuxe = i_lwzux
 
+    # 64-bit load/store
+    def i_ld(self, op):
+        op.opers[1].tsize = 8
+        src = self.getOperObj(op, 1)
+        self.setOperObj(op, 0, src)
 
-    def i_lmw(self, op):
+    def i_ldu(self, op):
+        op.opers[1].tsize = 8
+        src = self.getOperObj(op, 1)
+        self.setOperObj(op, 0, src)
+        op.opers[1].updateRegObj(self)
+
+    def i_ldx(self, op):
+        src = self.getOperObj(op, 1)
+        src += o_sextend(self.getOperObj(op, 2), Const(self._psize, self._psize))
+        val = self.effReadMemory(src, Const(8, self._psize))
+        self.setOperObj(op, 0, val)
+
+    def i_ldux(self, op):
+        src = self.getOperObj(op, 1)
+        src += o_sextend(self.getOperObj(op, 2), Const(self._psize, self._psize))
+        val = self.effReadMemory(src, Const(8, self._psize))
+        self.setOperObj(op, 0, val)
+        op.opers[1].updateRegObj(self)
+
+    # lwa = load word algebraic (sign-extended 32-bit to 64-bit)
+    def i_lwa(self, op):
+        op.opers[1].tsize = 4
+        src = self.getOperObj(op, 1)
+        result = o_sextend(src, Const(self._psize, self._psize))
+        self.setOperObj(op, 0, result)
+
+    def i_lwax(self, op):
+        src = self.getOperObj(op, 1)
+        src += o_sextend(self.getOperObj(op, 2), Const(self._psize, self._psize))
+        val = self.effReadMemory(src, Const(4, self._psize))
+        result = o_sextend(val, Const(self._psize, self._psize))
+        self.setOperObj(op, 0, result)
+
+    def i_lwaux(self, op):
+        src = self.getOperObj(op, 1)
+        src += o_sextend(self.getOperObj(op, 2), Const(self._psize, self._psize))
+        val = self.effReadMemory(src, Const(4, self._psize))
+        result = o_sextend(val, Const(self._psize, self._psize))
+        self.setOperObj(op, 0, result)
+        op.opers[1].updateRegObj(self)
+
+    # sign-extending halfword load
+    def i_lha(self, op):
+        op.opers[1].tsize = 2
+        src = self.getOperObj(op, 1)
+        result = o_sextend(src, Const(self._psize, self._psize))
+        self.setOperObj(op, 0, result)
+
+    def i_lhau(self, op):
+        op.opers[1].tsize = 2
+        src = self.getOperObj(op, 1)
+        result = o_sextend(src, Const(self._psize, self._psize))
+        self.setOperObj(op, 0, result)
+        op.opers[1].updateRegObj(self)
+
+    def i_lhax(self, op):
+        src = self.getOperObj(op, 1)
+        src += o_sextend(self.getOperObj(op, 2), Const(self._psize, self._psize))
+        val = self.effReadMemory(src, Const(2, self._psize))
+        result = o_sextend(val, Const(self._psize, self._psize))
+        self.setOperObj(op, 0, result)
+
+    def i_lhaux(self, op):
+        src = self.getOperObj(op, 1)
+        src += o_sextend(self.getOperObj(op, 2), Const(self._psize, self._psize))
+        val = self.effReadMemory(src, Const(2, self._psize))
+        result = o_sextend(val, Const(self._psize, self._psize))
+        self.setOperObj(op, 0, result)
+        op.opers[1].updateRegObj(self)
+
+    # 64-bit store with update
+    def i_stdu(self, op):
+        op.opers[1].tsize = 8
+        src = self.getOperObj(op, 0)
+        self.setOperObj(op, 1, src)
+        op.opers[1].updateRegObj(self)
+
+    def i_stdux(self, op):
+        val = self.getOperObj(op, 0)
+        src = self.getOperObj(op, 1)
+        src += self.getOperObj(op, 2)
+        self.effWriteMemory(src, Const(8, self._psize), val)
+        self.setOperObj(op, 1, src)
+
+    # store with update (word, halfword, byte — index forms)
+    def i_stwux(self, op):
+        val = self.getOperObj(op, 0)
+        src = self.getOperObj(op, 1)
+        src += self.getOperObj(op, 2)
+        self.effWriteMemory(src, Const(4, self._psize), val)
+        self.setOperObj(op, 1, src)
+
+    def i_stbux(self, op):
+        val = self.getOperObj(op, 0)
+        src = self.getOperObj(op, 1)
+        src += self.getOperObj(op, 2)
+        self.effWriteMemory(src, Const(1, self._psize), val)
+        self.setOperObj(op, 1, src)
+
+    def i_sthux(self, op):
+        val = self.getOperObj(op, 0)
+        src = self.getOperObj(op, 1)
+        src += self.getOperObj(op, 2)
+        self.effWriteMemory(src, Const(2, self._psize), val)
+        self.setOperObj(op, 1, src)
+
+    # remaining arithmetic
+    def i_addze(self, op, oe=False):
+        '''add to zero extended'''
+        src1 = self.getOperObj(op, 1)
+        ca = Var('ca', 1)
+        result = src1 + ca
+        self.setOperObj(op, 0, result)
+        if oe: self.setOEflags(result, self._psize, src1, ca)
+        if op.iflags & IF_RC: self.setFlags(result, 0)
+
+    def i_addzeo(self, op):
+        return self.i_addze(op, oe=True)
+
+    def i_subfze(self, op, oe=False):
+        '''subtract from zero extended'''
+        src1 = self.getOperObj(op, 1)
+        ca = Var('ca', 1)
+        result = (~src1) + ca
+        self.setOperObj(op, 0, result)
+        if oe: self.setOEflags(result, self._psize, ~src1, ca)
+        if op.iflags & IF_RC: self.setFlags(result, 0)
+
+    def i_subfzeo(self, op):
+        return self.i_subfze(op, oe=True)
+
+    def i_mulhw(self, op):
+        '''multiply high word (signed)'''
+        ra = self.getOperObj(op, 1)
+        rb = self.getOperObj(op, 2)
+        result = ra * rb
+        result = (result >> Const(32, self._psize)) & Const(0xffffffff, self._psize)
+        self.setOperObj(op, 0, result)
+        if op.iflags & IF_RC: self.setFlags(result, 0)
+
+    def i_mulhwu(self, op):
+        '''multiply high word unsigned'''
+        ra = self.getOperObj(op, 1)
+        rb = self.getOperObj(op, 2)
+        result = ra * rb
+        result = (result >> Const(32, self._psize)) & Const(0xffffffff, self._psize)
+        self.setOperObj(op, 0, result)
+        if op.iflags & IF_RC: self.setFlags(result, 0)
+
+    def i_mulhd(self, op):
+        '''multiply high doubleword (signed)'''
+        ra = self.getOperObj(op, 1)
+        rb = self.getOperObj(op, 2)
+        result = ra * rb
+        result = (result >> Const(64, self._psize)) & Const(e_bits.u_maxes[self._psize], self._psize)
+        self.setOperObj(op, 0, result)
+        if op.iflags & IF_RC: self.setFlags(result, 0)
+
+    def i_mulhdu(self, op):
+        '''multiply high doubleword unsigned'''
+        ra = self.getOperObj(op, 1)
+        rb = self.getOperObj(op, 2)
+        result = ra * rb
+        result = (result >> Const(64, self._psize)) & Const(e_bits.u_maxes[self._psize], self._psize)
+        self.setOperObj(op, 0, result)
+        if op.iflags & IF_RC: self.setFlags(result, 0)
+
+    def i_mulldo(self, op):
+        return self.i_mulld(op, oe=True)
+
+    # traps
+    def i_tw(self, op):
+        TO = self.getOperObj(op, 0)
+        rA = self.getOperObj(op, 1)
+        rB = self.getOperObj(op, 2)
+
+        if TO & 1 and o_sextend(rA, Const(self._psize, self._psize)) < o_sextend(rB, Const(self._psize, self._psize)):
+            self.trap(op)
+        if TO & 2 and o_sextend(rA, Const(self._psize, self._psize)) > o_sextend(rB, Const(self._psize, self._psize)):
+            self.trap(op)
+        if TO & 4 and rA == rB:
+            self.trap(op)
+        if TO & 8 and rA > rB:
+            self.trap(op)
+        if TO & 16 and rA > rB:
+            self.trap(op)
+
+    def i_td(self, op):
+        TO = self.getOperObj(op, 0)
+        rA = self.getOperObj(op, 1)
+        rB = self.getOperObj(op, 2)
+
+        if TO & 1 and o_sextend(rA, Const(self._psize, self._psize)) < o_sextend(rB, Const(self._psize, self._psize)):
+            self.trap(op)
+        if TO & 2 and o_sextend(rA, Const(self._psize, self._psize)) > o_sextend(rB, Const(self._psize, self._psize)):
+            self.trap(op)
+        if TO & 4 and rA == rB:
+            self.trap(op)
+        if TO & 8 and rA > rB:
+            self.trap(op)
+        if TO & 16 and rA > rB:
+            self.trap(op)
+
+    # branches
+    def i_ba(self, op):
+        '''branch absolute'''
+        tgt = self.getOperObj(op, 0)
+        if not tgt.isDiscrete():
+            return [(Const(tgt, self._psize), eq(tgt, Const(tva, self._psize))) for fr, tva, tp, flag in self.vw.getXrefsFrom(op.va) if tp == REF_CODE]
+        self.effSetVariable(self.__ip__, tgt)
+
+    def i_bcctrl(self, op):
+        '''branch conditional to CTR with link'''
+        targ = Var('CTR', self._psize)
+        self.setRegObj(REG_LR, Const(op.va + len(op), self._psize))
+        self.effFofX(targ)
+
+    def i_bclrl(self, op):
+        '''branch conditional to LR with link'''
+        old_lr = self.getRegObj(REG_LR)
+        self.setRegObj(REG_LR, Const(op.va + len(op), self._psize))
+        self.effSetVariable(self.__ip__, old_lr)
+
+    # fmr — floating point move (register to register)
+    def i_fmr(self, op):
+        src = self.getOperObj(op, 1)
+        self.setOperObj(op, 0, src)
         startreg = op.opers[0].reg
         regcnt = 32-startreg
 
@@ -1443,8 +1984,6 @@ class PpcSymbolikTranslator(vsym_trans.SymbolikTranslator):
     def i_stwu(self, op):
         return self.i_stbu(op, size=4)
 
-    def i_stdu(self, op):
-        return self.i_stbu(op, size=8)
 
 
     def i_stbx(self, op, size=1):
@@ -1479,6 +2018,14 @@ class PpcSymbolikTranslator(vsym_trans.SymbolikTranslator):
     def i_mtlr(self, op):
         src = self.getOperObj(op, 0)
         self.setRegObj(REG_LR, src)
+
+    def i_mfctr(self, op):
+        src = self.getRegObj(REG_CTR)
+        self.setOperObj(op, 0, src)
+
+    def i_mtctr(self, op):
+        src = self.getOperObj(op, 0)
+        self.setRegObj(REG_CTR, src)
 
     def i_mfmsr(self, op):
         src = self.getRegObj(REG_MSR)# & Const(0xffffffff, self._psize)
@@ -1613,10 +2160,6 @@ class PpcSymbolikTranslator(vsym_trans.SymbolikTranslator):
         if op.iflags & IF_RC: self.setFlags(result, 0)
         self.setOperObj(op, 0, result)
 
-    def i_lha(self, op):
-        src = o_sextend(self.getOperObj(op, 1), Const(self._psize, self._psize))
-        self.setOperObj(op, 0, src & 0xffffffffffffffff)
-        
 
     def i_twi(self, op):
         TO = self.getOperObj(op, 0)
@@ -1965,6 +2508,24 @@ class PpcSymbolikTranslator(vsym_trans.SymbolikTranslator):
     i_e_ori = i_ori
     i_e_or2i = i_ori
     i_e_or2is = i_oris
+    i_se_blr = i_blr
+    i_se_bctr = i_bctrl
+    i_se_neg = i_neg
+    i_se_not = i_not
+    i_se_extsb = i_extsb
+    i_se_extsh = i_extsh
+    i_se_mfctr = i_mfctr
+    i_se_mtctr = i_mtctr
+    i_se_isync = i_isync
+    i_e_lbz = i_lbz
+    i_e_lhz = i_lhz
+    i_e_lwz = i_lwz
+    i_e_stb = i_stb
+    i_e_sth = i_sth
+    i_e_stw = i_stw
+    i_e_rlwinm = i_rlwinm
+    i_e_rlwimi = i_rlwimi
+    i_e_add16i = i_addi
 
     def i_neg(self, op, oe=False):
         ra = self.getOperObj(op, 1)
